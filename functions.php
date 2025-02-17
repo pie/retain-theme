@@ -1,4 +1,5 @@
 <?php
+
 if (!defined('RETAIN_VERSION')) {
     define('RETAIN_VERSION', '0.0.1');
 }
@@ -13,17 +14,17 @@ add_action('after_setup_theme', 'retain_theme_setup');
 
 // Enqueue scripts and styles
 function retain_scripts() {
-    // Enqueue stylesheet
+    // Enqueue compiled stylesheet
     wp_enqueue_style(
         'retain-style',
-        get_stylesheet_uri(),
+        get_template_directory_uri() . '/style.css',
         array(),
         RETAIN_VERSION
     );
 
     // Enqueue JavaScript
     wp_enqueue_script(
-        'retain-script',
+        'retain-navigation',
         get_template_directory_uri() . '/inc/js/navigation.js',
         array(),  // Add dependencies here if needed (e.g., array('jquery'))
         RETAIN_VERSION
