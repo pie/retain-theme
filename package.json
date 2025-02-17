@@ -1,0 +1,18 @@
+{
+  "name": "retain-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/sass/style.scss:style.css --watch",
+    "sass:build": "sass src/sass/style.scss:style.css --style compressed",
+    "start": "npm run sass",
+    "build": "npm run sass:build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  }
+}
