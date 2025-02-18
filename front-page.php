@@ -38,11 +38,9 @@ get_template_part('template-parts/header');
     <section class="membership-growth">
         <img src="/assets/membership-growth/plant.png" alt="Membership Growth Plant" class="divider-img">
 
-        <div class="dark-parallelogram">
-            <div class="light-parallelogram">
-                <h2 class="section-title">Ready to accelerate your membership growth</h2>
-            </div>
-        </div>
+        <div class="dark-parallelogram"></div>
+        <div class="light-parallelogram"></div>
+        <h2 class="section-title">Ready to accelerate your membership growth</h2>
 
         <h3 class="section-subtitle"></h3>
 
@@ -72,11 +70,9 @@ get_template_part('template-parts/header');
     <section class="highlights">
         <img src="/assets/highlights/stars.png" alt="Highlights stars image" class="divider-img">
 
-        <div class="dark-parallelogram">
-            <div class="light-parallelogram">
-                <h2 class="section-title">Check out highlights of our 2019 event:</h2>
-            </div>
-        </div>
+        <div class="dark-parallelogram"></div>
+        <div class="light-parallelogram"></div>
+        <h2 class="section-title">Check out highlights of our 2019 event:</h2>
 
         <div class="hightlights-video">
             Embedded video
@@ -86,11 +82,9 @@ get_template_part('template-parts/header');
     <section class="meet-your-host">
         <img src="/assets/meet-your-host/person.png" alt="Meet Your Host divider" class="divider-img">
 
-        <div class="dark-parallelogram">
-            <div class="light-parallelogram">
-                <h2 class="section-title">Meet your host for Retain 2025</h2>
-            </div>
-        </div>
+        <div class="dark-parallelogram"></div>
+        <div class="light-parallelogram"></div>
+        <h2 class="section-title">Meet your host for Retain 2025</h2>
 
         <div class="host-img-bg-dark"></div>
         <div class="host-img-bg-light"></div>
@@ -107,7 +101,8 @@ get_template_part('template-parts/header');
     </section>
 
     <section class="speakers">
-        <img src="/assets/speakers/bg.png" alt="abstract shapes" class="speakers-bg-img">
+        <img src="/assets/speakers/bg1.png" alt="abstract shape 1" class="speakers-bg-img-1">
+        <img src="/assets/speakers/bg2.png" alt="abstract shape 2" class="speakers-bg-img-2">
         <div class="speakers-section-content">
             <h2>You'll also learn from expert guests including:</h2>
             <!-- speakers repeater field here -->
@@ -116,6 +111,58 @@ get_template_part('template-parts/header');
         <h3 class="section-subtitle"></h3>
         <hr />
     </section>
+
+    <section class="tickets">
+        <img src="/assets/tickets/tickets-divider.png" alt="Tickers divider" class="divider-img">
+
+        <div class="dark-parallelogram"></div>
+        <div class="light-parallelogram"></div>
+        <h2 class="section-title">Buy your ticket</h2>
+
+        <p></p>
+        <p></p>
+
+        <h3 class="section-subtitle"></h3>
+
+        <div class="ticket-prices">
+            <div class="ticket-price-card">
+                <img class="card-bg" src="/assets/tickets/card-bg.png" alt="Ticket card background">
+                
+                <p class="price-title"></p>
+
+                <img class="earlybird-bg" src="/assets/tickets/earlybird-bg.png" alt="Earlybird background">
+                <p class="earlybird-text"></p>
+
+                <ul class="price-features">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <a href="#" class="buy-now-button">BUY NOW</a>
+            </div>
+            <div class="ticket-price-card">
+                <img class="card-bg" src="/assets/tickets/card-bg.png" alt="Ticket card background">
+                
+                <p class="price-title"></p>
+
+                <img class="earlybird-bg" src="/assets/tickets/earlybird-bg.png" alt="Earlybird background">
+                <p class="earlybird-text"></p>
+
+                <ul class="price-features">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <a href="#" class="buy-now-button">BUY NOW</a>
+            </div>
+        </div>
+    </section>
+
+    
 
     <?php
     if (have_posts()) :
