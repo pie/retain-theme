@@ -162,7 +162,22 @@ get_template_part('template-parts/header');
         </div>
     </section>
 
-    
+    <section class="location">
+        <img src="/assets/location/pin.png" alt="Location divider" class="divider-img">
+
+        <div class="location-section-content">
+            <div class="location-text-wrapper">
+                <div class="dark-parallelogram-cutoff"></div>
+                <div class="light-parallelogram-cutoff"></div>
+                <h2 class="section-title">Location</h2>
+                <p class="address"></p>
+                <p class="location-name"></p>
+            </div>
+
+            <div class="map-wrapper">
+
+            </div>
+    </section>
 
     <?php
     if (have_posts()) :
