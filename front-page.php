@@ -83,6 +83,40 @@ get_template_part('template-parts/header');
         </div>
     </section>
 
+    <section class="meet-your-host">
+        <img src="/assets/meet-your-host/person.png" alt="Meet Your Host divider" class="divider-img">
+
+        <div class="dark-parallelogram">
+            <div class="light-parallelogram">
+                <h2 class="section-title">Meet your host for Retain 2025</h2>
+            </div>
+        </div>
+
+        <div class="host-img-bg-dark"></div>
+        <div class="host-img-bg-light"></div>
+        <img src="/assets/meet-your-host/host.png" alt="Host photo" class="host-img">
+
+        <h3 class="section-subtitle"></h3>
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p class="last-p"></p>
+
+    </section>
+
+    <section class="speakers">
+        <img src="/assets/speakers/bg.png" alt="abstract shapes" class="speakers-bg-img">
+        <div class="speakers-section-content">
+            <h2>You'll also learn from expert guests including:</h2>
+            <!-- speakers repeater field here -->
+        </div>
+
+        <h3 class="section-subtitle"></h3>
+        <hr />
+    </section>
+
     <?php
     if (have_posts()) :
         while (have_posts()) :
