@@ -130,7 +130,7 @@ get_template_part('template-parts/header');
                 
                 <p class="price-title"></p>
 
-                <img class="earlybird-bg" src="/assets/tickets/earlybird-bg.png" alt="Earlybird background">
+                <div class="earlybird-bg"></div>
                 <p class="earlybird-text"></p>
 
                 <ul class="price-features">
@@ -147,7 +147,7 @@ get_template_part('template-parts/header');
                 
                 <p class="price-title"></p>
 
-                <img class="earlybird-bg" src="/assets/tickets/earlybird-bg.png" alt="Earlybird background">
+                <div class="earlybird-bg"></div>
                 <p class="earlybird-text"></p>
 
                 <ul class="price-features">
@@ -177,6 +177,39 @@ get_template_part('template-parts/header');
             <div class="map-wrapper">
 
             </div>
+    </section>
+
+    <section class="faq">
+        <img src="/assets/faq/speech-bubbles-divider.png" alt="FAQ divider" class="divider-img">
+
+        <div class="dark-parallelogram"></div>
+        <div class="light-parallelogram"></div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="collapsible-wrapper">
+
+            <button type="button" class="collapsible">Open Section 1</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button type="button" class="collapsible">Open Section 2</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            
+            <button type="button" class="collapsible">Open Section 3</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        
+            <button type="button" class="collapsible">Open Section 4</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            
+        </div>
+
     </section>
 
     <?php

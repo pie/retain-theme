@@ -53,5 +53,13 @@ function retain_scripts() {
         array(),  
         RETAIN_VERSION
     );
+
+    // Enqueue countdown script
+    wp_enqueue_script(
+        'retain-collapsible',
+        get_template_directory_uri() . '/inc/js/collapsible.js',
+        array(),  
+        RETAIN_VERSION
+    );
 }
 add_action('wp_enqueue_scripts', 'retain_scripts');
