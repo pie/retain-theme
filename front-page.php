@@ -10,9 +10,10 @@ get_template_part('template-parts/header');
 
 <main id="primary" class="site-main">
     <section class="hero">
-        <img src="path/to/your/image.jpg" alt="Hero Image">
+        <img src="/assets/hero/hero-image.png" alt="Hero Image" class="hero-image">
         <div class="hero-content">
             <div class="hero-text">Sept 22nd - 24th 2025 / Newcastle, UK</div>
+            <img src="/assets/hero/hero-logo.png" alt="Hero Logo" class="hero-logo">
             <div id="countdown" class="countdown">
                 <div class="countdown-item">
                     <span id="days" class="brandongrotesque">00</span>

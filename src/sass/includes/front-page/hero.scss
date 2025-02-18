@@ -9,7 +9,7 @@
         // height: auto; /* Reset height for desktop when image is visible */
     }
 
-    img {
+    .hero-img {
         display: none; /* Hide image on mobile */
 
         @media screen and (min-width: 768px) {
@@ -47,6 +47,20 @@
 
         @media screen and (min-width: 1024px) {
             font-size: 3.5em;
+        }
+    }
+
+    .hero-logo {
+        width: 150px;
+        height: auto;
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: 768px) {
+            width: 250px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 400px;
         }
     }
 
