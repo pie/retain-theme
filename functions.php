@@ -22,12 +22,20 @@ function retain_scripts() {
         RETAIN_VERSION
     );
 
-    // Enqueue JavaScript
+    // Enqueue navigation script
     wp_enqueue_script(
         'retain-navigation',
         get_template_directory_uri() . '/inc/js/navigation.js',
-        array(),  // Add dependencies here if needed (e.g., array('jquery'))
+        array(), 
         RETAIN_VERSION
+    );
+
+    // Enqueue countdown script
+    wp_enqueue_script(
+        'retain-countdown',
+        get_template_directory_uri() . '/inc/js/countdown.js',
+        array(),  
+        RETAIN_VERSION,
     );
 }
 add_action('wp_enqueue_scripts', 'retain_scripts');

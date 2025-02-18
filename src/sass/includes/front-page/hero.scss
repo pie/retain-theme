@@ -1,0 +1,111 @@
+.hero {
+    background-color: var(--color-darkorange);
+    height: 100vh; /* Ensure full height on mobile */
+    position: relative; /* Required for absolute positioning of text */
+
+    @media screen and (min-width: 768px) {
+        // background-color: var(--color-white);
+        background-color: var(--color-darkorange);
+        // height: auto; /* Reset height for desktop when image is visible */
+    }
+
+    img {
+        display: none; /* Hide image on mobile */
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .hero-content {
+        position: absolute; /* Position content over image */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9; /* Ensure content is above image but below header */
+        width: 100%;
+        text-align: center;
+        color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        margin-bottom: 2rem; // Add space between text and countdown
+
+        @media screen and (min-width: 768px) {
+            font-size: 2em;
+        }
+
+        @media screen and (min-width: 1024px) {
+            font-size: 3.5em;
+        }
+    }
+
+    .countdown {
+        $spacing: 4rem;
+        $primary-font-size: 4.5rem;
+        $secondary-font-size: 2.5rem;
+        
+        // Hidden by default on mobile
+        display: none;
+        
+        // Styles for when visible
+        &.visible {
+            display: flex;
+            justify-content: center;
+            gap: calc($spacing / 4);
+            margin-top: $spacing;
+        }
+        
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            span {
+                font-size: $primary-font-size * 0.4;
+                font-weight: bold;
+            }
+            
+            .label {
+                font-size: $secondary-font-size * 0.6;
+                margin-top: 0.5rem;
+            }
+        }
+    
+        @media (min-width: 768px) {
+            display: flex;
+            gap: $spacing;
+            
+            &-item {
+                span {
+                    font-size: $primary-font-size * 0.6;
+                }
+                
+                .label {
+                    font-size: $secondary-font-size * 0.8;
+                }
+            }
+        }
+
+        @media (min-width: 1024px) {
+            &-item {
+                span {
+                    font-size: $primary-font-size;
+                }
+                
+                .label {
+                    font-size: $secondary-font-size;
+            }
+        }
+    }
+}
+}
