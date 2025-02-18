@@ -9,6 +9,8 @@ get_template_part('template-parts/header');
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/hero.css">
 
 <main id="primary" class="site-main">
+
+<!-- Hero Section -->
     <section class="hero">
         <img src="/assets/hero/hero-image.png" alt="Hero Image" class="hero-image">
         <div class="hero-content">
@@ -35,6 +37,7 @@ get_template_part('template-parts/header');
         </div>
     </section>
 
+<!-- Membership Growth Section -->
     <section class="membership-growth">
         <img src="/assets/membership-growth/plant.png" alt="Membership Growth Plant" class="divider-img">
 
@@ -66,7 +69,7 @@ get_template_part('template-parts/header');
         </div>
     </section>
 
-
+<!-- Highlights Section -->
     <section class="highlights">
         <img src="/assets/highlights/stars.png" alt="Highlights stars image" class="divider-img">
 
@@ -79,6 +82,7 @@ get_template_part('template-parts/header');
         </div>
     </section>
 
+<!-- Meet Your Host Section -->
     <section class="meet-your-host">
         <img src="/assets/meet-your-host/person.png" alt="Meet Your Host divider" class="divider-img">
 
@@ -100,6 +104,7 @@ get_template_part('template-parts/header');
 
     </section>
 
+<!-- Speakers Section -->
     <section class="speakers">
         <img src="/assets/speakers/bg1.png" alt="abstract shape 1" class="speakers-bg-img-1">
         <img src="/assets/speakers/bg2.png" alt="abstract shape 2" class="speakers-bg-img-2">
@@ -112,6 +117,7 @@ get_template_part('template-parts/header');
         <hr />
     </section>
 
+<!-- Tickets Section -->
     <section class="tickets">
         <img src="/assets/tickets/tickets-divider.png" alt="Tickers divider" class="divider-img">
 
@@ -162,6 +168,7 @@ get_template_part('template-parts/header');
         </div>
     </section>
 
+<!-- Location Section -->
     <section class="location">
         <img src="/assets/location/pin.png" alt="Location divider" class="divider-img">
 
@@ -179,6 +186,7 @@ get_template_part('template-parts/header');
             </div>
     </section>
 
+<!-- FAQ Section -->
     <section class="faq">
         <img src="/assets/faq/speech-bubbles-divider.png" alt="FAQ divider" class="divider-img">
 
@@ -207,9 +215,35 @@ get_template_part('template-parts/header');
             <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            
+
         </div>
 
+    </section>
+
+<!-- Schedule Section -->
+    <section class="schedule">
+        <img src="/assets/schedule/folder.png" alt="Schedule image" class="divider-img">
+
+        <div class="dark-parallelogram"></div>
+        <div class="light-parallelogram"></div>
+        <h2 class="section-title">Schedule</h2>
+
+        <div class="schedule-tabs">
+            <div class="tab-button-container">
+                <button class="tab-button" onclick="openTab(event, 'day1')">Day 1</button>
+                <button class="tab-button" onclick="openTab(event, 'day2')">Day 2</button>
+            </div>
+
+            <div id="day1" class="tab-content">
+                <p>Content for Day 1</p>
+                <!-- schedule repeater fields here -->
+            </div>
+
+            <div id="day2" class="tab-content" style="display:none;">
+                <p>Content for Day 2</p>
+                <!-- schedule repeater fields here -->
+            </div>
+        </div>
     </section>
 
     <?php

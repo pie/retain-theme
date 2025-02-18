@@ -54,10 +54,18 @@ function retain_scripts() {
         RETAIN_VERSION
     );
 
-    // Enqueue countdown script
+    // Enqueue collapsible script
     wp_enqueue_script(
         'retain-collapsible',
         get_template_directory_uri() . '/inc/js/collapsible.js',
+        array(),  
+        RETAIN_VERSION
+    );
+
+    // Enqueue schedule tabs script
+    wp_enqueue_script(
+        'retain-schedule-tabs',
+        get_template_directory_uri() . '/inc/js/schedule-tabs.js',
         array(),  
         RETAIN_VERSION
     );
