@@ -6,9 +6,19 @@ Template Name: Front Page
 get_template_part('template-parts/header');
 ?>
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/hero.css">
-
 <main id="primary" class="site-main">
+
+<!-- This frontpage template includes the following sections:
+    - Hero
+    - Membership Growth
+    - Highlights
+    - Meet Your Host
+    - Speakers
+    - Tickets
+    - Location
+    - FAQ
+    - Schedule
+-->
 
 <!-- Hero Section -->
     <section class="hero">
@@ -41,9 +51,11 @@ get_template_part('template-parts/header');
     <section class="membership-growth">
         <img src="/assets/membership-growth/plant.png" alt="Membership Growth Plant" class="divider-img">
 
+        <div class="title-wrapper">
         <div class="dark-parallelogram"></div>
         <div class="light-parallelogram"></div>
         <h2 class="section-title">Ready to accelerate your membership growth</h2>
+        </div>
 
         <h3 class="section-subtitle"></h3>
 
@@ -224,9 +236,11 @@ get_template_part('template-parts/header');
     <section class="schedule">
         <img src="/assets/schedule/folder.png" alt="Schedule image" class="divider-img">
 
+        <div class="title-wrapper">
         <div class="dark-parallelogram"></div>
         <div class="light-parallelogram"></div>
         <h2 class="section-title">Schedule</h2>
+        </div>
 
         <div class="schedule-tabs">
             <div class="tab-button-container">
