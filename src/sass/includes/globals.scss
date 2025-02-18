@@ -11,16 +11,20 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-// .sourcesans {
-//   font-family: var(--font-sourcesans);
-// }
-// .publico {
-//   font-family: var(--font-publico);
-// }
-
 :root {
   --color-darkorange: #fe5e00;
   --color-lightorange: #feb902;
   --color-white: #fff;
   --color-black: #000;
+
+  --font-brandongrotesque: 'Brandon Grotesque', sans-serif;
+  --font-sourcesanspro: 'Source Sans Pro', sans-serif;
+}
+
+.brandongrotesque {
+  font-family: var(--font-brandongrotesque);
+}
+
+.sourcesanspro {
+  font-family: var(--font-sourcesanspro);
 }

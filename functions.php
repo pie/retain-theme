@@ -14,6 +14,22 @@ add_action('after_setup_theme', 'retain_theme_setup');
 
 // Enqueue scripts and styles
 function retain_scripts() {
+    // Enqueue Google Fonts stylesheet for Source Sans Pro font
+    wp_enqueue_style(
+        'retain-google-fonts',
+        'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap',
+        array(),
+        null
+    );
+
+    // Enqueue Typekit stylesheet for Brandon Grotesque font
+    wp_enqueue_style(
+        'retain-typekit',
+        'https://use.typekit.net/hmd0zsv.css',
+        array(),
+        null
+    );
+
     // Enqueue compiled stylesheet
     wp_enqueue_style(
         'retain-style',
@@ -35,7 +51,7 @@ function retain_scripts() {
         'retain-countdown',
         get_template_directory_uri() . '/inc/js/countdown.js',
         array(),  
-        RETAIN_VERSION,
+        RETAIN_VERSION
     );
 }
 add_action('wp_enqueue_scripts', 'retain_scripts');

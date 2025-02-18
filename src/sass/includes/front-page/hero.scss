@@ -39,6 +39,7 @@
         font-size: 1.2em;
         text-transform: uppercase;
         margin-bottom: 2rem; // Add space between text and countdown
+        font-family: var(--font-brandongrotesque);
 
         @media screen and (min-width: 768px) {
             font-size: 2em;

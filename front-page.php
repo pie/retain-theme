@@ -9,30 +9,30 @@ get_template_part('template-parts/header');
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/hero.css">
 
 <main id="primary" class="site-main">
-    <div class="hero">
+    <section class="hero">
         <img src="path/to/your/image.jpg" alt="Hero Image">
         <div class="hero-content">
             <div class="hero-text">Sept 22nd - 24th 2025 / Newcastle, UK</div>
             <div id="countdown" class="countdown">
                 <div class="countdown-item">
-                    <span id="days">00</span>
-                    <span class="label">Days</span>
+                    <span id="days" class="brandongrotesque">00</span>
+                    <span class="label sourcesanspro">Days</span>
                 </div>
                 <div class="countdown-item">
-                    <span id="hours">00</span>
-                    <span class="label">Hours</span>
+                    <span id="hours" class="brandongrotesque">00</span>
+                    <span class="label sourcesanspro">Hours</span>
                 </div>
                 <div class="countdown-item">
-                    <span id="minutes">00</span>
-                    <span class="label">Minutes</span>
+                    <span id="minutes" class="brandongrotesque">00</span>
+                    <span class="label sourcesanspro">Minutes</span>
                 </div>
                 <div class="countdown-item">
-                    <span id="seconds">00</span>
-                    <span class="label">Seconds</span>
+                    <span id="seconds" class="brandongrotesque">00</span>
+                    <span class="label sourcesanspro">Seconds</span>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <?php
     if (have_posts()) :
