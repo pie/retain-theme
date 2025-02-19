@@ -21,3 +21,7 @@ add_action('after_setup_theme', 'retain_theme_setup');
 
 // Include enqueue functions
 require_once get_template_directory() . '/enqueue.php';
+
+// Include ACF fields
+require_once get_template_directory() . '/inc/acf/speaker-fields.php';
+error_log('Speaker fields file loaded');

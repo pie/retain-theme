@@ -154,7 +154,38 @@ Template Name: Front Page
         <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg2.png" alt="abstract shape 2" class="speakers-bg-img-2">
         <div class="speakers-section-content">
             <h2>You'll also learn from expert guests including:</h2>
-            <!-- speakers repeater field here -->
+            <!-- Speakers repeater field below
+                 When you edit the front page in WP admin, if you add a new speaker they will be displayed here -->
+            <div class="speakers-container">
+        <?php if( have_rows('speakers') ): ?>
+            <div class="speakers-grid">
+                <?php while( have_rows('speakers') ): the_row(); 
+                    $image = get_sub_field('speaker_image');
+                    $name = get_sub_field('speaker_name');
+                    $role = get_sub_field('speaker_role');
+                ?>
+                    <div class="speaker-card">
+                        <?php if($image): ?>
+                            <div class="speaker-image">
+                                <img src="<?php echo esc_url($image['url']); ?>" 
+                                     alt="<?php echo esc_attr($image['alt']); ?>" />
+                            </div>
+                        <?php endif; ?>
+                        
+                        <div class="speaker-info">
+                            <?php if($name): ?>
+                                <h3 class="speaker-name"><?php echo esc_html($name); ?></h3>
+                            <?php endif; ?>
+                            
+                            <?php if($role): ?>
+                                <p class="speaker-role"><?php echo esc_html($role); ?></p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        <?php endif; ?>
+    </div>
         </div>
 
         <h3 class="section-subtitle">
