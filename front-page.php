@@ -19,6 +19,12 @@ Template Name: Front Page
     - Location
     - FAQ
     - Schedule
+
+    And the following repeater fields:
+    - speaker repeater fields
+    - schedule day 1 repeater fields
+    - schedule day 2 repeater fields
+    When you edit the front page on WP admin, you can add speakers, plus sessions for day 1 and day 2 of the schedule.
 -->
 
 <!-- Hero Section -->
@@ -154,30 +160,29 @@ Template Name: Front Page
         <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg2.png" alt="abstract shape 2" class="speakers-bg-img-2">
         <div class="speakers-section-content">
             <h2>You'll also learn from expert guests including:</h2>
-            <!-- Speakers repeater field below
-                 When you edit the front page in WP admin, if you add a new speaker they will be displayed here -->
+            <!-- speakers repeater fields -->
             <div class="speakers-container">
-        <?php if( have_rows('speakers') ): ?>
+        <?php if (have_rows('speakers')): ?>
             <div class="speakers-grid">
-                <?php while( have_rows('speakers') ): the_row(); 
-                    $image = get_sub_field('speaker_image');
-                    $name = get_sub_field('speaker_name');
-                    $role = get_sub_field('speaker_role');
-                ?>
-                    <div class="speaker-card">
-                        <?php if($image): ?>
-                            <div class="speaker-image">
-                                <img src="<?php echo esc_url($image['url']); ?>" 
-                                     alt="<?php echo esc_attr($image['alt']); ?>" />
-                            </div>
-                        <?php endif; ?>
-                        
+                <?php while (have_rows('speakers')): the_row();
+                        $image = get_sub_field('speaker_image');
+                        $name  = get_sub_field('speaker_name');
+                        $role  = get_sub_field('speaker_role');
+                    ?>
+	                    <div class="speaker-card">
+	                        <?php if ($image): ?>
+	                            <div class="speaker-image">
+	                                <img src="<?php echo esc_url($image['url']); ?>"
+	                                     alt="<?php echo esc_attr($image['alt']); ?>" />
+	                            </div>
+	                        <?php endif; ?>
+
                         <div class="speaker-info">
-                            <?php if($name): ?>
+                            <?php if ($name): ?>
                                 <h3 class="speaker-name"><?php echo esc_html($name); ?></h3>
                             <?php endif; ?>
-                            
-                            <?php if($role): ?>
+
+                            <?php if ($role): ?>
                                 <p class="speaker-role"><?php echo esc_html($role); ?></p>
                             <?php endif; ?>
                         </div>
@@ -389,12 +394,58 @@ Bottle Bank, Gateshead NE8 2AR
 
             <div id="day1" class="tab-content">
                 <p>Content for Day 1</p>
-                <!-- schedule repeater fields here -->
+                <!-- schedule day 1 repeater fields -->
+                <?php if (have_rows('schedule_day_1')): ?>
+        <div class="schedule-grid">
+            <?php while (have_rows('schedule_day_1')): the_row();
+                    $time          = get_sub_field('time');
+                    $session       = get_sub_field('session');
+                    $speaker_name  = get_sub_field('speaker_name');
+                    $speaker_photo = get_sub_field('speaker_photo');
+                ?>
+	                <div class="schedule-card">
+	                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
+	                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
+	                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
+	                    <?php if ($speaker_photo): ?>
+	                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
+	                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
+	                             class="schedule-speaker-photo" />
+	                    <?php endif; ?>
+                </div>
+            <?php endwhile; ?>
+        </div>
+    <?php else: ?>
+        <p>No schedule available for Day 1.</p>
+    <?php endif; ?>
             </div>
 
             <div id="day2" class="tab-content" style="display:none;">
                 <p>Content for Day 2</p>
-                <!-- schedule repeater fields here -->
+                <!-- schedule day 2 repeater fields -->
+                <?php if (have_rows('schedule_day_2')): ?>
+        <div class="schedule-grid">
+            <?php while (have_rows('schedule_day_2')): the_row();
+                    $time          = get_sub_field('time');
+                    $session       = get_sub_field('session');
+                    $speaker_name  = get_sub_field('speaker_name');
+                    $speaker_photo = get_sub_field('speaker_photo');
+                ?>
+	                <div class="schedule-card">
+	                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
+	                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
+	                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
+	                    <?php if ($speaker_photo): ?>
+	                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
+	                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
+	                             class="schedule-speaker-photo" />
+	                    <?php endif; ?>
+                </div>
+            <?php endwhile; ?>
+        </div>
+    <?php else: ?>
+        <p>No schedule available for Day 2.</p>
+    <?php endif; ?>
             </div>
         </div>
     </section>

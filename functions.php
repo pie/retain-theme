@@ -24,4 +24,4 @@ require_once get_template_directory() . '/enqueue.php';
 
 // Include ACF fields
 require_once get_template_directory() . '/inc/acf/speaker-fields.php';
-error_log('Speaker fields file loaded');
+require_once get_template_directory() . '/inc/acf/schedule-fields.php';
