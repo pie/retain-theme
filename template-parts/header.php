@@ -16,7 +16,7 @@
 <header id="masthead" class="site-header">
     <div class="site-branding">
         <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="<?php bloginfo('name'); ?>">
         </a>
     </div><!-- .site-branding -->
 
@@ -29,7 +29,7 @@
         <div class="menu-row">
             <?php
             wp_nav_menu(array(
-                'theme_location' => 'menu-1',
+                'theme_location' => 'primary',
                 'menu_id'        => 'primary-menu',
             ));
             ?>
@@ -41,7 +41,7 @@
             <button class="menu-close">&times;</button>
             <?php
             wp_nav_menu(array(
-                'theme_location' => 'menu-1',
+                'theme_location' => 'primary',
                 'menu_id'        => 'primary-menu-modal',
             ));
             ?>

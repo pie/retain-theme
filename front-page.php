@@ -22,10 +22,10 @@ get_template_part('template-parts/header');
 
 <!-- Hero Section -->
     <section class="hero">
-        <img src="/assets/hero/hero-image.png" alt="Hero Image" class="hero-image">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-image.png" alt="Hero Image" class="hero-image">
         <div class="hero-content">
             <h1 class="hero-text">Sept 22nd - 24th 2025 / Newcastle, UK</h1>
-            <img src="/assets/hero/hero-logo.png" alt="Hero Logo" class="hero-logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-logo.png" alt="Hero Logo" class="hero-logo">
             <div id="countdown" class="countdown">
                 <div class="countdown-item">
                     <span id="days" class="brandongrotesque">00</span>
@@ -49,7 +49,7 @@ get_template_part('template-parts/header');
 
 <!-- Membership Growth Section -->
     <section class="membership-growth">
-        <img src="/assets/membership-growth/plant.png" alt="Membership Growth Plant" class="divider-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/membership-growth/growth-icon.png" alt="Membership Growth Plant" class="icon-img">
 
         <div class="title-wrapper">
         <div class="dark-parallelogram"></div>
@@ -64,7 +64,7 @@ get_template_part('template-parts/header');
         <p></p>
         <p class="last-p"></p>
 
-        <img src="/assets/membership-growth/people-collage.png" alt="Membership Growth people collage" class="membership-growth-collage-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/membership-growth/people-collage.png" alt="Membership Growth people collage" class="membership-growth-collage-img">
         <div class="membership-growth-columns">
             <div class="membership-growth-column">
                 <h4></h4>
@@ -83,7 +83,7 @@ get_template_part('template-parts/header');
 
 <!-- Highlights Section -->
     <section class="highlights">
-        <img src="/assets/highlights/stars.png" alt="Highlights stars image" class="divider-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/highlights/highlights-icon.png" alt="Highlights stars image" class="icon-img">
 
         <div class="dark-parallelogram"></div>
         <div class="light-parallelogram"></div>
@@ -96,7 +96,7 @@ get_template_part('template-parts/header');
 
 <!-- Meet Your Host Section -->
     <section class="meet-your-host">
-        <img src="/assets/meet-your-host/person.png" alt="Meet Your Host divider" class="divider-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/meet-your-host/host-icon.png" alt="Meet Your Host icon" class="icon-img">
 
         <div class="dark-parallelogram"></div>
         <div class="light-parallelogram"></div>
@@ -104,7 +104,7 @@ get_template_part('template-parts/header');
 
         <div class="host-img-bg-dark"></div>
         <div class="host-img-bg-light"></div>
-        <img src="/assets/meet-your-host/host.png" alt="Host photo" class="host-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/meet-your-host/host.png" alt="Host photo" class="host-img">
 
         <h3 class="section-subtitle"></h3>
 
@@ -118,8 +118,8 @@ get_template_part('template-parts/header');
 
 <!-- Speakers Section -->
     <section class="speakers">
-        <img src="/assets/speakers/bg1.png" alt="abstract shape 1" class="speakers-bg-img-1">
-        <img src="/assets/speakers/bg2.png" alt="abstract shape 2" class="speakers-bg-img-2">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg1.png" alt="abstract shape 1" class="speakers-bg-img-1">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg2.png" alt="abstract shape 2" class="speakers-bg-img-2">
         <div class="speakers-section-content">
             <h2>You'll also learn from expert guests including:</h2>
             <!-- speakers repeater field here -->
@@ -131,7 +131,7 @@ get_template_part('template-parts/header');
 
 <!-- Tickets Section -->
     <section class="tickets">
-        <img src="/assets/tickets/tickets-divider.png" alt="Tickers divider" class="divider-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/tickets/tickets-icon.png" alt="Tickers icon" class="icon-img">
 
         <div class="dark-parallelogram"></div>
         <div class="light-parallelogram"></div>
@@ -144,7 +144,7 @@ get_template_part('template-parts/header');
 
         <div class="ticket-prices">
             <div class="ticket-price-card">
-                <img class="card-bg" src="/assets/tickets/card-bg.png" alt="Ticket card background">
+                <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
                 
                 <p class="price-title"></p>
 
@@ -158,10 +158,10 @@ get_template_part('template-parts/header');
                     <li></li>
                 </ul>
 
-                <a href="#" class="buy-now-button">BUY NOW</a>
+                <a href="/buy-your-tickets" class="buy-now-button">BUY NOW</a>
             </div>
             <div class="ticket-price-card">
-                <img class="card-bg" src="/assets/tickets/card-bg.png" alt="Ticket card background">
+                <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
                 
                 <p class="price-title"></p>
 
@@ -175,14 +175,14 @@ get_template_part('template-parts/header');
                     <li></li>
                 </ul>
 
-                <a href="#" class="buy-now-button">BUY NOW</a>
+                <a href="/buy-your-tickets" class="buy-now-button">BUY NOW</a>
             </div>
         </div>
     </section>
 
 <!-- Location Section -->
     <section class="location">
-        <img src="/assets/location/pin.png" alt="Location divider" class="divider-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/location/location-icon.png" alt="Location icon" class="icon-img">
 
         <div class="location-section-content">
             <div class="location-text-wrapper">
@@ -200,7 +200,7 @@ get_template_part('template-parts/header');
 
 <!-- FAQ Section -->
     <section class="faq">
-        <img src="/assets/faq/speech-bubbles-divider.png" alt="FAQ divider" class="divider-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/faq/faq-icon.png" alt="FAQ icon" class="icon-img">
 
         <div class="dark-parallelogram"></div>
         <div class="light-parallelogram"></div>
@@ -234,7 +234,7 @@ get_template_part('template-parts/header');
 
 <!-- Schedule Section -->
     <section class="schedule">
-        <img src="/assets/schedule/folder.png" alt="Schedule image" class="divider-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/schedule/schedule-icon.png" alt="Schedule image" class="icon-img">
 
         <div class="title-wrapper">
         <div class="dark-parallelogram"></div>
