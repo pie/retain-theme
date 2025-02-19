@@ -1,9 +1,9 @@
 <?php
-/*
+    /*
 Template Name: Front Page
 */
 
-get_template_part('template-parts/header');
+    get_template_part('template-parts/header');
 ?>
 
 <main id="primary" class="site-main">
@@ -11,6 +11,7 @@ get_template_part('template-parts/header');
 <!-- This frontpage template includes the following sections:
     - Hero
     - Membership Growth
+    - What to Expect
     - Highlights
     - Meet Your Host
     - Speakers
@@ -184,7 +185,7 @@ get_template_part('template-parts/header');
         <div class="ticket-prices">
             <div class="ticket-price-card">
                 <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
-                
+
                 <p class="price-title"></p>
 
                 <div class="earlybird-bg"></div>
@@ -201,7 +202,7 @@ get_template_part('template-parts/header');
             </div>
             <div class="ticket-price-card">
                 <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
-                
+
                 <p class="price-title"></p>
 
                 <div class="earlybird-bg"></div>
@@ -245,7 +246,7 @@ Bottle Bank, Gateshead NE8 2AR
             </div>
 
             <div class="map-wrapper">
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.5954672480453!2d-1.6064786303255774!3d54.96640216817044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e70ba0fc767ef%3A0xb1529a45b94da2ea!2sHilton%20Newcastle%20Gateshead!5e0!3m2!1sen!2suk!4v1739978592971!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -289,7 +290,7 @@ Bottle Bank, Gateshead NE8 2AR
                     Note: Hotel, airfare and other travel expenses are not included in the ticket price.
                 </p>
             </div>
-            
+
             <button type="button" class="collapsible">Can I BUY A TICKET TO JUST ONE OF THE DAYS OF THE EVENT?</button>
             <div class="content">
             <p>
@@ -304,7 +305,7 @@ Bottle Bank, Gateshead NE8 2AR
                     Note: Hotel, airfare and other travel expenses are not included in the ticket price.
                 </p>
             </div>
-        
+
             <button type="button" class="collapsible">WHAT IS YOUR REFUND POLICY?</button>
             <div class="content">
             <p>
@@ -368,11 +369,11 @@ Bottle Bank, Gateshead NE8 2AR
     </section>
 
     <?php
-    if (have_posts()) :
-        while (have_posts()) :
-            the_post();
-            the_content();
-        endwhile;
-    endif;
+        if (have_posts()):
+            while (have_posts()):
+                the_post();
+                the_content();
+            endwhile;
+        endif;
     ?>
 </main>
