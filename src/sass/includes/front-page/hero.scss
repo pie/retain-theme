@@ -122,5 +122,15 @@
             }
         }
     }
+
+    .countdown-item {
+        .title {
+            font-family: var(--font-brandongrotesque);
+        }
+    
+        .label {
+            font-family: var(--font-sourcesanspro);
+        }
+    }
 }
 }

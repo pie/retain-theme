@@ -3,7 +3,9 @@
   padding: 0;
   border-collapse: collapse;
   box-sizing: border-box;
+  text-align: center;
 }
+
 html,
 body {
   height: 100%;
@@ -17,14 +19,6 @@ body {
   --color-white: #fff;
   --color-black: #000;
 
-  --font-brandongrotesque: 'Brandon Grotesque', sans-serif;
+  --font-brandongrotesque: 'brandon-grotesque', sans-serif;
   --font-sourcesanspro: 'Source Sans Pro', sans-serif;
-}
-
-.brandongrotesque {
-  font-family: var(--font-brandongrotesque);
-}
-
-.sourcesanspro {
-  font-family: var(--font-sourcesanspro);
 }

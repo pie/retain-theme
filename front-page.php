@@ -28,20 +28,20 @@ get_template_part('template-parts/header');
             <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-logo.png" alt="Hero Logo" class="hero-logo">
             <div id="countdown" class="countdown">
                 <div class="countdown-item">
-                    <span id="days" class="brandongrotesque">00</span>
-                    <span class="label sourcesanspro">Days</span>
+                    <span id="days" class="title">00</span>
+                    <span class="label">Days</span>
                 </div>
                 <div class="countdown-item">
-                    <span id="hours" class="brandongrotesque">00</span>
-                    <span class="label sourcesanspro">Hours</span>
+                    <span id="hours" class="title">00</span>
+                    <span class="label">Hours</span>
                 </div>
                 <div class="countdown-item">
-                    <span id="minutes" class="brandongrotesque">00</span>
-                    <span class="label sourcesanspro">Minutes</span>
+                    <span id="minutes" class="title">00</span>
+                    <span class="label">Minutes</span>
                 </div>
                 <div class="countdown-item">
-                    <span id="seconds" class="brandongrotesque">00</span>
-                    <span class="label sourcesanspro">Seconds</span>
+                    <span id="seconds" class="title">00</span>
+                    <span class="label">Seconds</span>
                 </div>
             </div>
         </div>
@@ -57,26 +57,47 @@ get_template_part('template-parts/header');
         <h2 class="section-title">Ready to accelerate your membership growth</h2>
         </div>
 
-        <h3 class="section-subtitle"></h3>
+        <h3 class="section-subtitle">
+            A one of a kind event for membership site owners who want to increase their membership growth in 2025 and beyond.
+        </h3>
 
-        <p></p>
-        <p></p>
-        <p></p>
-        <p class="last-p"></p>
+        <p>
+        Hear from successful membership owners and industry experts on the strategies and tactics that are working for them, discover future trends and new ideas, ask questions and connect with other membership site owners from around the world over the course of 2 days in Newcastle upon Tyne, UK.
+        </p>
+        <p>
+        With a mix of keynotes, power sessions, panels and more it’s all about providing you with actionable content that you can implement in your own membership to take it to the next level. With strictly no fluff, theory or pitching!
+        </p>
+        <p>
+        Retain is the only live event dedicated entirely to growing your online membership.
+        </p>
+        <p><b>
+        It’s an event for membership site owners, by membership site owners. Are you in?
+        </b>
+        </p>
 
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/membership-growth/people-collage.png" alt="Membership Growth people collage" class="membership-growth-collage-img">
-        <div class="membership-growth-columns">
-            <div class="membership-growth-column">
-                <h4></h4>
-                <p></p>
+    </section>
+
+<!-- What to Expect Section -->
+    <section class="what-to-expect">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/what-to-expect/people-collage.png" alt="people collage" class="what-to-expect-collage-img">
+        <div class="what-to-expect-columns">
+            <div class="what-to-expect-column">
+                <h4>What you can expect</h4>
+                <p>
+                2 action packed days of membership goodness with talks and panels on a variety of membership topics. Plus plenty of time for talking with other membership site owners too – because lets be honest, the conversations you have and ideas you get from the other people in the room are often the best bit of attending a conference!
+                </p>
             </div>
-            <div class="membership-growth-column">
-                <h4></h4>
-                <p></p>
+            <div class="what-to-expect-column">
+                <h4>What you can expect</h4>
+                <p>
+                2 action packed days of membership goodness with talks and panels on a variety of membership topics. Plus plenty of time for talking with other membership site owners too – because lets be honest, the conversations you have and ideas you get from the other people in the room are often the best bit of attending a conference!
+                </p>
             </div>
-            <div class="membership-growth-column">
-                <h4></h4>
-                <p></p>
+            <div class="what-to-expect-column">
+                <h4>What you can expect</h4>
+                <p>
+                2 action packed days of membership goodness with talks and panels on a variety of membership topics. Plus plenty of time for talking with other membership site owners too – because lets be honest, the conversations you have and ideas you get from the other people in the room are often the best bit of attending a conference!
+                </p>
             </div>
         </div>
     </section>
@@ -106,13 +127,23 @@ get_template_part('template-parts/header');
         <div class="host-img-bg-light"></div>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/meet-your-host/host.png" alt="Host photo" class="host-img">
 
-        <h3 class="section-subtitle"></h3>
+        <p class="host-name">Mike Morrison</p>
 
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p class="last-p"></p>
+        <h3 class="section-subtitle">Howdy, I’m Mike Morrison, founder of the “Membership Geeks”</h3>
+
+        <p>
+        I’ve spent years guiding the growth of thousands of memberships, e-learning businesses and online communities.
+        </p>
+        <p>
+        With 20+ years in the online marketing and web development industry, we’ve been the driving force behind a multitude of 6 and 7 figure membership businesses in a diverse range of industries – from weight loss to coaching to executive training to bass guitar – and we have a proven track record of helping great clients to achieve fantastic results.
+        </p>
+        <p>
+        In 2015 I decided to take all of that knowledge and experience and use it to help entrepreneurs and small business owners to achieve success with membership sites on a global scale, and so created Membership Academy which has now helped over 11,000 membership site owners.
+        </p>
+        <p>
+        I’ll be leading the charge at Retain 2025 providing training throughout both days on the latest membership growth tactics and strategies, and sharing insights from our work with countless successful memberships.
+        </p>
+        <p><b>But I’m not coming alone…</b></p>
 
     </section>
 
@@ -125,7 +156,9 @@ get_template_part('template-parts/header');
             <!-- speakers repeater field here -->
         </div>
 
-        <h3 class="section-subtitle"></h3>
+        <h3 class="section-subtitle">
+        With more to come – full lineup to be announced in the coming months!
+        </h3>
         <hr />
     </section>
 
@@ -137,10 +170,16 @@ get_template_part('template-parts/header');
         <div class="light-parallelogram"></div>
         <h2 class="section-title">Buy your ticket</h2>
 
-        <p></p>
-        <p></p>
+        <p>
+        Join us on <b>September 22nd - 24th 2025</b> in <b>Newcastle-Upon-Tyne, England</b> for THE membership growth event that you simply can’t afford to miss.
+        </p>
+        <p>
+        <em><b>Don’t forget:</b> members of Membership Academy receive a discount on their ticket price!</em>
+        </p>
 
-        <h3 class="section-subtitle"></h3>
+        <h3 class="section-subtitle">
+        PLUS take advantage of Earlybird pricing if you buy your ticket today!
+        </h3>
 
         <div class="ticket-prices">
             <div class="ticket-price-card">
@@ -189,13 +228,26 @@ get_template_part('template-parts/header');
                 <div class="dark-parallelogram-cutoff"></div>
                 <div class="light-parallelogram-cutoff"></div>
                 <h2 class="section-title">Location</h2>
-                <p class="address"></p>
-                <p class="location-name"></p>
+                <p class="address"><b>
+                Hilton Newcastle Gateshead
+                </b>
+                </p>
+                <p class="address"><b>
+Bottle Bank, Gateshead NE8 2AR
+</b>
+                </p>
+                <p class="location-name">
+                Newcastle Airport <span>(8 miles)</span>
+                </p>
+                <p class="location-name">
+                Central Station <span>(1.3 miles)</span>
+                </p>
             </div>
 
             <div class="map-wrapper">
 
             </div>
+        </div>
     </section>
 
 <!-- FAQ Section -->
@@ -208,24 +260,79 @@ get_template_part('template-parts/header');
 
         <div class="collapsible-wrapper">
 
-            <button type="button" class="collapsible">Open Section 1</button>
+            <button type="button" class="collapsible">WHATS INCLUDED IN THE TICKET PRICE?</button>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>
+                    Your completed registration includes the following:
+                </p>
+                <ul>
+                    <li>Access to all speaker presentations and panels throughout both days of the conference</li>
+                    <li>Breakfast, lunch and refreshments on both days</li>
+                    <li>Complimentary Wifi access in the event area</li>
+                    <li>And a few special surprises…</li>
+                <p class="note">
+                    Note: Hotel, airfare and other travel expenses are not included in the ticket price.
+                </p>
             </div>
 
-            <button type="button" class="collapsible">Open Section 2</button>
+            <button type="button" class="collapsible">ARE THERE ANY DISCOUNTS FOR STUDENTS OR CHARITIES?</button>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>
+                    Your completed registration includes the following:
+                </p>
+                <ul>
+                    <li>Access to all speaker presentations and panels throughout both days of the conference</li>
+                    <li>Breakfast, lunch and refreshments on both days</li>
+                    <li>Complimentary Wifi access in the event area</li>
+                    <li>And a few special surprises…</li>
+                <p class="note">
+                    Note: Hotel, airfare and other travel expenses are not included in the ticket price.
+                </p>
             </div>
             
-            <button type="button" class="collapsible">Open Section 3</button>
+            <button type="button" class="collapsible">Can I BUY A TICKET TO JUST ONE OF THE DAYS OF THE EVENT?</button>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>
+                    Your completed registration includes the following:
+                </p>
+                <ul>
+                    <li>Access to all speaker presentations and panels throughout both days of the conference</li>
+                    <li>Breakfast, lunch and refreshments on both days</li>
+                    <li>Complimentary Wifi access in the event area</li>
+                    <li>And a few special surprises…</li>
+                <p class="note">
+                    Note: Hotel, airfare and other travel expenses are not included in the ticket price.
+                </p>
             </div>
         
-            <button type="button" class="collapsible">Open Section 4</button>
+            <button type="button" class="collapsible">WHAT IS YOUR REFUND POLICY?</button>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>
+                    Your completed registration includes the following:
+                </p>
+                <ul>
+                    <li>Access to all speaker presentations and panels throughout both days of the conference</li>
+                    <li>Breakfast, lunch and refreshments on both days</li>
+                    <li>Complimentary Wifi access in the event area</li>
+                    <li>And a few special surprises…</li>
+                <p class="note">
+                    Note: Hotel, airfare and other travel expenses are not included in the ticket price.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">ARE MEALS PROVIDED?</button>
+            <div class="content">
+            <p>
+                    Your completed registration includes the following:
+                </p>
+                <ul>
+                    <li>Access to all speaker presentations and panels throughout both days of the conference</li>
+                    <li>Breakfast, lunch and refreshments on both days</li>
+                    <li>Complimentary Wifi access in the event area</li>
+                    <li>And a few special surprises…</li>
+                <p class="note">
+                    Note: Hotel, airfare and other travel expenses are not included in the ticket price.
+                </p>
             </div>
 
         </div>
