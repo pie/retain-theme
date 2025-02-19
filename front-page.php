@@ -29,10 +29,12 @@ Template Name: Front Page
 
 <!-- Hero Section -->
     <section class="hero">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-image.png" alt="Hero Image" class="hero-image">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-bg.png" alt="Hero Image" class="hero-bg">
         <div class="hero-content">
             <h1 class="hero-text">Sept 22nd - 24th 2025 / Newcastle, UK</h1>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-logo.png" alt="Hero Logo" class="hero-logo">
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-image-left.png" alt="Hero image with people 1" class="hero-bg-img" id="hero-bg-img-left">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-image-right.png" alt="Hero image with people 2" class="hero-bg-img" id="hero-bg-img-right"> -->
             <div id="countdown" class="countdown">
                 <div class="countdown-item">
                     <span id="days" class="title">00</span>
@@ -113,12 +115,14 @@ Template Name: Front Page
     <section class="highlights">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/highlights/highlights-icon.png" alt="Highlights stars image" class="icon-img">
 
+        <div class="title-wrapper">
         <div class="dark-parallelogram"></div>
         <div class="light-parallelogram"></div>
         <h2 class="section-title">Check out highlights of our 2019 event:</h2>
+    </div>
 
         <div class="hightlights-video">
-            Embedded video
+            <iframe src="https://player.vimeo.com/video/366466354?dnt=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>
         </div>
     </section>
 
@@ -126,9 +130,11 @@ Template Name: Front Page
     <section class="meet-your-host">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/meet-your-host/host-icon.png" alt="Meet Your Host icon" class="icon-img">
 
+        <div class="title-wrapper">
         <div class="dark-parallelogram"></div>
         <div class="light-parallelogram"></div>
         <h2 class="section-title">Meet your host for Retain 2025</h2>
+        </div>
 
         <div class="host-img-bg-dark"></div>
         <div class="host-img-bg-light"></div>
@@ -169,13 +175,13 @@ Template Name: Front Page
                         $name  = get_sub_field('speaker_name');
                         $role  = get_sub_field('speaker_role');
                     ?>
-	                    <div class="speaker-card">
-	                        <?php if ($image): ?>
-	                            <div class="speaker-image">
-	                                <img src="<?php echo esc_url($image['url']); ?>"
-	                                     alt="<?php echo esc_attr($image['alt']); ?>" />
-	                            </div>
-	                        <?php endif; ?>
+		                    <div class="speaker-card">
+		                        <?php if ($image): ?>
+		                            <div class="speaker-image">
+		                                <img src="<?php echo esc_url($image['url']); ?>"
+		                                     alt="<?php echo esc_attr($image['alt']); ?>" />
+		                            </div>
+		                        <?php endif; ?>
 
                         <div class="speaker-info">
                             <?php if ($name): ?>
@@ -203,9 +209,11 @@ Template Name: Front Page
     <section class="tickets">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/tickets/tickets-icon.png" alt="Tickers icon" class="icon-img">
 
+        <div class="title-wrapper">
         <div class="dark-parallelogram"></div>
         <div class="light-parallelogram"></div>
         <h2 class="section-title">Buy your ticket</h2>
+        </div>
 
         <p>
         Join us on <b>September 22nd - 24th 2025</b> in <b>Newcastle-Upon-Tyne, England</b> for THE membership growth event that you simply can’t afford to miss.
@@ -262,9 +270,11 @@ Template Name: Front Page
 
         <div class="location-section-content">
             <div class="location-text-wrapper">
+            <div class="title-wrapper-cutoff">
                 <div class="dark-parallelogram-cutoff"></div>
                 <div class="light-parallelogram-cutoff"></div>
                 <h2 class="section-title">Location</h2>
+            </div>
                 <p class="address"><b>
                 Hilton Newcastle Gateshead
                 </b>
@@ -291,9 +301,11 @@ Bottle Bank, Gateshead NE8 2AR
     <section class="faq">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/faq/faq-icon.png" alt="FAQ icon" class="icon-img">
 
+        <div class="title-wrapper">
         <div class="dark-parallelogram"></div>
         <div class="light-parallelogram"></div>
         <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
 
         <div class="collapsible-wrapper">
 
@@ -403,15 +415,15 @@ Bottle Bank, Gateshead NE8 2AR
                     $speaker_name  = get_sub_field('speaker_name');
                     $speaker_photo = get_sub_field('speaker_photo');
                 ?>
-	                <div class="schedule-card">
-	                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
-	                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
-	                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
-	                    <?php if ($speaker_photo): ?>
-	                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
-	                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
-	                             class="schedule-speaker-photo" />
-	                    <?php endif; ?>
+		                <div class="schedule-card">
+		                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
+		                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
+		                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
+		                    <?php if ($speaker_photo): ?>
+		                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
+		                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
+		                             class="schedule-speaker-photo" />
+		                    <?php endif; ?>
                 </div>
             <?php endwhile; ?>
         </div>
@@ -431,15 +443,15 @@ Bottle Bank, Gateshead NE8 2AR
                     $speaker_name  = get_sub_field('speaker_name');
                     $speaker_photo = get_sub_field('speaker_photo');
                 ?>
-	                <div class="schedule-card">
-	                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
-	                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
-	                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
-	                    <?php if ($speaker_photo): ?>
-	                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
-	                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
-	                             class="schedule-speaker-photo" />
-	                    <?php endif; ?>
+		                <div class="schedule-card">
+		                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
+		                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
+		                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
+		                    <?php if ($speaker_photo): ?>
+		                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
+		                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
+		                             class="schedule-speaker-photo" />
+		                    <?php endif; ?>
                 </div>
             <?php endwhile; ?>
         </div>

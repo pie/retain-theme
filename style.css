@@ -37,7 +37,7 @@ body {
   font-family: var(--font-brandongrotesque);
   font-weight: 700;
   font-size: 1.2rem;
-  padding: 25px;
+  padding: 25px 40px;
 }
 @media (min-width: 768px) {
   .site-header {
@@ -65,7 +65,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  margin-right: 45px;
+  margin-right: 75px;
 }
 .site-header .main-navigation .menu-toggle .bar {
   width: 100%;
@@ -143,43 +143,40 @@ body {
   }
 }
 
-section {
-  width: 100vw;
+.title-wrapper {
   position: relative;
-  padding-top: 160px;
-}
-
-.dark-parallelogram {
-  width: fit-content;
-  min-width: 300px;
-  height: 80px;
-  background-color: var(--color-darkorange);
-  transform: skew(-20deg);
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
 .light-parallelogram {
-  width: fit-content;
   min-width: 300px;
   height: 80px;
   background-color: var(--color-lightorange);
   transform: skew(-20deg);
   position: relative;
-  top: -90px;
-  left: 15px;
   z-index: 2;
-  margin: 0 auto;
   padding: 0 10px;
+}
+
+.dark-parallelogram {
+  min-width: 300px;
+  height: 80px;
+  background-color: var(--color-darkorange);
+  transform: skew(-20deg);
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  top: 10px;
 }
 
 .section-title {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
   text-align: center;
   color: var(--color-white);
   text-transform: uppercase;
@@ -194,19 +191,44 @@ section {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-color: var(--color-darkorange);
+    background-color: var(--color-white);
+    height: auto;
   }
 }
-.hero .hero-img {
+.hero .hero-bg {
   display: none; /* Hide image on mobile */
 }
 @media screen and (min-width: 768px) {
-  .hero .hero-img {
+  .hero .hero-bg {
+    display: block;
+    width: 100%;
+    padding: 0 1.5rem; /* Add padding to image */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+  }
+}
+.hero .hero-bg-img {
+  display: none; /* Hide image on mobile */
+}
+@media screen and (min-width: 768px) {
+  .hero .hero-bg-img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
+    opacity: 0.5;
   }
+}
+.hero #hero-bg-img-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.hero #hero-bg-img-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 .hero .hero-content {
   position: absolute; /* Position content over image */
@@ -320,6 +342,75 @@ section {
 .speaker-image img {
   max-width: 100%;
   height: auto;
+}
+
+.what-to-expect {
+  background-color: var(--color-white);
+  height: auto;
+  position: relative; /* Required for absolute positioning of text */
+}
+@media screen and (min-width: 768px) {
+  .what-to-expect {
+    background-color: var(--color-white);
+    height: auto;
+  }
+}
+.what-to-expect img {
+  display: none; /* Hide image on mobile */
+}
+@media screen and (min-width: 768px) {
+  .what-to-expect img {
+    display: block;
+    width: 100vw;
+    padding: 0; /* Add padding to image */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+  }
+}
+.what-to-expect .what-to-expect-columns {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .what-to-expect .what-to-expect-columns {
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20px; /* Push columns 20px from the bottom of the image */
+    padding: 0;
+  }
+}
+.what-to-expect .what-to-expect-column {
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .what-to-expect .what-to-expect-column {
+    margin-bottom: 0;
+    flex: 1;
+    padding: 20px;
+    margin-top: 50%;
+  }
+}
+.what-to-expect .what-to-expect-column h4 {
+  color: darkorange;
+}
+@media screen and (min-width: 768px) {
+  .what-to-expect .what-to-expect-column h4 {
+    color: white;
+  }
+}
+.what-to-expect .what-to-expect-column p {
+  color: black;
+}
+@media screen and (min-width: 768px) {
+  .what-to-expect .what-to-expect-column p {
+    color: white;
+  }
 }
 
 .collapsible {
