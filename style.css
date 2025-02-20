@@ -330,7 +330,6 @@ body {
 }
 .hero .hero-content {
   position: absolute; /* Position content over image */
-  top: 60%; /* Position from top */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9; /* Ensure content is above image but below header */
@@ -341,13 +340,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+}
+@media screen and (min-width: 1300px) {
+  .hero .hero-content {
+    margin-top: 980px;
+  }
 }
 .hero .hero-text {
   font-size: 25px;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   font-family: var(--font-brandongrotesque);
+  margin-bottom: -20px;
 }
 @media screen and (min-width: 1300px) {
   .hero .hero-text {

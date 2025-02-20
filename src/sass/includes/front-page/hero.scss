@@ -36,7 +36,6 @@
 
     .hero-content {
         position: absolute; /* Position content over image */
-        top: 60%; /* Position from top */
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 9; /* Ensure content is above image but below header */
@@ -47,7 +46,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: .5rem;
+
+        @media screen and (min-width: 1300px) {
+            margin-top: 980px;
+        }
     }
 
     .hero-text {
@@ -55,6 +57,7 @@
         letter-spacing: .25rem;
         text-transform: uppercase;
         font-family: var(--font-brandongrotesque);
+        margin-bottom: -20px;
 
         @media screen and (min-width: 1300px) {
             font-size: 30px;
