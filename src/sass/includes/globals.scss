@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border-collapse: collapse;
   box-sizing: border-box;
@@ -11,6 +11,10 @@ body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
+
+  @media screen and (min-width: 1300px) {
+    width: 1300px;
+  }
 }
 
 :root {

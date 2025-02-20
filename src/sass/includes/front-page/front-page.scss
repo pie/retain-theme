@@ -1,40 +1,125 @@
-.title-wrapper {
-    position: relative;
+.site-main {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+section {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100px;
+    justify-content: center;
+
+    @media screen and (min-width: 1300px) {
+        width: 1300px;
+    }
 }
 
-.light-parallelogram {
-    min-width: 300px;
-    height: 80px;
-    background-color: var(--color-lightorange);
-    transform: skew(-20deg);
-    position: relative;
-    z-index: 2;
-    padding: 0 10px;
+h3 {
+    font-size: 30.6px;
+    font-family: var(--font-brandongrotesque);
+    font-weight: 700;
+    color: var(--color-darkorange);
+    font-style: italic;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 60px auto;
+
+    @media screen and (min-width: 768px) {
+        font-size: 40.6px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 50.6px;
+    }
 }
 
-.dark-parallelogram {
-    min-width: 300px;
-    height: 80px;
-    background-color: var(--color-darkorange);
-    transform: skew(-20deg);
-    position: absolute;
-    z-index: 1;
-    left: -20px;  // Moves it slightly to the left
-    top: 10px;   // Moves it slightly downward
+h4 {
+    font-size: 30px;
+    font-family: var(--font-brandongrotesque);
+    font-weight: 700;
+    color: var(--color-darkorange);
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+
+
+    @media screen and (min-width: 768px) {
+        font-size: 37px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 47.3px;
+    }
 }
+
+p {
+    font-size: 20px;
+    color: var(--color-black);
+    font-family: var(--font-sourcesanspro);
+    font-weight: 400;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto 60px auto;
+
+
+    @media screen and (min-width: 768px) {
+        font-size: 27px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 37.3px;
+    }
+}
+
+/* Large screen background images on what to expect and speakers sections */
+.full-w-img {
+    display: none; /* Hide image on mobile */
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        width: 100vw;
+        padding: 0; /* Add padding to image */
+        object-fit: cover; /* Maintain aspect ratio and cover the area */
+    }
+}
+
+/* Section icon */
+.icon-img {
+    margin: 70px auto;
+    width: 69px;
+    height: auto;
+}
+ 
+/* Section titles */
+ .parallelogram {
+    background: var(--color-lightorange);
+    display:inline-block;
+    padding:.5em 2em;
+    max-width: 87%;
+    margin: 0 auto 60px auto;
+
+    @media screen and (min-width: 768px) {
+    box-shadow: -13px 11px 0 var(--color-darkorange);
+    transform: skew(-20deg);
+    }
+  }
 
 .section-title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 20px;
-    text-align: center;
+    display:inline-block;
+    font-size: 1.5em;
     color: var(--color-white);
     text-transform: uppercase;
-    z-index: 3;
+    font-family: var(--font-brandongrotesque);
+    font-weight: 900;
+    font-style: bold;
     margin: 0 auto;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+    transform: skew(20deg);
+    font-size: 2em;
+    }
+}
 }

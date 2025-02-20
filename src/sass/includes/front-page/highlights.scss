@@ -1,3 +1,12 @@
 .highlights {
     background-color: #f7f7f7;
+
+    .highlights-video {
+        margin: 0 auto 100px auto;
+
+        iframe {
+            width: 80%;
+            max-width: 1000px;
+        }
+    }
 }

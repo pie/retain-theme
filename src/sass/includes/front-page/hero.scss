@@ -1,5 +1,5 @@
 .hero {
-    background-color: var(--color-darkorange);
+    backgound-color: var(--color-darkorange);
     height: 100vh; /* Ensure full height on mobile */
     position: relative; /* Required for absolute positioning of text */
 
@@ -61,38 +61,38 @@
     }
 
     .hero-text {
-        font-size: 1.2em;
+        font-size: 30px;
         text-transform: uppercase;
         margin-bottom: 2rem; // Add space between text and countdown
         font-family: var(--font-brandongrotesque);
 
         @media screen and (min-width: 768px) {
-            font-size: 2em;
+            font-size: 35px;
         }
 
         @media screen and (min-width: 1024px) {
-            font-size: 3.5em;
+            font-size: 40px;
         }
     }
 
     .hero-logo {
-        width: 150px;
+        width: 300px;
         height: auto;
         margin-bottom: 2rem;
 
         @media screen and (min-width: 768px) {
-            width: 250px;
+            width: 600px;
         }
 
         @media screen and (min-width: 1024px) {
-            width: 400px;
+            width: 1016px;
         }
     }
 
     .countdown {
         $spacing: 4rem;
-        $primary-font-size: 4.5rem;
-        $secondary-font-size: 2.5rem;
+        $primary-font-size: 35px;
+        $secondary-font-size: 15px;
         
         // Hidden by default on mobile
         display: none;
@@ -118,6 +118,7 @@
             .label {
                 font-size: $secondary-font-size * 0.6;
                 margin-top: 0.5rem;
+                font-weight: normal;
             }
         }
     

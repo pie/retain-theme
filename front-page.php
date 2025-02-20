@@ -60,10 +60,8 @@ Template Name: Front Page
     <section class="membership-growth">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/membership-growth/growth-icon.png" alt="Membership Growth Plant" class="icon-img">
 
-        <div class="title-wrapper">
-        <div class="dark-parallelogram"></div>
-        <div class="light-parallelogram"></div>
-        <h2 class="section-title">Ready to accelerate your membership growth</h2>
+        <div class="parallelogram">
+        <h2 class="section-title">Ready to accelerate your membership growth?</h2>
         </div>
 
         <h3 class="section-subtitle">
@@ -88,7 +86,7 @@ Template Name: Front Page
 
 <!-- What to Expect Section -->
     <section class="what-to-expect">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/what-to-expect/people-collage.png" alt="people collage" class="what-to-expect-collage-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/what-to-expect/people-collage.png" alt="people collage" class="full-w-img what-to-expect-collage-img">
         <div class="what-to-expect-columns">
             <div class="what-to-expect-column">
                 <h4>What you can expect</h4>
@@ -115,13 +113,11 @@ Template Name: Front Page
     <section class="highlights">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/highlights/highlights-icon.png" alt="Highlights stars image" class="icon-img">
 
-        <div class="title-wrapper">
-        <div class="dark-parallelogram"></div>
-        <div class="light-parallelogram"></div>
+        <div class="parallelogram">
         <h2 class="section-title">Check out highlights of our 2019 event:</h2>
     </div>
 
-        <div class="hightlights-video">
+        <div class="highlights-video">
             <iframe src="https://player.vimeo.com/video/366466354?dnt=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>
         </div>
     </section>
@@ -130,9 +126,7 @@ Template Name: Front Page
     <section class="meet-your-host">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/meet-your-host/host-icon.png" alt="Meet Your Host icon" class="icon-img">
 
-        <div class="title-wrapper">
-        <div class="dark-parallelogram"></div>
-        <div class="light-parallelogram"></div>
+        <div class="parallelogram">
         <h2 class="section-title">Meet your host for Retain 2025</h2>
         </div>
 
@@ -162,8 +156,8 @@ Template Name: Front Page
 
 <!-- Speakers Section -->
     <section class="speakers">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg1.png" alt="abstract shape 1" class="speakers-bg-img-1">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg2.png" alt="abstract shape 2" class="speakers-bg-img-2">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg1.png" alt="abstract shape 1" class="full-w-img speakers-bg-img-1">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg2.png" alt="abstract shape 2" class="full-w-img speakers-bg-img-2">
         <div class="speakers-section-content">
             <h2>You'll also learn from expert guests including:</h2>
             <!-- speakers repeater fields -->
@@ -183,7 +177,7 @@ Template Name: Front Page
 		                            </div>
 		                        <?php endif; ?>
 
-                        <div class="speaker-info">
+                                <div class="speaker-info">
                             <?php if ($name): ?>
                                 <h3 class="speaker-name"><?php echo esc_html($name); ?></h3>
                             <?php endif; ?>
@@ -209,9 +203,7 @@ Template Name: Front Page
     <section class="tickets">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/tickets/tickets-icon.png" alt="Tickers icon" class="icon-img">
 
-        <div class="title-wrapper">
-        <div class="dark-parallelogram"></div>
-        <div class="light-parallelogram"></div>
+        <div class="parallelogram">
         <h2 class="section-title">Buy your ticket</h2>
         </div>
 
@@ -301,9 +293,7 @@ Bottle Bank, Gateshead NE8 2AR
     <section class="faq">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/faq/faq-icon.png" alt="FAQ icon" class="icon-img">
 
-        <div class="title-wrapper">
-        <div class="dark-parallelogram"></div>
-        <div class="light-parallelogram"></div>
+        <div class="parallelogram">
         <h2 class="section-title">Frequently Asked Questions</h2>
         </div>
 
@@ -392,9 +382,7 @@ Bottle Bank, Gateshead NE8 2AR
     <section class="schedule">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/schedule/schedule-icon.png" alt="Schedule image" class="icon-img">
 
-        <div class="title-wrapper">
-        <div class="dark-parallelogram"></div>
-        <div class="light-parallelogram"></div>
+        <div class="parallelogram">
         <h2 class="section-title">Schedule</h2>
         </div>
 

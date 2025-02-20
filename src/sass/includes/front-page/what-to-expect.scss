@@ -8,17 +8,6 @@
         height: auto; 
     }
 
-    img {
-        display: none; /* Hide image on mobile */
-
-        @media screen and (min-width: 768px) {
-            display: block;
-            width: 100vw;
-            padding: 0; /* Add padding to image */
-            object-fit: cover; /* Maintain aspect ratio and cover the area */
-        }
-    }
-
     .what-to-expect-columns {
         display: flex;
         flex-direction: column;
@@ -45,7 +34,7 @@
             margin-bottom: 0;
             flex: 1;
             padding: 20px;
-            margin-top: 50%;
+            margin-top: 20%;
         }
 
         h4 {
