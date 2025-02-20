@@ -426,11 +426,11 @@ body {
 
 .membership-growth .icon-img {
   width: 70px;
-  margin: 57px auto 55px auto;
+  margin: 57px auto 54px auto;
 }
 @media screen and (min-width: 1300px) {
   .membership-growth .parallelogram {
-    height: 83px;
+    height: 88px;
   }
 }
 
@@ -458,7 +458,7 @@ body {
   }
 }
 .highlights .highlights-video {
-  margin: 63px auto 90px auto;
+  margin: 63px auto 87px auto;
   position: relative;
   width: 300px;
   height: 169px;
@@ -477,6 +477,57 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.meet-your-host {
+  position: relative; /* This is needed for absolute positioning of children */
+}
+.meet-your-host .icon-img {
+  width: 43px;
+  margin: 64px auto 68px auto;
+}
+@media screen and (min-width: 1300px) {
+  .meet-your-host .parallelogram {
+    height: 89px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .meet-your-host .section-title {
+    padding: 0 20px 5px 10px;
+  }
+}
+.meet-your-host .host-img {
+  width: 330px;
+  height: auto;
+  padding: 0;
+  object-fit: cover;
+  position: relative; /* This ensures it stays above the background divs */
+  z-index: 2;
+}
+@media screen and (min-width: 1300px) {
+  .meet-your-host .host-img {
+    padding: 67px 0 20px 0;
+  }
+}
+.meet-your-host .host-img-bg-dark {
+  position: absolute;
+  width: 329px;
+  height: 251px;
+  background: var(--color-darkorange);
+  top: 630px;
+  left: 661px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.meet-your-host .host-img-bg-light {
+  position: absolute;
+  width: 329px;
+  height: 251px;
+  background: var(--color-lightorange);
+  top: 655px;
+  left: 636px;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 /* Grid Layout */
@@ -586,7 +637,7 @@ hr {
   }
 }
 .what-to-expect .what-to-expect-collage-img {
-  margin-top: -57px;
+  margin-top: -60px;
 }
 .what-to-expect .what-to-expect-columns {
   display: flex;

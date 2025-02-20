@@ -1,0 +1,55 @@
+.meet-your-host {
+    position: relative; /* This is needed for absolute positioning of children */
+    
+    .icon-img {
+      width: 43px;
+      margin: 64px auto 68px auto;
+    }
+  
+    .parallelogram {
+      @media screen and (min-width: 1300px) {
+        height: 89px;
+      }
+    }
+  
+    .section-title {
+      @media screen and (min-width: 1300px) {
+        padding: 0 20px 5px 10px;
+      }
+    }
+  
+    .host-img {
+      width: 330px;
+      height: auto;
+      padding: 0;
+      object-fit: cover;
+      position: relative; /* This ensures it stays above the background divs */
+      z-index: 2;
+      
+      @media screen and (min-width: 1300px) {
+        padding: 67px 0 20px 0;
+      }
+    }
+  
+    .host-img-bg-dark {
+      position: absolute;
+      width: 329px;
+      height: 251px;
+      background: var(--color-darkorange);
+      top: 630px;
+      left: 661px;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+  
+    .host-img-bg-light {
+      position: absolute;
+      width: 329px;
+      height: 251px;
+      background: var(--color-lightorange);
+      top: 655px;
+      left: 636px;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+  }
