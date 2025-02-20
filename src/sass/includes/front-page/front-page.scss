@@ -87,7 +87,7 @@ p {
 
 /* Section icon */
 .icon-img {
-    margin: 70px auto;
+    margin: 60px auto 55px auto;
     width: 69px;
     height: auto;
 }
@@ -97,7 +97,7 @@ p {
     background: var(--color-lightorange);
     display:inline-block;
     padding:.5em 2em;
-    max-width: 87%;
+    height: 50px;
     margin: 0 auto 60px auto;
 
     @media screen and (min-width: 768px) {

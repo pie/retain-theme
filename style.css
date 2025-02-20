@@ -37,7 +37,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 115px;
+  height: 111px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 100;
   font-family: var(--font-brandongrotesque);
@@ -52,11 +52,11 @@ body {
   }
 }
 .site-header .site-branding {
-  padding: 37px 25px 15px 0px;
+  padding: 35px 25px 15px 0px;
   margin: 0 4%;
 }
 .site-header .site-branding img {
-  width: 174px;
+  width: 172px;
   height: auto;
 }
 .site-header .main-navigation {
@@ -144,6 +144,7 @@ body {
     justify-content: space-between;
     align-items: center;
     letter-spacing: 3px;
+    padding-top: 5px;
   }
   .site-header .main-navigation .menu-row ul {
     display: flex;
@@ -257,7 +258,7 @@ body {
   }
 }
 .site-main .icon-img {
-  margin: 70px auto;
+  margin: 60px auto 55px auto;
   width: 69px;
   height: auto;
 }
@@ -265,7 +266,7 @@ body {
   background: var(--color-lightorange);
   display: inline-block;
   padding: 0.5em 2em;
-  max-width: 87%;
+  height: 50px;
   margin: 0 auto 60px auto;
 }
 @media screen and (min-width: 768px) {
@@ -310,20 +311,9 @@ body {
   .hero .hero-bg {
     display: block;
     width: 100%;
+    height: 1380px;
     padding: 0 1.5rem; /* Add padding to image */
     object-fit: cover; /* Maintain aspect ratio and cover the area */
-  }
-}
-.hero .hero-bg-img {
-  display: none; /* Hide image on mobile */
-}
-@media screen and (min-width: 768px) {
-  .hero .hero-bg-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    opacity: 0.5;
   }
 }
 .hero #hero-bg-img-left {
@@ -340,7 +330,7 @@ body {
 }
 .hero .hero-content {
   position: absolute; /* Position content over image */
-  top: 50%;
+  top: 60%; /* Position from top */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9; /* Ensure content is above image but below header */
@@ -351,27 +341,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 .hero .hero-text {
-  font-size: 30px;
+  font-size: 25px;
+  letter-spacing: 0.25rem;
   text-transform: uppercase;
-  margin-bottom: 2rem;
   font-family: var(--font-brandongrotesque);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1300px) {
   .hero .hero-text {
-    font-size: 35px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .hero .hero-text {
-    font-size: 40px;
+    font-size: 30px;
+    letter-spacing: 0.55rem;
   }
 }
 .hero .hero-logo {
   width: 300px;
   height: auto;
-  margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px) {
   .hero .hero-logo {
@@ -389,8 +375,9 @@ body {
 .hero .countdown.visible {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 4rem;
+  gap: 1.8rem;
+  margin-right: 7.2rem;
+  margin-left: 7.2rem;
 }
 .hero .countdown-item {
   display: flex;
@@ -398,32 +385,35 @@ body {
   align-items: center;
 }
 .hero .countdown-item span {
-  font-size: 14px;
+  font-size: 22px;
   font-weight: bold;
+  margin-top: 120px;
 }
 .hero .countdown-item .label {
-  font-size: 9px;
+  font-size: 10.8px;
   margin-top: 0.5rem;
   font-weight: normal;
 }
 @media (min-width: 768px) {
   .hero .countdown {
     display: flex;
-    gap: 4rem;
+    gap: 7.2rem;
   }
   .hero .countdown-item span {
-    font-size: 21px;
+    font-size: 33px;
   }
   .hero .countdown-item .label {
-    font-size: 12px;
+    font-size: 14.4px;
+    margin-top: 0;
+    line-height: 0.1;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
   .hero .countdown-item span {
-    font-size: 35px;
+    font-size: 55px;
   }
   .hero .countdown-item .label {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 .hero .countdown .countdown-item .title {
