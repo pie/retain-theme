@@ -189,27 +189,27 @@ body {
   }
 }
 .site-main h3 {
-  font-size: 30.6px;
+  font-size: 22px;
   font-family: var(--font-brandongrotesque);
   font-weight: 700;
   color: var(--color-darkorange);
   font-style: italic;
-  width: 80%;
+  max-width: 85%;
   text-align: center;
-  margin: 0 auto 60px auto;
+  margin: 55px auto 30px auto;
 }
 @media screen and (min-width: 768px) {
   .site-main h3 {
-    font-size: 40.6px;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 768px) {
   .site-main h3 {
-    font-size: 50.6px;
+    font-size: 35px;
   }
 }
 .site-main h4 {
-  font-size: 30px;
+  font-size: 20px;
   font-family: var(--font-brandongrotesque);
   font-weight: 700;
   color: var(--color-darkorange);
@@ -219,31 +219,31 @@ body {
 }
 @media screen and (min-width: 768px) {
   .site-main h4 {
-    font-size: 37px;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 1024px) {
   .site-main h4 {
-    font-size: 47.3px;
+    font-size: 30px;
   }
 }
 .site-main p {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--color-black);
   font-family: var(--font-sourcesanspro);
   font-weight: 400;
-  line-height: 1.6;
-  width: 80%;
-  margin: 0 auto 60px auto;
+  line-height: 1.4;
+  width: 85%;
+  margin: 0 auto 40px auto;
 }
 @media screen and (min-width: 768px) {
   .site-main p {
-    font-size: 27px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 1024px) {
   .site-main p {
-    font-size: 37.3px;
+    font-size: 30px;
   }
 }
 .site-main .full-w-img {
@@ -252,32 +252,29 @@ body {
 @media screen and (min-width: 768px) {
   .site-main .full-w-img {
     display: block;
-    width: 100vw;
+    width: 100%;
     padding: 0; /* Add padding to image */
     object-fit: cover; /* Maintain aspect ratio and cover the area */
   }
 }
 .site-main .icon-img {
-  margin: 60px auto 55px auto;
-  width: 69px;
   height: auto;
 }
 .site-main .parallelogram {
   background: var(--color-lightorange);
   display: inline-block;
-  padding: 0.5em 2em;
-  height: 50px;
-  margin: 0 auto 60px auto;
+  padding: 20px;
+  height: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1300px) {
   .site-main .parallelogram {
     box-shadow: -13px 11px 0 var(--color-darkorange);
-    transform: skew(-20deg);
+    transform: skew(-28deg);
   }
 }
 .site-main .section-title {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 2em;
   color: var(--color-white);
   text-transform: uppercase;
   font-family: var(--font-brandongrotesque);
@@ -286,10 +283,10 @@ body {
   margin: 0 auto;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1300px) {
   .site-main .section-title {
-    transform: skew(20deg);
-    font-size: 2em;
+    transform: skew(28deg);
+    font-size: 2.6em;
   }
 }
 
@@ -427,15 +424,59 @@ body {
   font-family: var(--font-sourcesanspro);
 }
 
+.membership-growth .icon-img {
+  width: 70px;
+  margin: 57px auto 55px auto;
+}
+@media screen and (min-width: 1300px) {
+  .membership-growth .parallelogram {
+    height: 83px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .section-title {
+    padding: 0 20px 10px 19px;
+  }
+}
+
 .highlights {
   background-color: #f7f7f7;
 }
+.highlights .icon-img {
+  width: 64px;
+  margin: 57px auto 48px auto;
+}
+@media screen and (min-width: 1300px) {
+  .highlights .parallelogram {
+    height: 90px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .highlights .section-title {
+    padding: 0 20px 10px 48px;
+  }
+}
 .highlights .highlights-video {
-  margin: 0 auto 100px auto;
+  margin: 63px auto 90px auto;
+  position: relative;
+  width: 300px;
+  height: 169px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1300px) {
+  .highlights .highlights-video {
+    width: 1165px;
+    height: 675px;
+  }
 }
 .highlights .highlights-video iframe {
-  width: 80%;
-  max-width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Grid Layout */
@@ -544,23 +585,27 @@ hr {
     height: auto;
   }
 }
+.what-to-expect .what-to-expect-collage-img {
+  margin-top: -57px;
+}
 .what-to-expect .what-to-expect-columns {
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 1;
-  padding: 20px;
+  padding: 30px;
 }
 @media screen and (min-width: 768px) {
   .what-to-expect .what-to-expect-columns {
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
+    gap: 1rem;
     top: 0;
     left: 0;
     right: 0;
     bottom: 20px; /* Push columns 20px from the bottom of the image */
-    padding: 0;
+    padding: 0 70px;
   }
 }
 .what-to-expect .what-to-expect-column {
@@ -570,12 +615,12 @@ hr {
   .what-to-expect .what-to-expect-column {
     margin-bottom: 0;
     flex: 1;
-    padding: 20px;
-    margin-top: 20%;
+    margin-top: 250px;
   }
 }
 .what-to-expect .what-to-expect-column h4 {
   color: darkorange;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .what-to-expect .what-to-expect-column h4 {
@@ -584,10 +629,13 @@ hr {
 }
 .what-to-expect .what-to-expect-column p {
   color: black;
+  width: 90%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1300px) {
   .what-to-expect .what-to-expect-column p {
     color: white;
+    font-size: 27px;
+    width: 100%;
   }
 }
 

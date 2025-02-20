@@ -17,26 +17,26 @@ section {
 }
 
 h3 {
-    font-size: 30.6px;
+    font-size: 22px;
     font-family: var(--font-brandongrotesque);
     font-weight: 700;
     color: var(--color-darkorange);
     font-style: italic;
-    width: 80%;
+    max-width: 85%;
     text-align: center;
-    margin: 0 auto 60px auto;
+    margin: 55px auto 30px auto;
 
     @media screen and (min-width: 768px) {
-        font-size: 40.6px;
+        font-size: 25px;
     }
 
     @media screen and (min-width: 768px) {
-        font-size: 50.6px;
+        font-size: 35px;
     }
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 20px;
     font-family: var(--font-brandongrotesque);
     font-weight: 700;
     color: var(--color-darkorange);
@@ -46,30 +46,30 @@ h4 {
 
 
     @media screen and (min-width: 768px) {
-        font-size: 37px;
+        font-size: 25px;
     }
 
     @media screen and (min-width: 1024px) {
-        font-size: 47.3px;
+        font-size: 30px;
     }
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--color-black);
     font-family: var(--font-sourcesanspro);
     font-weight: 400;
-    line-height: 1.6;
-    width: 80%;
-    margin: 0 auto 60px auto;
+    line-height: 1.4;
+    width: 85%;
+    margin: 0 auto 40px auto;
 
 
     @media screen and (min-width: 768px) {
-        font-size: 27px;
+        font-size: 22px;
     }
 
     @media screen and (min-width: 1024px) {
-        font-size: 37.3px;
+        font-size: 30px;
     }
 }
 
@@ -79,7 +79,7 @@ p {
 
     @media screen and (min-width: 768px) {
         display: block;
-        width: 100vw;
+        width: 100%;
         padding: 0; /* Add padding to image */
         object-fit: cover; /* Maintain aspect ratio and cover the area */
     }
@@ -87,28 +87,25 @@ p {
 
 /* Section icon */
 .icon-img {
-    margin: 60px auto 55px auto;
-    width: 69px;
     height: auto;
 }
  
 /* Section titles */
  .parallelogram {
     background: var(--color-lightorange);
-    display:inline-block;
-    padding:.5em 2em;
-    height: 50px;
-    margin: 0 auto 60px auto;
+    display: inline-block;
+    padding: 20px;
+    height: auto;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1300px) {
     box-shadow: -13px 11px 0 var(--color-darkorange);
-    transform: skew(-20deg);
+    transform: skew(-28deg);
     }
   }
 
 .section-title {
     display:inline-block;
-    font-size: 1.5em;
+    font-size: 2em;
     color: var(--color-white);
     text-transform: uppercase;
     font-family: var(--font-brandongrotesque);
@@ -117,9 +114,9 @@ p {
     margin: 0 auto;
     width: 100%;
 
-    @media screen and (min-width: 768px) {
-    transform: skew(20deg);
-    font-size: 2em;
+    @media screen and (min-width: 1300px) {
+    transform: skew(28deg);
+    font-size: 2.6em;
     }
 }
 }

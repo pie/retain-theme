@@ -78,7 +78,9 @@ Template Name: Front Page
         Retain is the only live event dedicated entirely to growing your online membership.
         </p>
         <p><b>
-        It’s an event for membership site owners, by membership site owners. Are you in?
+        It’s an event for membership site owners, by membership site owners. 
+<br />
+        Are you in?
         </b>
         </p>
 
