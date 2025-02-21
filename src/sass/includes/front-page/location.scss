@@ -27,11 +27,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 125px;
 
         @media screen and (min-width: 1300px) {
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
+            gap: 600px;
         }
     }
 
@@ -59,12 +61,14 @@
         }
 
         .map-wrapper {
-            flex-grow: 1;
+            width: 50%;
             display: flex;
-            justify-content: center;
-            border: 7px solid #f7f7f7;
-            margin: 20px 220px 0 -35px;
-            width: 80%;
+            flex-direction: column;
+            justify-content: flex-start;
+            border: 7px solid var(--color-offwhite);
+            text-align: left;
+            min-width: fit-content;
+            margin: 20px 0 0 -800px;
 
             iframe {
                 width: 100%;

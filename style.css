@@ -25,6 +25,7 @@ body {
   --color-lightorange: #feb902;
   --color-white: #fff;
   --color-black: #000;
+  --color-offwhite: #f7f7f7;
   --font-brandongrotesque: "brandon-grotesque", sans-serif;
   --font-sourcesanspro: "Source Sans Pro", sans-serif;
 }
@@ -438,6 +439,71 @@ body {
 @media screen and (min-width: 1300px) {
   .section-title {
     padding: 0 20px 10px 19px;
+  }
+}
+
+.what-to-expect {
+  background-color: var(--color-white);
+  height: auto;
+  position: relative; /* Required for absolute positioning of text */
+}
+@media screen and (min-width: 768px) {
+  .what-to-expect {
+    background-color: var(--color-white);
+    height: auto;
+  }
+}
+.what-to-expect .what-to-expect-collage-img {
+  margin-top: -60px;
+}
+.what-to-expect .what-to-expect-columns {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+}
+@media screen and (min-width: 768px) {
+  .what-to-expect .what-to-expect-columns {
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    gap: 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20px; /* Push columns 20px from the bottom of the image */
+    padding: 0 70px;
+  }
+}
+.what-to-expect .what-to-expect-column {
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .what-to-expect .what-to-expect-column {
+    margin-bottom: 0;
+    flex: 1;
+    margin-top: 250px;
+  }
+}
+.what-to-expect .what-to-expect-column h4 {
+  color: darkorange;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .what-to-expect .what-to-expect-column h4 {
+    color: white;
+  }
+}
+.what-to-expect .what-to-expect-column p {
+  color: black;
+  width: 90%;
+}
+@media screen and (min-width: 1300px) {
+  .what-to-expect .what-to-expect-column p {
+    color: white;
+    font-size: 27px;
+    width: 100%;
   }
 }
 
@@ -933,12 +999,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 125px;
 }
 @media screen and (min-width: 1300px) {
   .location .location-section-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 600px;
   }
 }
 .location .location-text-wrapper,
@@ -961,12 +1029,14 @@ body {
     width: auto;
   }
   .location .map-wrapper {
-    flex-grow: 1;
+    width: 50%;
     display: flex;
-    justify-content: center;
-    border: 7px solid #f7f7f7;
-    margin: 20px 220px 0 -35px;
-    width: 80%;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 7px solid var(--color-offwhite);
+    text-align: left;
+    min-width: fit-content;
+    margin: 20px 0 0 -800px;
   }
   .location .map-wrapper iframe {
     width: 100%;
@@ -1004,92 +1074,139 @@ body {
   margin-top: 53px;
 }
 
-.what-to-expect {
-  background-color: var(--color-white);
-  height: auto;
-  position: relative; /* Required for absolute positioning of text */
+.faq {
+  background-color: var(--color-offwhite);
 }
-@media screen and (min-width: 768px) {
-  .what-to-expect {
-    background-color: var(--color-white);
-    height: auto;
-  }
+.faq .icon-img {
+  width: 48px;
+  margin: 47px auto 48px auto;
 }
-.what-to-expect .what-to-expect-collage-img {
-  margin-top: -60px;
-}
-.what-to-expect .what-to-expect-columns {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-  padding: 30px;
-}
-@media screen and (min-width: 768px) {
-  .what-to-expect .what-to-expect-columns {
-    flex-direction: row;
-    justify-content: space-between;
-    position: absolute;
-    gap: 1rem;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 20px; /* Push columns 20px from the bottom of the image */
-    padding: 0 70px;
-  }
-}
-.what-to-expect .what-to-expect-column {
-  background-color: transparent;
-}
-@media screen and (min-width: 768px) {
-  .what-to-expect .what-to-expect-column {
-    margin-bottom: 0;
-    flex: 1;
-    margin-top: 250px;
-  }
-}
-.what-to-expect .what-to-expect-column h4 {
-  color: darkorange;
-  margin-bottom: 10px;
-}
-@media screen and (min-width: 768px) {
-  .what-to-expect .what-to-expect-column h4 {
-    color: white;
-  }
-}
-.what-to-expect .what-to-expect-column p {
-  color: black;
-  width: 90%;
+.faq .parallelogram {
+  margin-bottom: 110px;
 }
 @media screen and (min-width: 1300px) {
-  .what-to-expect .what-to-expect-column p {
-    color: white;
-    font-size: 27px;
-    width: 100%;
+  .faq .parallelogram {
+    height: 90px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .faq .section-title {
+    padding: 0 20px 10px 19px;
+  }
+}
+.faq .collapsible {
+  background-color: var(--color-lightorange);
+  color: var(--color-white);
+  font-weight: normal;
+  cursor: pointer;
+  padding: 20px 30px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  height: auto;
+  min-height: 105px;
+  text-align: left;
+  width: 85%;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .faq .collapsible {
+    width: 60%;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .faq .collapsible {
+    font-size: 40px;
+    width: 1100px;
+  }
+}
+.faq .active {
+  background-color: var(--color-lightorange);
+}
+.faq .collapsible:hover {
+  background-color: var(--color-darkorange);
+}
+.faq .content {
+  padding: 28px 18px 0 20px;
+  display: none;
+  overflow: hidden;
+  background-color: var(--color-white);
+  width: 85%;
+}
+@media screen and (min-width: 768px) {
+  .faq .content {
+    width: 60%;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .faq .content {
+    font-size: 40px;
+    width: 1100px;
+  }
+}
+.faq .content p,
+.faq .content ul,
+.faq .content li {
+  text-align: left;
+}
+.faq .content ul {
+  list-style-type: disc;
+  padding: 10px 0 0 110px;
+}
+.faq .content ul li {
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .faq .content ul li {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .faq .content ul li {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+}
+.faq .content .note {
+  font-style: italic;
+  color: var(--color-darkorange);
+  padding: 45px 0 10px 0;
+  margin-left: -35px;
+  font-size: 15px;
+}
+@media screen and (min-width: 768px) {
+  .faq .content .note {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .faq .content .note {
+    font-size: 24px;
   }
 }
 
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+.schedule {
+  background-color: var(--color-offwhite);
 }
-
-.active, .collapsible:hover {
-  background-color: #555;
+.schedule .icon-img {
+  width: 48px;
+  margin: 47px auto 48px auto;
 }
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+.schedule .parallelogram {
+  margin-bottom: 110px;
+}
+@media screen and (min-width: 1300px) {
+  .schedule .parallelogram {
+    height: 90px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .schedule .section-title {
+    padding: 0 20px 10px 19px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

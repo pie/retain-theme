@@ -78,7 +78,7 @@ Template Name: Front Page
         Retain is the only live event dedicated entirely to growing your online membership.
         </p>
         <p><b>
-        It’s an event for membership site owners, by membership site owners. 
+        It’s an event for membership site owners, by membership site owners.
 <br />
         Are you in?
         </b>
@@ -167,19 +167,19 @@ Template Name: Front Page
         <?php if (have_rows('speakers')): ?>
             <div class="speakers-grid">
     <?php while (have_rows('speakers')): the_row();
-            $image = get_sub_field('speaker_image');
-            $name  = get_sub_field('speaker_name');
-            $lastname  = get_sub_field('speaker_last_name');
-            $role  = get_sub_field('speaker_role');
+            $image    = get_sub_field('speaker_image');
+            $name     = get_sub_field('speaker_name');
+            $lastname = get_sub_field('speaker_last_name');
+            $role     = get_sub_field('speaker_role');
         ?>
-            <div class="speaker-wrapper">
-                <div class="speaker-card">
-                    <?php if ($image): ?>
-                        <div class="speaker-image">
-                            <img src="<?php echo esc_url($image['url']); ?>"
-                                 alt="<?php echo esc_attr($image['alt']); ?>" />
-                        </div>
-                    <?php endif; ?>
+	            <div class="speaker-wrapper">
+	                <div class="speaker-card">
+	                    <?php if ($image): ?>
+	                        <div class="speaker-image">
+	                            <img src="<?php echo esc_url($image['url']); ?>"
+	                                 alt="<?php echo esc_attr($image['alt']); ?>" />
+	                        </div>
+	                    <?php endif; ?>
                 </div>
 
                 <div class="speaker-info">
@@ -222,7 +222,7 @@ Template Name: Front Page
         </div>
         <div class="second-p"><p>
         <em><b>Don’t forget:</b> members of Membership Academy receive a discount on their ticket price!</em>
-    </p>    
+    </p>
     </div>
 
         <h3 class="section-subtitle">
@@ -246,7 +246,7 @@ Template Name: Front Page
             <a href="/buy-your-tickets" class="buy-now-button">BUY NOW</a>
         </div>
     </div>
-    
+
     <div class="card-wrapper">
         <div class="ticket-price-card">
             <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
@@ -413,15 +413,15 @@ Bottle Bank, Gateshead NE8 2AR
                     $speaker_name  = get_sub_field('speaker_name');
                     $speaker_photo = get_sub_field('speaker_photo');
                 ?>
-		                <div class="schedule-card">
-		                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
-		                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
-		                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
-		                    <?php if ($speaker_photo): ?>
-		                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
-		                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
-		                             class="schedule-speaker-photo" />
-		                    <?php endif; ?>
+			                <div class="schedule-card">
+			                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
+			                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
+			                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
+			                    <?php if ($speaker_photo): ?>
+			                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
+			                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
+			                             class="schedule-speaker-photo" />
+			                    <?php endif; ?>
                 </div>
             <?php endwhile; ?>
         </div>
@@ -441,15 +441,15 @@ Bottle Bank, Gateshead NE8 2AR
                     $speaker_name  = get_sub_field('speaker_name');
                     $speaker_photo = get_sub_field('speaker_photo');
                 ?>
-		                <div class="schedule-card">
-		                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
-		                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
-		                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
-		                    <?php if ($speaker_photo): ?>
-		                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
-		                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
-		                             class="schedule-speaker-photo" />
-		                    <?php endif; ?>
+			                <div class="schedule-card">
+			                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
+			                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
+			                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
+			                    <?php if ($speaker_photo): ?>
+			                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
+			                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
+			                             class="schedule-speaker-photo" />
+			                    <?php endif; ?>
                 </div>
             <?php endwhile; ?>
         </div>
