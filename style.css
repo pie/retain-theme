@@ -905,6 +905,105 @@ body {
   color: var(--color-darkorange);
 }
 
+.location {
+  width: 88%;
+  overflow: hidden;
+  /* Default layout: single column */
+  /* Styles for screens 1300px and above */
+}
+.location .icon-img {
+  width: 52px;
+  margin: 80px auto 50px auto;
+}
+.location .parallelogram {
+  margin: 20px 850px 50px -30px;
+}
+@media screen and (min-width: 1300px) {
+  .location .parallelogram {
+    height: 88px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .location .section-title {
+    padding: 0 15px 0 140px;
+  }
+}
+.location .location-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1300px) {
+  .location .location-section-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.location .location-text-wrapper,
+.location .map-wrapper {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 1300px) {
+  .location .location-text-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    min-width: fit-content;
+  }
+  .location .location-text-wrapper .address, .location .location-text-wrapper .location-name {
+    text-align: left;
+    white-space: nowrap;
+    width: auto;
+  }
+  .location .map-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    border: 7px solid #f7f7f7;
+    margin: 20px 220px 0 -35px;
+    width: 80%;
+  }
+  .location .map-wrapper iframe {
+    width: 100%;
+    height: 535px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.location .location-text {
+  margin: 8px 35px 0 98px;
+  width: auto;
+}
+.location .location-text .address {
+  white-space: nowrap;
+  line-height: 1;
+}
+.location .location-text .address:first-child {
+  margin-bottom: 12px;
+}
+.location .location-text .address:last-child {
+  margin-bottom: 60px;
+}
+.location .location-text .location-name {
+  color: var(--color-darkorange);
+  font-style: normal;
+  white-space: nowrap;
+  line-height: 1;
+  margin-top: 58px;
+}
+.location .location-text .location-name span {
+  color: var(--color-lightorange);
+  font-style: italic;
+}
+.location .location-text .location-name:last-child {
+  margin-top: 53px;
+}
+
 .what-to-expect {
   background-color: var(--color-white);
   height: auto;

@@ -1,0 +1,112 @@
+.location {
+    width: 88%;
+    overflow: hidden;
+
+    .icon-img {
+        width: 52px;
+        margin: 80px auto 50px auto;
+    }
+
+    .parallelogram {
+        margin: 20px 850px 50px -30px;
+        
+        @media screen and (min-width: 1300px) {
+            height: 88px;
+        }
+    }
+
+    .section-title {
+        @media screen and (min-width: 1300px) {
+            padding: 0 15px 0 140px;
+        }
+    }
+
+    /* Default layout: single column */
+    .location-section-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 1300px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    .location-text-wrapper, 
+    .map-wrapper {
+        width: 100%;
+        text-align: center; // Default center alignment for mobile
+    }
+
+    /* Styles for screens 1300px and above */
+    @media screen and (min-width: 1300px) {
+        .location-text-wrapper {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            min-width: fit-content; // This ensures the text container is at least as wide as its content
+            
+            .address, .location-name {
+                text-align: left;
+                white-space: nowrap; // This prevents text from wrapping
+                width: auto; // This allows the text to take its natural width
+            }
+        }
+
+        .map-wrapper {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            border: 7px solid #f7f7f7;
+            margin: 20px 220px 0 -35px;
+            width: 80%;
+
+            iframe {
+                width: 100%;
+                height: 535px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .location-text {
+        margin: 8px 35px 0 98px;
+        width: auto;
+
+        .address {
+            white-space: nowrap;
+            line-height: 1;
+        
+        &:first-child {
+            margin-bottom: 12px;
+        }
+
+        &:last-child {
+            margin-bottom: 60px;
+        }
+        }
+
+        .location-name {
+            color: var(--color-darkorange);
+            font-style: normal;
+            white-space: nowrap;
+            line-height: 1;
+            margin-top: 58px;
+
+            span {
+                color: var(--color-lightorange);
+                font-style: italic;
+            }
+
+            &:last-child {
+                margin-top: 53px;
+            }
+        }
+    }
+}

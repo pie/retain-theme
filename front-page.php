@@ -272,11 +272,10 @@ Template Name: Front Page
 
         <div class="location-section-content">
             <div class="location-text-wrapper">
-            <div class="title-wrapper-cutoff">
-                <div class="dark-parallelogram-cutoff"></div>
-                <div class="light-parallelogram-cutoff"></div>
-                <h2 class="section-title">Location</h2>
-            </div>
+            <div class="parallelogram">
+        <h2 class="section-title">Location</h2>
+        </div>
+        <div class="location-text">
                 <p class="address"><b>
                 Hilton Newcastle Gateshead
                 </b>
@@ -291,6 +290,7 @@ Bottle Bank, Gateshead NE8 2AR
                 <p class="location-name">
                 Central Station <span>(1.3 miles)</span>
                 </p>
+            </div>
             </div>
 
             <div class="map-wrapper">
