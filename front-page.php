@@ -216,53 +216,54 @@ Template Name: Front Page
         <h2 class="section-title">Buy your ticket</h2>
         </div>
 
-        <p>
-        Join us on <b>September 22nd - 24th 2025</b> in <b>Newcastle-Upon-Tyne, England</b> for THE membership growth event that you simply can’t afford to miss.
+        <div class="first-p">
+            <p>Join us on <b>September 22nd - 24th 2025</b> in <b>Newcastle-Upon-Tyne, England</b> for THE membership growth event that you simply can’t afford to miss.
         </p>
-        <p>
+        </div>
+        <div class="second-p"><p>
         <em><b>Don’t forget:</b> members of Membership Academy receive a discount on their ticket price!</em>
-        </p>
+    </p>    
+    </div>
 
         <h3 class="section-subtitle">
         PLUS take advantage of Earlybird pricing if you buy your ticket today!
         </h3>
 
         <div class="ticket-prices">
-            <div class="ticket-price-card">
-                <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
-
-                <p class="price-title"></p>
-
-                <div class="earlybird-bg"></div>
-                <p class="earlybird-text"></p>
-
-                <ul class="price-features">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-
-                <a href="/buy-your-tickets" class="buy-now-button">BUY NOW</a>
+    <div class="card-wrapper">
+        <div class="ticket-price-card">
+            <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
+            <p class="price-title">£345</p>
+            <div class="earlybird-bg">
+                <p class="earlybird-text">Earlybird (non-members)</p>
             </div>
-            <div class="ticket-price-card">
-                <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
-
-                <p class="price-title"></p>
-
-                <div class="earlybird-bg"></div>
-                <p class="earlybird-text"></p>
-
-                <ul class="price-features">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-
-                <a href="/buy-your-tickets" class="buy-now-button">BUY NOW</a>
-            </div>
+            <ul class="price-features">
+                <li><b>Save £150</b></li>
+                <li>Access to all sessions</li>
+                <li>Lunch & refreshments provided</li>
+                <li>Academy member discount</li>
+            </ul>
+            <a href="/buy-your-tickets" class="buy-now-button">BUY NOW</a>
         </div>
+    </div>
+    
+    <div class="card-wrapper">
+        <div class="ticket-price-card">
+            <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
+            <p class="price-title">£245</p>
+            <div class="earlybird-bg">
+                <p class="earlybird-text">Earlybird (members)</p>
+            </div>
+            <ul class="price-features">
+                <li><b>Save £250</b></li>
+                <li>Access to all sessions</li>
+                <li>Lunch & refreshments provided</li>
+                <li><b>Academy member discount</b></li>
+            </ul>
+            <a href="/buy-your-tickets" class="buy-now-button">BUY NOW</a>
+        </div>
+    </div>
+</div>
     </section>
 
 <!-- Location Section -->
