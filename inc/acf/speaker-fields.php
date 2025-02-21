@@ -31,9 +31,16 @@ acf_add_local_field_group(array(
                     'library' => 'all',
                 ),
                 array(
-                    'key' => 'field_speaker_name',
+                    'key' => 'field_speaker_first_name',
                     'label' => 'Speaker Name',
                     'name' => 'speaker_name',
+                    'type' => 'text',
+                    'required' => 1,
+                ),
+                array(
+                    'key' => 'field_speaker_last_name',
+                    'label' => 'Speaker Last Name',
+                    'name' => 'speaker_last_name',
                     'type' => 'text',
                     'required' => 1,
                 ),

@@ -1,5 +1,6 @@
 .meet-your-host {
     position: relative; /* This is needed for absolute positioning of children */
+    z-index: 1;
     
     .icon-img {
       width: 43px;
@@ -37,7 +38,7 @@
       height: 251px;
       background: var(--color-darkorange);
       top: 630px;
-      left: 661px;
+      left: 662px;
       transform: translate(-50%, -50%);
       z-index: 1;
     }
@@ -47,9 +48,23 @@
       width: 329px;
       height: 251px;
       background: var(--color-lightorange);
-      top: 655px;
+      top: 656px;
       left: 636px;
       transform: translate(-50%, -50%);
       z-index: 0;
+    }
+
+    .host-name {
+        color: var(--color-lightorange);
+        font-size: 40px;
+        letter-spacing: 4px;
+        font-family: var(--font-brandongrotesque);
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 28px auto 0 auto;
+    }
+
+    h3 {
+        margin: 30px auto 35px auto;
     }
   }

@@ -166,34 +166,41 @@ Template Name: Front Page
             <div class="speakers-container">
         <?php if (have_rows('speakers')): ?>
             <div class="speakers-grid">
-                <?php while (have_rows('speakers')): the_row();
-                        $image = get_sub_field('speaker_image');
-                        $name  = get_sub_field('speaker_name');
-                        $role  = get_sub_field('speaker_role');
-                    ?>
-		                    <div class="speaker-card">
-		                        <?php if ($image): ?>
-		                            <div class="speaker-image">
-		                                <img src="<?php echo esc_url($image['url']); ?>"
-		                                     alt="<?php echo esc_attr($image['alt']); ?>" />
-		                            </div>
-		                        <?php endif; ?>
-
-                                <div class="speaker-info">
-                            <?php if ($name): ?>
-                                <h3 class="speaker-name"><?php echo esc_html($name); ?></h3>
-                            <?php endif; ?>
-
-                            <?php if ($role): ?>
-                                <p class="speaker-role"><?php echo esc_html($role); ?></p>
-                            <?php endif; ?>
+    <?php while (have_rows('speakers')): the_row();
+            $image = get_sub_field('speaker_image');
+            $name  = get_sub_field('speaker_name');
+            $lastname  = get_sub_field('speaker_last_name');
+            $role  = get_sub_field('speaker_role');
+        ?>
+            <div class="speaker-wrapper">
+                <div class="speaker-card">
+                    <?php if ($image): ?>
+                        <div class="speaker-image">
+                            <img src="<?php echo esc_url($image['url']); ?>"
+                                 alt="<?php echo esc_attr($image['alt']); ?>" />
                         </div>
-                    </div>
-                <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+
+                <div class="speaker-info">
+                    <?php if ($name): ?>
+                        <h3 class="speaker-name"><?php echo esc_html($name); ?></h3>
+                    <?php endif; ?>
+
+                    <?php if ($lastname): ?>
+                        <h3 class="speaker-name"><?php echo esc_html($lastname); ?></h3>
+                    <?php endif; ?>
+
+                    <?php if ($role): ?>
+                        <p class="speaker-role"><?php echo esc_html($role); ?></p>
+                    <?php endif; ?>
+                </div>
             </div>
+    <?php endwhile; ?>
+</div>
         <?php endif; ?>
     </div>
-        </div>
+    </div>
 
         <h3 class="section-subtitle">
         With more to come – full lineup to be announced in the coming months!
