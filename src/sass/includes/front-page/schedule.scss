@@ -1,9 +1,9 @@
 .schedule {
-    background-color: var(--color-offwhite);
+    background-color: var(--color-white);
   
     .icon-img {
-      width: 48px;
-      margin: 47px auto 48px auto;
+      width: 42px;
+      margin: 55px auto 55px auto;
     }
   
     .parallelogram {
@@ -19,4 +19,117 @@
         padding: 0 20px 10px 19px;
       }
     }
+
+    .schedule-tabs {
+        .tab-button-container {
+            display: none;
+        }
+
+        .tab-content {
+            display: block; // Default: Show all tabs on small screens
+        }
+
+        @media screen and (min-width: 768px) {
+            .tab-button-container {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                position: relative;
+            }
+
+            .tab-button {
+                background-color: var(--color-white);
+                color: var(--color-darkorange);
+                border: 1px solid var(--color-darkorange);
+                padding: 10px 20px;
+                cursor: pointer;
+                position: relative;
+                z-index: 1;
+
+                &.active {
+                    background-color: var(--color-darkorange);
+                    color: var(--color-white);
+                }
+            }
+
+            .tab-content {
+                display: none;
+            }
+
+            .tab-content:first-of-type {
+                display: block;
+            }
+        }
+    }
+
+        .schedule-tabs {
+            .schedule-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+    
+            .schedule-card {
+                display: flex;
+                align-items: center;
+                border: 1px solid var(--color-darkorange);
+                overflow: hidden;
+                background-color: var(--color-white);
+    
+                .schedule-time {
+                    background-color: var(--color-darkorange);
+                    color: var(--color-white);
+                    padding: 15px 20px;
+                    font-weight: bold;
+                    text-align: center;
+                    flex-shrink: 0;
+                    min-width: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 0 0 20%;
+                    height: 100%;
+                }
+    
+                .schedule-details {
+                    padding: 15px;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+    
+                    .schedule-session {
+                        color: var(--color-black);
+                        font-size: 1.1em;
+                        font-weight: bold;
+                    }
+    
+                    .schedule-speaker {
+                        color: var(--color-lightorange);
+                        text-transform: uppercase;
+                        font-size: 0.9em;
+                    }
+                }
+    
+                .schedule-speaker-photo {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-left: 15px;
+                    flex-shrink: 0;
+                }
+            }
+    
+            @media screen and (min-width: 768px) {
+                .schedule-grid {
+                    gap: 25px;
+                }
+    
+                .schedule-card {
+                    flex-direction: row;
+                    width: 100%;
+                }
+            }
+        }    
 }

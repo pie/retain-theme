@@ -385,6 +385,7 @@ Bottle Bank, Gateshead NE8 2AR
             </div>
 
         </div>
+        <div class="empty-space"></div>
 
     </section>
 
@@ -398,12 +399,11 @@ Bottle Bank, Gateshead NE8 2AR
 
         <div class="schedule-tabs">
             <div class="tab-button-container">
-                <button class="tab-button" onclick="openTab(event, 'day1')">Day 1</button>
+                <button class="tab-button active" onclick="openTab(event, 'day1')">Day 1</button>
                 <button class="tab-button" onclick="openTab(event, 'day2')">Day 2</button>
             </div>
 
             <div id="day1" class="tab-content">
-                <p>Content for Day 1</p>
                 <!-- schedule day 1 repeater fields -->
                 <?php if (have_rows('schedule_day_1')): ?>
         <div class="schedule-grid">
@@ -431,7 +431,6 @@ Bottle Bank, Gateshead NE8 2AR
             </div>
 
             <div id="day2" class="tab-content" style="display:none;">
-                <p>Content for Day 2</p>
                 <!-- schedule day 2 repeater fields -->
                 <?php if (have_rows('schedule_day_2')): ?>
         <div class="schedule-grid">
