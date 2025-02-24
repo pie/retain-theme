@@ -203,17 +203,21 @@
       }
 
       .schedule-speaker-photo {
+        width: 57px;
+        height: 61px;
+        background-color: var(--color-lightorange);
         margin-left: auto;
-        padding-right: 15px;
-        width: 110px;
+        margin-right: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
+        clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
 
         img {
-          width: 55px;
-          height: 55px;
+          width: 49px;
+          height: 53px;
           object-fit: cover;
+          clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
         }
       }
     }
