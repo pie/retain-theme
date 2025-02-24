@@ -639,7 +639,7 @@ body {
 }
 .speakers .speakers-bg-img-2 {
   max-width: 100%;
-  margin-top: -200px;
+  margin-top: -196px;
 }
 .speakers h2 {
   text-align: center;
@@ -745,7 +745,7 @@ body {
   font-family: var(--font-sourcesanspro);
 }
 .speakers hr {
-  margin: -7px 0;
+  margin: -9px 0;
   width: 100%;
   height: 7px;
   border: none;
@@ -759,7 +759,7 @@ body {
 }
 .tickets .icon-img {
   width: 58px;
-  margin: 2px auto 50px auto;
+  margin: 4px auto 50px auto;
 }
 .tickets .parallelogram {
   margin-bottom: 82px;
@@ -1058,7 +1058,7 @@ body {
 }
 .faq .icon-img {
   width: 48px;
-  margin: 47px auto 48px auto;
+  margin: 45px auto 50px auto;
 }
 .faq .parallelogram {
   margin-bottom: 110px;
