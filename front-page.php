@@ -399,11 +399,17 @@ Bottle Bank, Gateshead NE8 2AR
 
         <div class="schedule-tabs">
             <div class="tab-button-container">
-                <button class="tab-button active" onclick="openTab(event, 'day1')">Day 1</button>
-                <button class="tab-button" onclick="openTab(event, 'day2')">Day 2</button>
+            <button class="tab-button active" onclick="openTab(event, 'day1')">
+                <span>Day 1</span>
+                <span>22/09/2025</span>
+            </button>
+            <button class="tab-button" onclick="openTab(event, 'day2')">
+                <span>Day 2</span>
+                <span>23/09/2025</span>
+            </button>
             </div>
 
-            <div id="day1" class="tab-content">
+        <div id="day1" class="tab-content">
                 <!-- schedule day 1 repeater fields -->
                 <?php if (have_rows('schedule_day_1')): ?>
         <div class="schedule-grid">
