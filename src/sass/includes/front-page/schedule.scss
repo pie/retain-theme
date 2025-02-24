@@ -1,199 +1,252 @@
 .schedule {
-    background-color: var(--color-white);
-  
-    .icon-img {
-      width: 42px;
-      margin: 55px auto 55px auto;
+  background-color: var(--color-white);
+
+  .icon-img {
+    width: 42px;
+    margin: 55px auto 55px auto;
+  }
+
+  .parallelogram {
+    margin-bottom: 110px;
+
+    @media screen and (min-width: 1300px) {
+      height: 90px;
     }
-  
-    .parallelogram {
-      margin-bottom: 110px;
-  
-      @media screen and (min-width: 1300px) {
-        height: 90px;
+  }
+
+  .section-title {
+    @media screen and (min-width: 1300px) {
+      padding: 0 20px 10px 19px;
+    }
+  }
+
+  .schedule-tabs {
+    .tab-button-container {
+      display: none;
+    }
+
+    .tab-button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      span {
+        text-transform: uppercase;
+        font-family: var(--font-brandongrotesque);
+        font-size: 20px;
+        letter-spacing: 3px;
+
+        &:first-child {
+          font-weight: 700;
+        }
+
+        &:last-child {
+          font-weight: 400;
+        }
       }
     }
-  
-    .section-title {
-      @media screen and (min-width: 1300px) {
-        padding: 0 20px 10px 19px;
-      }
+
+    .tab-content {
+      display: block; // Default: Show all tabs on small screens
     }
 
-    .schedule-tabs {
-        .tab-button-container {
-            display: none;
+    @media screen and (min-width: 768px) {
+      width: 1100px;
+      margin: 0 auto;
+
+      /* Default gradient (first tab active) */
+      .tab-button-container {
+        display: flex;
+        position: relative;
+        border: 1px solid var(--color-darkorange);
+        width: 100%;
+        height: 105px;
+        overflow: hidden;
+        margin-bottom: 73px;
+        background: linear-gradient(
+          120deg,
+          var(--color-darkorange) 50%,
+          var(--color-white) 50%
+        );
+      }
+
+      /* When the second button is active */
+      .tab-button:nth-child(2).active ~ .tab-button-container,
+      .tab-button-container:has(.tab-button:nth-child(2).active) {
+        background: linear-gradient(
+          120deg,
+          var(--color-white) 50%,
+          var(--color-darkorange) 50%
+        );
+      }
+
+      .tab-button {
+        background-color: transparent;
+        color: var(--color-white); /* Default text color for first button */
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        flex: 1;
+        line-height: 1;
+        text-align: center;
+      }
+
+      /* When first button is active */
+      .tab-button:nth-child(1).active {
+        color: var(--color-white);
+      }
+
+      .tab-button:nth-child(2) {
+        color: var(--color-darkorange);
+        margin-left: 80px;
+      }
+
+      /* When second button is active */
+      .tab-button:nth-child(1) {
+        color: var(--color-darkorange);
+        margin-left: 20px;
+      }
+
+      .tab-button:nth-child(2).active {
+        color: var(--color-white);
+      }
+
+      .tab-button {
+        span {
+          font-size: 30px;
+        }
+      }
+
+      .tab-content {
+        display: none;
+      }
+
+      .tab-content {
+        display: none;
+      }
+
+      .tab-content:first-of-type {
+        display: block;
+      }
+    }
+  }
+
+  .schedule-tabs {
+    .schedule-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .schedule-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      border: 1px solid var(--color-darkorange);
+      overflow: hidden;
+      background-color: var(--color-white);
+      height: 101px;
+      margin-bottom: 8px;
+
+      .schedule-time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        flex-shrink: 0;
+        background-color: var(--color-darkorange);
+        padding: 0;
+        height: 100%;
+
+        p {
+          color: var(--color-white);
+          font-weight: bold;
+          text-align: center;
+          line-height: 1;
+          margin: 0 auto;
+          font-size: 18px;
+        }
+      }
+
+      .schedule-session-details {
+        flex-grow: 1;
+        padding: 0;
+
+        .schedule-session {
+          h3 {
+            color: var(--color-black);
+            font-size: 20px;
+            font-weight: 700px;
+            margin: 0 auto 5px;
+            text-align: left;
+            font-style: normal;
+          }
         }
 
-        .tab-button {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-
-            span {
-                text-transform: uppercase;
-                font-family: var(--font-brandongrotesque);
-                font-size: 20px;
-                letter-spacing: 3px;
-            
-                &:first-child {
-                    font-weight: 700;
-                }
-
-                &:last-child {
-                    font-weight: 400;
-                }
-            }
-        }
-
-        .tab-content {
-            display: block; // Default: Show all tabs on small screens
-        }
-
-        @media screen and (min-width: 768px) {
-            width: 1100px;
+        .schedule-speaker {
+          p {
+            color: var(--color-lightorange);
+            text-transform: uppercase;
+            font-weight: 400px;
+            font-size: 16px;
             margin: 0 auto;
-
-            /* Default gradient (first tab active) */
-            .tab-button-container {
-              display: flex;
-              position: relative;
-              border: 1px solid var(--color-darkorange);
-              width: 100%;
-              height: 105px;
-              overflow: hidden;
-              background: linear-gradient(120deg, var(--color-darkorange) 50%, var(--color-white) 50%);
-            }
-            
-            /* When the second button is active */
-            .tab-button:nth-child(2).active ~ .tab-button-container,
-            .tab-button-container:has(.tab-button:nth-child(2).active) {
-              background: linear-gradient(120deg, var(--color-white) 50%, var(--color-darkorange) 50%);
-            }
-            
-            .tab-button {
-              background-color: transparent;
-              color: var(--color-white); /* Default text color for first button */
-              padding: 10px 20px;
-              border: none;
-              cursor: pointer;
-              position: relative;
-              z-index: 1;
-              flex: 1;
-              line-height: 1;
-              text-align: center;
-            }            
-        
-            /* When first button is active */
-            .tab-button:nth-child(1).active {
-              color: var(--color-white);
-            }
-
-            .tab-button:nth-child(2) {
-                color: var(--color-darkorange);
-                margin-left: 80px;                
-              }
-            
-            /* When second button is active */
-            .tab-button:nth-child(1) {
-                color: var(--color-darkorange);
-                margin-left: 20px;
-              }
-
-            .tab-button:nth-child(2).active {
-              color: var(--color-white);
-            }
-
-            .tab-button {
-                span {
-                    font-size: 30px;
-                }
-            }
-              
-              .tab-content {
-                display: none;
-              }
-
-            .tab-content {
-                display: none;
-            }
-
-            .tab-content:first-of-type {
-                display: block;
-            }
+            text-align: left;
+            letter-spacing: 2px;
+            line-height: 0.7;
+          }
         }
+      }
+
+      .schedule-speaker-photo {
+        margin-left: auto;
+        padding-right: 15px;
+        width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 55px;
+          height: 55px;
+          object-fit: cover;
+        }
+      }
     }
 
-        .schedule-tabs {
-            .schedule-grid {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
+    @media screen and (min-width: 768px) {
+      .schedule-grid {
+        gap: 25px;
+        width: 1100px;
+      }
+
+      .schedule-card {
+        .schedule-time {
+          width: 102px;
+
+          p {
+            font-size: 24px;
+          }
+        }
+
+        .schedule-session-details {
+          .schedule-session {
+            h3 {
+              font-size: 26px;
             }
-    
-            .schedule-card {
-                display: flex;
-                align-items: center;
-                border: 1px solid var(--color-darkorange);
-                overflow: hidden;
-                background-color: var(--color-white);
-    
-                .schedule-time {
-                    background-color: var(--color-darkorange);
-                    color: var(--color-white);
-                    padding: 15px 20px;
-                    font-weight: bold;
-                    text-align: center;
-                    flex-shrink: 0;
-                    min-width: 100px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex: 0 0 20%;
-                    height: 100%;
-                }
-    
-                .schedule-details {
-                    padding: 15px;
-                    flex-grow: 1;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-    
-                    .schedule-session {
-                        color: var(--color-black);
-                        font-size: 1.1em;
-                        font-weight: bold;
-                    }
-    
-                    .schedule-speaker {
-                        color: var(--color-lightorange);
-                        text-transform: uppercase;
-                        font-size: 0.9em;
-                    }
-                }
-    
-                .schedule-speaker-photo {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    margin-left: 15px;
-                    flex-shrink: 0;
-                }
+          }
+
+          .schedule-speaker {
+            p {
+              font-size: 22px;
             }
-    
-            @media screen and (min-width: 768px) {
-                .schedule-grid {
-                    gap: 25px;
-                }
-    
-                .schedule-card {
-                    flex-direction: row;
-                    width: 100%;
-                }
-            }
-        }    
+          }
+        }
+      }
+    }
+  }
 }

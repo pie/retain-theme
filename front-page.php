@@ -172,14 +172,14 @@ Template Name: Front Page
             $lastname = get_sub_field('speaker_last_name');
             $role     = get_sub_field('speaker_role');
         ?>
-	            <div class="speaker-wrapper">
-	                <div class="speaker-card">
-	                    <?php if ($image): ?>
-	                        <div class="speaker-image">
-	                            <img src="<?php echo esc_url($image['url']); ?>"
-	                                 alt="<?php echo esc_attr($image['alt']); ?>" />
-	                        </div>
-	                    <?php endif; ?>
+		            <div class="speaker-wrapper">
+		                <div class="speaker-card">
+		                    <?php if ($image): ?>
+		                        <div class="speaker-image">
+		                            <img src="<?php echo esc_url($image['url']); ?>"
+		                                 alt="<?php echo esc_attr($image['alt']); ?>" />
+		                        </div>
+		                    <?php endif; ?>
                 </div>
 
                 <div class="speaker-info">
@@ -419,15 +419,27 @@ Bottle Bank, Gateshead NE8 2AR
                     $speaker_name  = get_sub_field('speaker_name');
                     $speaker_photo = get_sub_field('speaker_photo');
                 ?>
-			                <div class="schedule-card">
-			                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
-			                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
-			                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
-			                    <?php if ($speaker_photo): ?>
-			                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
-			                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
-			                             class="schedule-speaker-photo" />
-			                    <?php endif; ?>
+				                <div class="schedule-card">
+	                            <div class="schedule-time">
+                                    <p><?php echo esc_html($time); ?></p>
+                                </div>
+                                <div class="schedule-session-details">
+				                    <div class="schedule-session">
+                                        <h3><?php echo esc_html($session); ?></h3>
+                                    </div>
+                                    <div class="schedule-speaker">
+	                                    <?php if ($speaker_name): ?>
+	                                        <p><?php echo esc_html($speaker_name); ?></p>
+	                                    <?php endif; ?>
+                                    </div>
+                                </div>
+                                <div class="schedule-speaker-photo">
+			                        <?php if ($speaker_photo): ?>
+			                            <img src="<?php echo esc_url($speaker_photo['url']); ?>"
+			                                 alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
+			                                 />
+			                        <?php endif; ?>
+                                </div>
                 </div>
             <?php endwhile; ?>
         </div>
@@ -446,16 +458,28 @@ Bottle Bank, Gateshead NE8 2AR
                     $speaker_name  = get_sub_field('speaker_name');
                     $speaker_photo = get_sub_field('speaker_photo');
                 ?>
-			                <div class="schedule-card">
-			                    <p class="schedule-time"><?php echo esc_html($time); ?></p>
-			                    <h3 class="schedule-session"><?php echo esc_html($session); ?></h3>
-			                    <p class="schedule-speaker"><?php echo esc_html($speaker_name); ?></p>
-			                    <?php if ($speaker_photo): ?>
-			                        <img src="<?php echo esc_url($speaker_photo['url']); ?>"
-			                             alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
-			                             class="schedule-speaker-photo" />
-			                    <?php endif; ?>
-                </div>
+				               				                <div class="schedule-card">
+	                            <div class="schedule-time">
+                                    <p><?php echo esc_html($time); ?></p>
+                                </div>
+                                <div class="schedule-session-details">
+				                    <div class="schedule-session">
+                                        <h3><?php echo esc_html($session); ?></h3>
+                                    </div>
+                                    <div class="schedule-speaker">
+	                                    <?php if ($speaker_name): ?>
+	                                        <p><?php echo esc_html($speaker_name); ?></p>
+	                                    <?php endif; ?>
+                                    </div>
+                                </div>
+                                <div class="schedule-speaker-photo">
+			                        <?php if ($speaker_photo): ?>
+			                            <img src="<?php echo esc_url($speaker_photo['url']); ?>"
+			                                 alt="<?php echo esc_attr($speaker_photo['alt']); ?>"
+			                                 />
+			                        <?php endif; ?>
+                                </div>
+                                </div>
             <?php endwhile; ?>
         </div>
     <?php else: ?>
