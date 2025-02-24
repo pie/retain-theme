@@ -2,15 +2,19 @@
   background-color: var(--color-offwhite);
 
   .icon-img {
-    width: 48px;
     margin: 45px auto 50px auto;
+
+    @media screen and (min-width: 1300px) {
+      width: 48px;
+  }
   }
 
   .parallelogram {
-    margin-bottom: 110px;
+    margin-bottom: 52px;
 
     @media screen and (min-width: 1300px) {
       height: 90px;
+      margin-bottom: 110px;
     }
   }
 
@@ -84,13 +88,16 @@
       li {
         font-size: 18px;
         line-height: 1.2;
+        margin-left: -70px;
 
         @media screen and (min-width: 768px) {
           font-size: 24px;
+          margin-left: -35px;
         }
         @media screen and (min-width: 1300px) {
           font-size: 28px;
           line-height: 1.5;
+          margin-left: 0;
         }
       }
     }
@@ -99,15 +106,17 @@
       font-style: italic;
       color: var(--color-darkorange);
       padding: 45px 0 10px 0;
-      margin-left: -35px;
+      margin-left: -85px;
       font-size: 15px;
 
       @media screen and (min-width: 768px) {
         font-size: 20px;
+        margin-left: -60px;
       }
 
       @media screen and (min-width: 1300px) {
         font-size: 24px;
+        margin-left: -35px;
       }
     }
   }

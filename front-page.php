@@ -294,7 +294,7 @@ Bottle Bank, Gateshead NE8 2AR
             </div>
 
             <div class="map-wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.5954672480453!2d-1.6064786303255774!3d54.96640216817044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e70ba0fc767ef%3A0xb1529a45b94da2ea!2sHilton%20Newcastle%20Gateshead!5e0!3m2!1sen!2suk!4v1739978592971!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.5954672480453!2d-1.6064786303255774!3d54.96640216817044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e70ba0fc767ef%3A0xb1529a45b94da2ea!2sHilton%20Newcastle%20Gateshead!5e0!3m2!1sen!2suk!4v1739978592971!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -410,6 +410,10 @@ Bottle Bank, Gateshead NE8 2AR
             </div>
 
         <div id="day1" class="tab-content">
+        <button class="tab-button-mobile">
+                <span>Day 1</span>
+                <span>22/09/2025</span>
+            </button>
                 <!-- schedule day 1 repeater fields -->
                 <?php if (have_rows('schedule_day_1')): ?>
         <div class="schedule-grid">
@@ -448,7 +452,11 @@ Bottle Bank, Gateshead NE8 2AR
     <?php endif; ?>
             </div>
 
-            <div id="day2" class="tab-content" style="display:none;">
+            <div id="day2" class="tab-content">
+            <button class="tab-button-mobile">
+                <span>Day 2</span>
+                <span>23/09/2025</span>
+            </button>
                 <!-- schedule day 2 repeater fields -->
                 <?php if (have_rows('schedule_day_2')): ?>
         <div class="schedule-grid">

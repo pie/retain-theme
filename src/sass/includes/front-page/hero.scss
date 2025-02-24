@@ -1,5 +1,5 @@
 .hero {
-    backgound-color: var(--color-darkorange);
+    background-color: var(--color-darkorange);
     height: 100vh; /* Ensure full height on mobile */
     position: relative; /* Required for absolute positioning of text */
 
@@ -46,6 +46,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 200px;
 
         @media screen and (min-width: 1300px) {
             margin-top: 980px;
@@ -53,11 +54,11 @@
     }
 
     .hero-text {
-        font-size: 25px;
-        letter-spacing: .25rem;
+        font-size: 22px;
+        letter-spacing: .15rem;
         text-transform: uppercase;
         font-family: var(--font-brandongrotesque);
-        margin-bottom: -20px;
+        margin-bottom: 20px;
 
         @media screen and (min-width: 1300px) {
             font-size: 30px;

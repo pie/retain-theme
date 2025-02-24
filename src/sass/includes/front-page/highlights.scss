@@ -2,8 +2,11 @@
     background-color: #f7f7f7;
 
     .icon-img {
-        width: 64px;
         margin: 57px auto 48px auto;
+
+    @media screen and (min-width: 1300px) {
+        width: 64px;
+    }
     }
     
         .parallelogram {

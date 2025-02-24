@@ -2,15 +2,19 @@
   background-color: var(--color-white);
 
   .icon-img {
-    width: 42px;
     margin: 55px auto 55px auto;
+
+    @media screen and (min-width: 1300px) {
+      width: 42px;
+  }
   }
 
   .parallelogram {
-    margin-bottom: 110px;
+    margin-bottom: 30px;
 
     @media screen and (min-width: 1300px) {
       height: 90px;
+      margin-bottom: 110px;
     }
   }
 
@@ -25,36 +29,50 @@
       display: none;
     }
 
-    .tab-button {
+    .tab-button-mobile {
+      display: block;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
+      background-color: var(--color-darkorange);
+      color: var(--color-white);
+      padding: 10px 20px;
+      border: none;
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      line-height: 1;
+      text-align: center;
+      margin: 40px auto 20px auto;
 
       span {
-        text-transform: uppercase;
-        font-family: var(--font-brandongrotesque);
-        font-size: 20px;
-        letter-spacing: 3px;
-
-        &:first-child {
-          font-weight: 700;
+          text-transform: uppercase;
+          font-family: var(--font-brandongrotesque);
+          font-size: 20px;
+          letter-spacing: 3px;
+    
+          &:first-child {
+            font-weight: 700;
+          }
+    
+          &:last-child {
+            font-weight: 400;
+          }
         }
-
-        &:last-child {
-          font-weight: 400;
-        }
-      }
     }
 
     .tab-content {
-      display: block; // Default: Show all tabs on small screens
+      display: block;
     }
 
     @media screen and (min-width: 768px) {
       width: 1100px;
       margin: 0 auto;
+
+      .tab-button-mobile {
+        display: none;
+      }
 
       /* Default gradient (first tab active) */
       .tab-button-container {
@@ -83,6 +101,10 @@
       }
 
       .tab-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: transparent;
         color: var(--color-white); /* Default text color for first button */
         padding: 10px 20px;
@@ -93,6 +115,21 @@
         flex: 1;
         line-height: 1;
         text-align: center;
+
+        span {
+            text-transform: uppercase;
+            font-family: var(--font-brandongrotesque);
+            font-size: 20px;
+            letter-spacing: 3px;
+    
+            &:first-child {margin-bottom: 8px;
+              font-weight: 700;
+            }
+    
+            &:last-child {
+              font-weight: 400;
+            }
+          }
       }
 
       /* When first button is active */
@@ -125,10 +162,6 @@
         display: none;
       }
 
-      .tab-content {
-        display: none;
-      }
-
       .tab-content:first-of-type {
         display: block;
       }
@@ -150,14 +183,14 @@
       border: 1px solid var(--color-darkorange);
       overflow: hidden;
       background-color: var(--color-white);
-      height: 101px;
-      margin-bottom: 8px;
+      height: 130px;
+      margin-bottom: 2px;
 
       .schedule-time {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50px;
+        width: 70px;
         flex-shrink: 0;
         background-color: var(--color-darkorange);
         padding: 0;
@@ -169,7 +202,7 @@
           text-align: center;
           line-height: 1;
           margin: 0 auto;
-          font-size: 18px;
+          font-size: 16px;
         }
       }
 
@@ -180,7 +213,7 @@
         .schedule-session {
           h3 {
             color: var(--color-black);
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700px;
             margin: 0 auto 5px;
             text-align: left;
@@ -197,28 +230,13 @@
             margin: 0 auto;
             text-align: left;
             letter-spacing: 2px;
-            line-height: 0.7;
+            line-height: 1;
           }
         }
       }
 
       .schedule-speaker-photo {
-        width: 57px;
-        height: 61px;
-        background-color: var(--color-lightorange);
-        margin-left: auto;
-        margin-right: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
-
-        img {
-          width: 49px;
-          height: 53px;
-          object-fit: cover;
-          clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
-        }
+        display: none;
       }
     }
 
@@ -229,6 +247,8 @@
       }
 
       .schedule-card {
+        margin-bottom: 8px;
+
         .schedule-time {
           width: 102px;
 
@@ -249,6 +269,25 @@
               font-size: 22px;
             }
           }
+        }
+
+        .schedule-speaker-photo { 
+          width: 57px;
+        height: 61px;
+        background-color: var(--color-lightorange);
+        margin-left: auto;
+        margin-right: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
+
+        img {
+          width: 49px;
+          height: 53px;
+          object-fit: cover;
+          clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
+        }
         }
       }
     }

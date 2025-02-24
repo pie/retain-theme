@@ -3,8 +3,12 @@
     z-index: 1;
     
     .icon-img {
-      width: 43px;
       margin: 64px auto 68px auto;
+
+
+    @media screen and (min-width: 1300px) {
+      width: 43px;
+  }
     }
   
     .parallelogram {
@@ -20,48 +24,70 @@
     }
   
     .host-img {
-      width: 330px;
+      width: 250px;
       height: auto;
       padding: 0;
       object-fit: cover;
       position: relative; /* This ensures it stays above the background divs */
       z-index: 2;
+      margin-top: 20px;
       
       @media screen and (min-width: 1300px) {
+        width: 330px;
         padding: 67px 0 20px 0;
+        margin-top: 0;
       }
     }
   
     .host-img-bg-dark {
-      position: absolute;
-      width: 329px;
-      height: 251px;
-      background: var(--color-darkorange);
-      top: 630px;
-      left: 662px;
-      transform: translate(-50%, -50%);
-      z-index: 1;
+      display: none;
+
+      @media screen and (min-width: 1300px) {
+        display: block;
+        position: absolute;
+        background: var(--color-darkorange);
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 329px;
+        height: 251px;
+        top: 630px;
+        left: 662px;
+      }
     }
   
     .host-img-bg-light {
-      position: absolute;
-      width: 329px;
-      height: 251px;
-      background: var(--color-lightorange);
-      top: 656px;
-      left: 636px;
-      transform: translate(-50%, -50%);
-      z-index: 0;
-    }
+      display: none;
+
+      @media screen and (min-width: 1300px) {
+        display: block;
+        position: absolute;
+        background: var(--color-lightorange);
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        width: 329px;
+        height: 251px;
+        top: 656px;
+        left: 636px;
+      }
+      }
 
     .host-name {
         color: var(--color-lightorange);
-        font-size: 40px;
+        font-size: 27px;
         letter-spacing: 4px;
         font-family: var(--font-brandongrotesque);
         font-weight: 900;
         text-transform: uppercase;
-        margin: 28px auto 0 auto;
+        margin: 18px auto;
+
+        @media screen and (min-width: 1300px) {
+            font-size: 32px;
+        }
+
+        @media screen and (min-width: 1300px) {
+            font-size: 40px;
+            margin: 28px auto 0 auto;
+        }
     }
 
     h3 {

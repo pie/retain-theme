@@ -1,8 +1,11 @@
 .membership-growth {
     .icon-img {
-    width: 70px;
     margin: 57px auto 54px auto;
+
+    @media screen and (min-width: 1300px) {
+        width: 70px;
     }
+}
 
     .parallelogram {
         @media screen and (min-width: 1300px) {

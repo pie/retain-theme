@@ -1,14 +1,18 @@
 .tickets {
     .icon-img {
-    width: 58px;
     margin: 4px auto 50px auto;
+
+    @media screen and (min-width: 1300px) {
+        width: 58px;
+    }
     }
 
     .parallelogram {
-        margin-bottom: 82px;
+        margin-bottom: 52px;
 
         @media screen and (min-width: 1300px) {
         height: 88px;
+        margin-bottom: 82px;
     }
 }
 
@@ -28,7 +32,7 @@
 
 .section-subtitle {
     width: 90%;
-    margin: -6px auto 115px auto;
+    margin: -6px auto 60px auto;
     font-size: 25px;
 
     @media screen and (min-width: 768px) {
@@ -36,6 +40,7 @@
     }
 
     @media screen and (min-width: 1300px) {
+        margin: -6px auto 115px auto;
         font-size: 38px;
     }
 }

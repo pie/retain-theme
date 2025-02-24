@@ -260,13 +260,24 @@ body {
   }
 }
 .site-main .icon-img {
+  width: 40px;
   height: auto;
+}
+@media screen and (min-width: 768px) {
+  .site-main .icon-img {
+    width: 50px;
+  }
 }
 .site-main .parallelogram {
   background: var(--color-lightorange);
   display: inline-block;
   padding: 20px;
-  height: auto;
+}
+@media screen and (max-width: 1299px) {
+  .site-main .parallelogram {
+    width: 90%;
+    height: auto;
+  }
 }
 @media screen and (min-width: 1300px) {
   .site-main .parallelogram {
@@ -276,7 +287,7 @@ body {
 }
 .site-main .section-title {
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.5em;
   color: var(--color-white);
   text-transform: uppercase;
   font-family: var(--font-brandongrotesque);
@@ -287,13 +298,18 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .site-main .section-title {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .site-main .section-title {
     transform: skew(28deg);
     font-size: 2.6em;
   }
 }
 
 .hero {
-  backgound-color: var(--color-darkorange);
+  background-color: var(--color-darkorange);
   height: 100vh; /* Ensure full height on mobile */
   position: relative; /* Required for absolute positioning of text */
 }
@@ -339,6 +355,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 200px;
 }
 @media screen and (min-width: 1300px) {
   .hero .hero-content {
@@ -346,11 +363,11 @@ body {
   }
 }
 .hero .hero-text {
-  font-size: 25px;
-  letter-spacing: 0.25rem;
+  font-size: 22px;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
   font-family: var(--font-brandongrotesque);
-  margin-bottom: -20px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1300px) {
   .hero .hero-text {
@@ -427,8 +444,12 @@ body {
 }
 
 .membership-growth .icon-img {
-  width: 70px;
   margin: 57px auto 54px auto;
+}
+@media screen and (min-width: 1300px) {
+  .membership-growth .icon-img {
+    width: 70px;
+  }
 }
 @media screen and (min-width: 1300px) {
   .membership-growth .parallelogram {
@@ -511,8 +532,12 @@ body {
   background-color: #f7f7f7;
 }
 .highlights .icon-img {
-  width: 64px;
   margin: 57px auto 48px auto;
+}
+@media screen and (min-width: 1300px) {
+  .highlights .icon-img {
+    width: 64px;
+  }
 }
 @media screen and (min-width: 1300px) {
   .highlights .parallelogram {
@@ -551,8 +576,12 @@ body {
   z-index: 1;
 }
 .meet-your-host .icon-img {
-  width: 43px;
   margin: 64px auto 68px auto;
+}
+@media screen and (min-width: 1300px) {
+  .meet-your-host .icon-img {
+    width: 43px;
+  }
 }
 @media screen and (min-width: 1300px) {
   .meet-your-host .parallelogram {
@@ -565,46 +594,72 @@ body {
   }
 }
 .meet-your-host .host-img {
-  width: 330px;
+  width: 250px;
   height: auto;
   padding: 0;
   object-fit: cover;
   position: relative; /* This ensures it stays above the background divs */
   z-index: 2;
+  margin-top: 20px;
 }
 @media screen and (min-width: 1300px) {
   .meet-your-host .host-img {
+    width: 330px;
     padding: 67px 0 20px 0;
+    margin-top: 0;
   }
 }
 .meet-your-host .host-img-bg-dark {
-  position: absolute;
-  width: 329px;
-  height: 251px;
-  background: var(--color-darkorange);
-  top: 630px;
-  left: 662px;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  display: none;
+}
+@media screen and (min-width: 1300px) {
+  .meet-your-host .host-img-bg-dark {
+    display: block;
+    position: absolute;
+    background: var(--color-darkorange);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 329px;
+    height: 251px;
+    top: 630px;
+    left: 662px;
+  }
 }
 .meet-your-host .host-img-bg-light {
-  position: absolute;
-  width: 329px;
-  height: 251px;
-  background: var(--color-lightorange);
-  top: 656px;
-  left: 636px;
-  transform: translate(-50%, -50%);
-  z-index: 0;
+  display: none;
+}
+@media screen and (min-width: 1300px) {
+  .meet-your-host .host-img-bg-light {
+    display: block;
+    position: absolute;
+    background: var(--color-lightorange);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 329px;
+    height: 251px;
+    top: 656px;
+    left: 636px;
+  }
 }
 .meet-your-host .host-name {
   color: var(--color-lightorange);
-  font-size: 40px;
+  font-size: 27px;
   letter-spacing: 4px;
   font-family: var(--font-brandongrotesque);
   font-weight: 900;
   text-transform: uppercase;
-  margin: 28px auto 0 auto;
+  margin: 18px auto;
+}
+@media screen and (min-width: 1300px) {
+  .meet-your-host .host-name {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .meet-your-host .host-name {
+    font-size: 40px;
+    margin: 28px auto 0 auto;
+  }
 }
 .meet-your-host h3 {
   margin: 30px auto 35px auto;
@@ -627,23 +682,35 @@ body {
 }
 .speakers .speakers-bg-img-1,
 .speakers .speakers-bg-img-2 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
-  pointer-events: none;
+  display: none;
 }
-.speakers .speakers-bg-img-1 {
-  max-width: 100%;
-  margin-top: -210px;
+@media screen and (min-width: 1300px) {
+  .speakers .speakers-bg-img-1,
+  .speakers .speakers-bg-img-2 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    pointer-events: none;
+  }
 }
-.speakers .speakers-bg-img-2 {
-  max-width: 100%;
-  margin-top: -196px;
+@media screen and (min-width: 1300px) {
+  .speakers .speakers-bg-img-1 {
+    max-width: 100%;
+    margin-top: -210px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .speakers .speakers-bg-img-2 {
+    max-width: 100%;
+    margin-top: -196px;
+  }
 }
 .speakers h2 {
   text-align: center;
-  margin: 145px 0 0 0;
+  margin: -20px 0 0 0;
+  width: 80%;
   color: var(--color-darkorange);
   text-transform: uppercase;
   font-family: var(--font-brandongrotesque);
@@ -655,11 +722,14 @@ body {
   .speakers h2 {
     font-size: 30px;
     color: var(--color-white);
+    width: 60%;
   }
 }
 @media screen and (min-width: 1300px) {
   .speakers h2 {
     font-size: 42px;
+    margin: 145px 0 0 0;
+    width: auto;
   }
 }
 .speakers .speakers-grid {
@@ -722,7 +792,7 @@ body {
   font-weight: 700;
   width: 350px;
   letter-spacing: 3px;
-  color: var(--color-white);
+  color: var(--color-black);
   font-family: var(--font-brandongrotesque);
   font-style: normal;
 }
@@ -734,15 +804,27 @@ body {
 @media screen and (min-width: 1300px) {
   .speakers .speaker-name {
     font-size: 27px;
+    color: var(--color-white);
   }
 }
 .speakers .speaker-role {
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
   letter-spacing: 2px;
-  margin-top: -5px;
-  color: var(--color-white);
+  margin: -5px auto 0 auto;
+  color: var(--color-lightorange);
   font-family: var(--font-sourcesanspro);
+}
+@media screen and (min-width: 1300px) {
+  .speakers .speaker-role {
+    color: var(--color-white);
+    margin: -5px 0 0 0;
+  }
+}
+@media screen and (max-width: 1299px) {
+  .speakers h3 {
+    margin-top: 0;
+  }
 }
 .speakers hr {
   margin: -9px 0;
@@ -758,15 +840,20 @@ body {
   /* Target the last li of the first card to show X instead */
 }
 .tickets .icon-img {
-  width: 58px;
   margin: 4px auto 50px auto;
 }
+@media screen and (min-width: 1300px) {
+  .tickets .icon-img {
+    width: 58px;
+  }
+}
 .tickets .parallelogram {
-  margin-bottom: 82px;
+  margin-bottom: 52px;
 }
 @media screen and (min-width: 1300px) {
   .tickets .parallelogram {
     height: 88px;
+    margin-bottom: 82px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -782,7 +869,7 @@ body {
 }
 .tickets .section-subtitle {
   width: 90%;
-  margin: -6px auto 115px auto;
+  margin: -6px auto 60px auto;
   font-size: 25px;
 }
 @media screen and (min-width: 768px) {
@@ -792,6 +879,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .tickets .section-subtitle {
+    margin: -6px auto 115px auto;
     font-size: 38px;
   }
 }
@@ -954,18 +1042,22 @@ body {
   width: 88%;
   overflow: hidden;
   /* Default layout: single column */
-  /* Styles for screens 1300px and above */
 }
 .location .icon-img {
-  width: 52px;
   margin: 80px auto 50px auto;
 }
+@media screen and (min-width: 1300px) {
+  .location .icon-img {
+    width: 52px;
+  }
+}
 .location .parallelogram {
-  margin: 20px 850px 50px -30px;
+  margin: 20px 10px 50px 10px;
 }
 @media screen and (min-width: 1300px) {
   .location .parallelogram {
     height: 88px;
+    margin: 20px 850px 50px -30px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -978,7 +1070,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 125px;
+  margin-bottom: 60px;
+  width: 90%;
 }
 @media screen and (min-width: 1300px) {
   .location .location-section-content {
@@ -986,6 +1079,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 600px;
+    margin-bottom: 125px;
   }
 }
 .location .location-text-wrapper,
@@ -1007,25 +1101,33 @@ body {
     white-space: nowrap;
     width: auto;
   }
+}
+.location .map-wrapper {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 7px solid var(--color-offwhite);
+  text-align: left;
+  min-width: fit-content;
+  margin: 20px 0 0 0;
+}
+@media screen and (min-width: 1300px) {
   .location .map-wrapper {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border: 7px solid var(--color-offwhite);
-    text-align: left;
-    min-width: fit-content;
-    margin: 20px 0 0 -800px;
-  }
-  .location .map-wrapper iframe {
-    width: 100%;
-    height: 535px;
-    margin: 0;
-    padding: 0;
+    margin: 20px 0 0 -1400px;
+    width: 549px;
+    height: 549px;
   }
 }
+.location .map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 .location .location-text {
-  margin: 8px 35px 0 98px;
+  margin: 0;
   width: auto;
 }
 .location .location-text .address {
@@ -1043,29 +1145,49 @@ body {
   font-style: normal;
   white-space: nowrap;
   line-height: 1;
-  margin-top: 58px;
+  margin: 20px auto 15px auto;
+}
+@media screen and (min-width: 1300px) {
+  .location .location-text .location-name {
+    margin: 58px 0 40px 0;
+  }
 }
 .location .location-text .location-name span {
   color: var(--color-lightorange);
   font-style: italic;
 }
 .location .location-text .location-name:last-child {
-  margin-top: 53px;
+  margin: 5px auto 40px auto;
+}
+@media screen and (min-width: 1300px) {
+  .location .location-text .location-name:last-child {
+    margin: 53px 0 40px 0;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .location .location-text {
+    margin: 8px 35px 0 98px;
+  }
 }
 
 .faq {
   background-color: var(--color-offwhite);
 }
 .faq .icon-img {
-  width: 48px;
   margin: 45px auto 50px auto;
 }
+@media screen and (min-width: 1300px) {
+  .faq .icon-img {
+    width: 48px;
+  }
+}
 .faq .parallelogram {
-  margin-bottom: 110px;
+  margin-bottom: 52px;
 }
 @media screen and (min-width: 1300px) {
   .faq .parallelogram {
     height: 90px;
+    margin-bottom: 110px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -1137,33 +1259,38 @@ body {
 .faq .content ul li {
   font-size: 18px;
   line-height: 1.2;
+  margin-left: -70px;
 }
 @media screen and (min-width: 768px) {
   .faq .content ul li {
     font-size: 24px;
+    margin-left: -35px;
   }
 }
 @media screen and (min-width: 1300px) {
   .faq .content ul li {
     font-size: 28px;
     line-height: 1.5;
+    margin-left: 0;
   }
 }
 .faq .content .note {
   font-style: italic;
   color: var(--color-darkorange);
   padding: 45px 0 10px 0;
-  margin-left: -35px;
+  margin-left: -85px;
   font-size: 15px;
 }
 @media screen and (min-width: 768px) {
   .faq .content .note {
     font-size: 20px;
+    margin-left: -60px;
   }
 }
 @media screen and (min-width: 1300px) {
   .faq .content .note {
     font-size: 24px;
+    margin-left: -35px;
   }
 }
 .faq .empty-space {
@@ -1175,15 +1302,20 @@ body {
   background-color: var(--color-white);
 }
 .schedule .icon-img {
-  width: 42px;
   margin: 55px auto 55px auto;
 }
+@media screen and (min-width: 1300px) {
+  .schedule .icon-img {
+    width: 42px;
+  }
+}
 .schedule .parallelogram {
-  margin-bottom: 110px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1300px) {
   .schedule .parallelogram {
     height: 90px;
+    margin-bottom: 110px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -1194,23 +1326,33 @@ body {
 .schedule .schedule-tabs .tab-button-container {
   display: none;
 }
-.schedule .schedule-tabs .tab-button {
+.schedule .schedule-tabs .tab-button-mobile {
+  display: block;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  background-color: var(--color-darkorange);
+  color: var(--color-white);
+  padding: 10px 20px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  line-height: 1;
+  text-align: center;
+  margin: 40px auto 20px auto;
 }
-.schedule .schedule-tabs .tab-button span {
+.schedule .schedule-tabs .tab-button-mobile span {
   text-transform: uppercase;
   font-family: var(--font-brandongrotesque);
   font-size: 20px;
   letter-spacing: 3px;
 }
-.schedule .schedule-tabs .tab-button span:first-child {
+.schedule .schedule-tabs .tab-button-mobile span:first-child {
   font-weight: 700;
 }
-.schedule .schedule-tabs .tab-button span:last-child {
+.schedule .schedule-tabs .tab-button-mobile span:last-child {
   font-weight: 400;
 }
 .schedule .schedule-tabs .tab-content {
@@ -1224,6 +1366,9 @@ body {
     /* When the second button is active */
     /* When first button is active */
     /* When second button is active */
+  }
+  .schedule .schedule-tabs .tab-button-mobile {
+    display: none;
   }
   .schedule .schedule-tabs .tab-button-container {
     display: flex;
@@ -1240,6 +1385,10 @@ body {
     background: linear-gradient(120deg, var(--color-white) 50%, var(--color-darkorange) 50%);
   }
   .schedule .schedule-tabs .tab-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
     color: var(--color-white); /* Default text color for first button */
     padding: 10px 20px;
@@ -1250,6 +1399,19 @@ body {
     flex: 1;
     line-height: 1;
     text-align: center;
+  }
+  .schedule .schedule-tabs .tab-button span {
+    text-transform: uppercase;
+    font-family: var(--font-brandongrotesque);
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .schedule .schedule-tabs .tab-button span:first-child {
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .schedule .schedule-tabs .tab-button span:last-child {
+    font-weight: 400;
   }
   .schedule .schedule-tabs .tab-button:nth-child(1).active {
     color: var(--color-white);
@@ -1271,9 +1433,6 @@ body {
   .schedule .schedule-tabs .tab-content {
     display: none;
   }
-  .schedule .schedule-tabs .tab-content {
-    display: none;
-  }
   .schedule .schedule-tabs .tab-content:first-of-type {
     display: block;
   }
@@ -1291,14 +1450,14 @@ body {
   border: 1px solid var(--color-darkorange);
   overflow: hidden;
   background-color: var(--color-white);
-  height: 101px;
-  margin-bottom: 8px;
+  height: 130px;
+  margin-bottom: 2px;
 }
 .schedule .schedule-tabs .schedule-card .schedule-time {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
+  width: 70px;
   flex-shrink: 0;
   background-color: var(--color-darkorange);
   padding: 0;
@@ -1310,7 +1469,7 @@ body {
   text-align: center;
   line-height: 1;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 16px;
 }
 .schedule .schedule-tabs .schedule-card .schedule-session-details {
   flex-grow: 1;
@@ -1318,7 +1477,7 @@ body {
 }
 .schedule .schedule-tabs .schedule-card .schedule-session-details .schedule-session h3 {
   color: var(--color-black);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700px;
   margin: 0 auto 5px;
   text-align: left;
@@ -1332,29 +1491,18 @@ body {
   margin: 0 auto;
   text-align: left;
   letter-spacing: 2px;
-  line-height: 0.7;
+  line-height: 1;
 }
 .schedule .schedule-tabs .schedule-card .schedule-speaker-photo {
-  width: 57px;
-  height: 61px;
-  background-color: var(--color-lightorange);
-  margin-left: auto;
-  margin-right: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
-}
-.schedule .schedule-tabs .schedule-card .schedule-speaker-photo img {
-  width: 49px;
-  height: 53px;
-  object-fit: cover;
-  clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .schedule .schedule-tabs .schedule-grid {
     gap: 25px;
     width: 1100px;
+  }
+  .schedule .schedule-tabs .schedule-card {
+    margin-bottom: 8px;
   }
   .schedule .schedule-tabs .schedule-card .schedule-time {
     width: 102px;
@@ -1367,6 +1515,23 @@ body {
   }
   .schedule .schedule-tabs .schedule-card .schedule-session-details .schedule-speaker p {
     font-size: 22px;
+  }
+  .schedule .schedule-tabs .schedule-card .schedule-speaker-photo {
+    width: 57px;
+    height: 61px;
+    background-color: var(--color-lightorange);
+    margin-left: auto;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
+  }
+  .schedule .schedule-tabs .schedule-card .schedule-speaker-photo img {
+    width: 49px;
+    height: 53px;
+    object-fit: cover;
+    clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
   }
 }
 
