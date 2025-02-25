@@ -1533,6 +1533,7 @@ body {
   }
   .schedule .schedule-tabs .schedule-card {
     margin-bottom: 8px;
+    height: 101px;
   }
   .schedule .schedule-tabs .schedule-card .schedule-time {
     width: 102px;
@@ -1542,9 +1543,11 @@ body {
   }
   .schedule .schedule-tabs .schedule-card .schedule-session-details .schedule-session h3 {
     font-size: 26px;
+    margin-left: 26px;
   }
   .schedule .schedule-tabs .schedule-card .schedule-session-details .schedule-speaker p {
     font-size: 22px;
+    margin-left: 26px;
   }
   .schedule .schedule-tabs .schedule-card .schedule-speaker-photo {
     width: 57px;

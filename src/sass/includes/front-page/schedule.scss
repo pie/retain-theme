@@ -276,7 +276,7 @@
       &:has(.tab-button:nth-child(2).active)::after {
         left: calc(75% - 40px); // Centered under second button
       }
-      
+
       .schedule-grid {
         gap: 25px;
         width: 1100px;
@@ -284,6 +284,7 @@
 
       .schedule-card {
         margin-bottom: 8px;
+        height: 101px;
 
         .schedule-time {
           width: 102px;
@@ -297,12 +298,14 @@
           .schedule-session {
             h3 {
               font-size: 26px;
+              margin-left: 26px;
             }
           }
 
           .schedule-speaker {
             p {
               font-size: 22px;
+              margin-left: 26px;
             }
           }
         }
