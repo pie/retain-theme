@@ -1300,6 +1300,7 @@ body {
 
 .schedule {
   background-color: var(--color-white);
+  margin-bottom: 50px;
 }
 .schedule .icon-img {
   margin: 55px auto 55px auto;
@@ -1444,9 +1445,9 @@ body {
   content: "";
   position: absolute;
   width: 2px;
-  height: calc(100% - 30px);
+  height: calc(100% - 80px);
   background-color: var(--color-darkorange);
-  top: 30px;
+  top: 70px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 0;
@@ -1519,7 +1520,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .schedule .schedule-tabs::after {
-    height: calc(100% - 105px);
+    height: calc(100% - 105px - 101px);
     top: 105px;
     transform: translateX(0);
     left: calc(25% + 10px);

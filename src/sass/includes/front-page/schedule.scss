@@ -1,5 +1,6 @@
 .schedule {
   background-color: var(--color-white);
+  margin-bottom: 50px;
 
   .icon-img {
     margin: 55px auto 55px auto;
@@ -175,9 +176,9 @@
       content: '';
       position: absolute;
       width: 2px;
-      height: calc(100% - 30px); // Adjusted for mobile
+      height: calc(100% - 80px); // Adjusted for mobile
       background-color: var(--color-darkorange);
-      top: 30px; // Position after mobile tab button
+      top: 70px; // Start right after the first button ends
       left: 50%; // Centered by default for mobile
       transform: translateX(-50%); // Perfect centering
       z-index: 0;
@@ -263,7 +264,7 @@
 
     @media screen and (min-width: 768px) {
       &::after {
-        height: calc(100% - 105px); // Height adjusted for desktop tabs
+        height: calc(100% - 105px - 101px); // Adjusted height for desktop tabs and last card
         top: 105px; // Start below the tab buttons
         transform: translateX(0); // Remove centering transform on desktop
         
