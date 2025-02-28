@@ -27,3 +27,9 @@ body {
   --font-brandongrotesque: 'brandon-grotesque', sans-serif;
   --font-sourcesanspro: 'Source Sans Pro', sans-serif;
 }
+
+.site-main {
+  @media screen and (min-width: 1300px) {
+    max-width: 1300px;
+  }
+}
