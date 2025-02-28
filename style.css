@@ -4,7 +4,6 @@
   padding: 0;
   border-collapse: collapse;
   box-sizing: border-box;
-  text-align: center;
 }
 
 html,
@@ -497,6 +496,9 @@ body {
   font-family: var(--font-sourcesanspro);
 }
 
+.membership-growth {
+  text-align: center;
+}
 .membership-growth .icon-img {
   margin: 57px auto 56px auto;
 }
@@ -518,6 +520,7 @@ body {
 }
 
 .what-to-expect {
+  text-align: center;
   background-color: var(--color-white);
   height: auto;
   position: relative; /* Required for absolute positioning of text */
@@ -584,6 +587,7 @@ body {
 
 .highlights {
   background-color: #f7f7f7;
+  text-align: center;
 }
 .highlights .icon-img {
   margin: 57px auto 48px auto;
@@ -628,6 +632,7 @@ body {
 .meet-your-host {
   position: relative; /* This is needed for absolute positioning of children */
   z-index: 1;
+  text-align: center;
 }
 .meet-your-host .icon-img {
   margin: 64px auto 70px auto;
@@ -738,7 +743,7 @@ body {
 
 .speakers {
   position: relative;
-  padding: 4rem 0;
+  padding: 200px 0;
   /* Background Images */
   /* Heading */
   /* Grid Layout */
@@ -775,7 +780,7 @@ body {
 @media screen and (min-width: 1300px) {
   .speakers .speakers-bg-img-2 {
     max-width: 100%;
-    margin-top: -196px;
+    margin-top: -208px;
   }
 }
 .speakers h2 {
@@ -799,7 +804,7 @@ body {
 @media screen and (min-width: 1300px) {
   .speakers h2 {
     font-size: 42px;
-    margin: 145px 0 0 0;
+    margin: 10px 0 0 0;
     width: auto;
   }
 }
@@ -817,18 +822,24 @@ body {
   .speakers .speakers-grid {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 }
 .speakers .speaker-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 25px;
+}
+@media screen and (min-width: 768px) {
+  .speakers .speaker-wrapper {
+    align-items: flex-start;
+  }
 }
 .speakers .speaker-card {
   position: relative;
   width: 320px;
-  height: 282px;
+  height: 280px;
   padding: 0px;
   margin-right: 60px;
   background: linear-gradient(to right top, #feb902, #fff);
@@ -859,7 +870,7 @@ body {
 }
 .speakers .speaker-name {
   font-size: 18px;
-  margin: -10px auto 0 auto;
+  margin: -7px auto 0 auto;
   font-weight: 700;
   width: 350px;
   letter-spacing: 3px;
@@ -870,6 +881,7 @@ body {
 @media screen and (min-width: 768px) {
   .speakers .speaker-name {
     font-size: 23px;
+    letter-spacing: 5px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -880,24 +892,29 @@ body {
 }
 .speakers .speaker-role {
   font-size: 1rem;
-  line-height: 1.5;
   letter-spacing: 2px;
-  margin: -5px auto 0 auto;
   color: var(--color-lightorange);
   font-family: var(--font-sourcesanspro);
 }
 @media screen and (min-width: 1300px) {
   .speakers .speaker-role {
+    letter-spacing: 3px;
     color: var(--color-white);
-    margin: -5px 0 0 0;
   }
 }
-@media screen and (max-width: 1299px) {
-  .speakers h3 {
-    margin-top: 0;
+.speakers .speakers-section-footer {
+  width: 100%;
+  text-align: center;
+}
+.speakers .speakers-section-footer h3 {
+  margin-top: 0;
+}
+@media screen and (min-width: 1300px) {
+  .speakers .speakers-section-footer h3 {
+    margin: 40px auto 47px auto;
   }
 }
-.speakers hr {
+.speakers .speakers-section-footer hr {
   margin: -9px 0;
   width: 100%;
   height: 7px;
@@ -906,6 +923,7 @@ body {
 }
 
 .tickets {
+  text-align: center;
   /* Stack side by side on larger screens */
   /* Default checkmark for all li items */
   /* Target the last li of the first card to show X instead */
@@ -1244,6 +1262,7 @@ body {
 
 .faq {
   background-color: var(--color-offwhite);
+  text-align: center;
 }
 .faq .icon-img {
   margin: 45px auto 50px auto;
@@ -1371,6 +1390,7 @@ body {
 }
 
 .schedule {
+  text-align: center;
   background-color: var(--color-white);
   margin-bottom: 50px;
 }

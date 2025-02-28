@@ -1,6 +1,7 @@
 .meet-your-host {
     position: relative; /* This is needed for absolute positioning of children */
     z-index: 1;
+    text-align: center;
     
     .icon-img {
       margin: 64px auto 70px auto;

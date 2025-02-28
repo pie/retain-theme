@@ -204,10 +204,12 @@ Template Name: Front Page
     </div>
     </div>
 
+    <div class="speakers-section-footer">
         <h3 class="section-subtitle">
         With more to come – full lineup to be announced in the coming months!
         </h3>
         <hr />
+        </div>
     </section>
 
 <!-- Tickets Section -->
