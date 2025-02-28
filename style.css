@@ -624,11 +624,11 @@ body {
   z-index: 1;
 }
 .meet-your-host .icon-img {
-  margin: 64px auto 68px auto;
+  margin: 64px auto 70px auto;
 }
 @media screen and (min-width: 1300px) {
   .meet-your-host .icon-img {
-    width: 43px;
+    width: 42px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -641,52 +641,69 @@ body {
     padding: 0 20px 5px 10px;
   }
 }
-.meet-your-host .host-img {
+.meet-your-host .host-img-wrapper {
+  width: 280px;
+  height: 370px;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .meet-your-host .host-img-wrapper {
+    width: 354px;
+    height: 505px;
+  }
+}
+.meet-your-host .host-img-wrapper .host-img {
   width: 250px;
   height: auto;
   padding: 0;
   object-fit: cover;
   position: relative; /* This ensures it stays above the background divs */
   z-index: 2;
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
 }
-@media screen and (min-width: 1300px) {
-  .meet-your-host .host-img {
+@media screen and (min-width: 768px) {
+  .meet-your-host .host-img-wrapper .host-img {
     width: 330px;
-    padding: 67px 0 20px 0;
+    padding: 66px 0 20px 0;
     margin-top: 0;
   }
 }
-.meet-your-host .host-img-bg-dark {
-  display: none;
+.meet-your-host .host-img-wrapper .host-img-bg-dark,
+.meet-your-host .host-img-wrapper .host-img-bg-light {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 250px;
+  height: 182px;
 }
-@media screen and (min-width: 1300px) {
-  .meet-your-host .host-img-bg-dark {
-    display: block;
-    position: absolute;
-    background: var(--color-darkorange);
-    transform: translate(-50%, -50%);
-    z-index: 1;
+@media screen and (min-width: 768px) {
+  .meet-your-host .host-img-wrapper .host-img-bg-dark,
+  .meet-your-host .host-img-wrapper .host-img-bg-light {
     width: 329px;
     height: 251px;
-    top: 630px;
-    left: 662px;
   }
 }
-.meet-your-host .host-img-bg-light {
-  display: none;
+.meet-your-host .host-img-wrapper .host-img-bg-dark {
+  background: var(--color-darkorange);
+  margin-top: 231px;
+  margin-left: 152px;
 }
-@media screen and (min-width: 1300px) {
-  .meet-your-host .host-img-bg-light {
-    display: block;
-    position: absolute;
-    background: var(--color-lightorange);
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    width: 329px;
-    height: 251px;
-    top: 656px;
-    left: 636px;
+@media screen and (min-width: 768px) {
+  .meet-your-host .host-img-wrapper .host-img-bg-dark {
+    margin-top: 353px;
+    margin-left: 190px;
+  }
+}
+.meet-your-host .host-img-wrapper .host-img-bg-light {
+  background: var(--color-lightorange);
+  margin-top: 263px;
+  margin-left: 127px;
+}
+@media screen and (min-width: 768px) {
+  .meet-your-host .host-img-wrapper .host-img-bg-light {
+    margin-top: 379px;
+    margin-left: 164px;
   }
 }
 .meet-your-host .host-name {
@@ -706,11 +723,11 @@ body {
 @media screen and (min-width: 1300px) {
   .meet-your-host .host-name {
     font-size: 40px;
-    margin: 28px auto 0 auto;
+    margin: 33px auto 0 auto;
   }
 }
 .meet-your-host h3 {
-  margin: 30px auto 35px auto;
+  margin: 34px auto 35px auto;
 }
 
 .speakers {

@@ -132,9 +132,11 @@ Template Name: Front Page
         <h2 class="section-title">Meet your host for Retain 2025</h2>
         </div>
 
-        <div class="host-img-bg-dark"></div>
-        <div class="host-img-bg-light"></div>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/meet-your-host/host.png" alt="Host photo" class="host-img">
+        <div class="host-img-wrapper">
+            <div class="host-img-bg-dark"></div>
+            <div class="host-img-bg-light"></div>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/meet-your-host/host.png" alt="Host photo" class="host-img">
+        </div>
 
         <p class="host-name">Mike Morrison</p>
 
