@@ -11,6 +11,10 @@ section {
     align-items: center;
     justify-content: center;
 
+    @media screen and (min-width: 1300px) {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 }
 
 h3 {

@@ -194,6 +194,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 1300px) {
+  .site-main section {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
 .site-main h3 {
   font-size: 22px;
   font-family: var(--font-brandongrotesque);
@@ -380,7 +386,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .site-main .hero .hero-content {
-    padding-top: 225px;
+    padding-top: 482px;
     display: block;
     margin-top: 0;
   }
