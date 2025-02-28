@@ -162,6 +162,7 @@ Template Name: Front Page
     <section class="speakers">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg1.png" alt="abstract shape 1" class="full-w-img speakers-bg-img-1">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg2.png" alt="abstract shape 2" class="full-w-img speakers-bg-img-2">
+        <div class="speakers-content-wrapper">
         <div class="speakers-section-content">
             <h2>You'll also learn from expert guests including:</h2>
             <!-- speakers repeater fields -->
@@ -201,6 +202,7 @@ Template Name: Front Page
     <?php endwhile; ?>
 </div>
         <?php endif; ?>
+    </div>
     </div>
     </div>
 

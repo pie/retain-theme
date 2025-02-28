@@ -1,6 +1,20 @@
 .speakers {
   position: relative;
-  padding: 200px 0;
+  padding: 100px 0 50px;
+
+  @media screen and (min-width: 768px) {
+    padding: 200px 0 63px 0;
+  }
+
+  .speakers-content-wrapper {
+  @media screen and (min-width: 1300px) {
+    background: linear-gradient(to bottom, 
+   white 0%, 
+   white 210px,
+    var(--color-lightorange) 210px, 
+    var(--color-lightorange) 100%);
+  }
+}
 
   .speakers-section-content {
     position: relative;
@@ -34,14 +48,13 @@
   .speakers-bg-img-2 {
       @media screen and (min-width: 1300px) {
     max-width: 100%;
-    margin-top: -208px;
+    margin-top: -210px;
       }
   }
 
   /* Heading */
   h2 {
     text-align: center;
-    margin: -20px 0 0 0;
     width: 80%;
     color: var(--color-darkorange);
     text-transform: uppercase;
@@ -184,10 +197,10 @@
     text-align: center;
 
   h3 {
-    margin-top: 0;
+    margin: 20px auto 30px auto;
 
    @media screen and (min-width: 1300px) {
-       margin: 40px auto 47px auto;
+       margin: 38px auto 47px auto;
     }
   }
 
