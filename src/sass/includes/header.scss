@@ -125,15 +125,15 @@
 
     @media (min-width: 1300px) {
         .main-navigation {
-            margin: 3.4%;
+            margin: 0 45px 0 0;
 
             .menu-row {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                letter-spacing: 3px;
-                padding-top: 5px;
+                letter-spacing: 2.55px;
+                padding-top: 7px;
 
                 ul {
                     display: flex;
@@ -148,6 +148,10 @@
                         color: var(--color-darkorange);
                         text-decoration: none;
                     }
+                }
+
+                li {
+                    margin-left: 40px;
                 }
             }
 
