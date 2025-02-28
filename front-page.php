@@ -29,10 +29,11 @@ Template Name: Front Page
 
 <!-- Hero Section -->
     <section class="hero">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-bg.png" alt="Hero Image" class="hero-bg">
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-bg.png" alt="Hero Image" class="hero-bg"> -->
         <div class="hero-content">
             <h1 class="hero-text">Sept 22nd - 24th 2025 / Newcastle, UK</h1>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-logo.png" alt="Hero Logo" class="hero-logo">
+            <h1 class="hero-logo">RETAIN - The Membership Growth Conference</h1>
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-logo.png" alt="Hero Logo" class="hero-logo"> -->
             <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-image-left.png" alt="Hero image with people 1" class="hero-bg-img" id="hero-bg-img-left">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-image-right.png" alt="Hero image with people 2" class="hero-bg-img" id="hero-bg-img-right"> -->
             <div id="countdown" class="countdown">

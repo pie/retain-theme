@@ -312,22 +312,25 @@ body {
   }
 }
 
-.hero {
+.site-main .hero {
   background-color: var(--color-darkorange);
+  background-image: url(./assets/hero/hero-bg.png);
   height: 100vh; /* Ensure full height on mobile */
   position: relative; /* Required for absolute positioning of text */
 }
 @media screen and (min-width: 768px) {
-  .hero {
-    background-color: var(--color-white);
-    height: auto;
+  .site-main .hero {
+    height: 1412px;
+    background-size: cover;
+    width: 1248px;
+    display: block;
   }
 }
-.hero .hero-bg {
+.site-main .hero .hero-bg {
   display: none; /* Hide image on mobile */
 }
 @media screen and (min-width: 768px) {
-  .hero .hero-bg {
+  .site-main .hero .hero-bg {
     display: block;
     width: 100%;
     height: 1380px;
@@ -335,22 +338,19 @@ body {
     object-fit: cover; /* Maintain aspect ratio and cover the area */
   }
 }
-.hero #hero-bg-img-left {
+.site-main .hero #hero-bg-img-left {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
-.hero #hero-bg-img-right {
+.site-main .hero #hero-bg-img-right {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
 }
-.hero .hero-content {
-  position: absolute; /* Position content over image */
-  left: 50%;
-  transform: translate(-50%, -50%);
+.site-main .hero .hero-content {
   z-index: 9; /* Ensure content is above image but below header */
   width: 100%;
   text-align: center;
@@ -361,89 +361,103 @@ body {
   align-items: center;
   margin-top: 200px;
 }
-@media screen and (min-width: 1300px) {
-  .hero .hero-content {
-    margin-top: 980px;
+@media screen and (min-width: 768px) {
+  .site-main .hero .hero-content {
+    padding-top: 514px;
+    display: block;
+    margin-top: 0;
   }
 }
-.hero .hero-text {
+.site-main .hero .hero-text {
   font-size: 22px;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   font-family: var(--font-brandongrotesque);
   margin-bottom: 20px;
+  font-weight: 700;
 }
 @media screen and (min-width: 1300px) {
-  .hero .hero-text {
+  .site-main .hero .hero-text {
     font-size: 30px;
     letter-spacing: 0.55rem;
   }
 }
-.hero .hero-logo {
+.site-main .hero .hero-logo {
   width: 300px;
   height: auto;
+  background-image: url(./assets/hero/hero-logo.png);
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1016px;
+  height: 484px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
-  .hero .hero-logo {
+  .site-main .hero .hero-logo {
     width: 600px;
+    margin-top: -55px;
+    margin-bottom: 71px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .hero .hero-logo {
+  .site-main .hero .hero-logo {
     width: 1016px;
   }
 }
-.hero .countdown {
+.site-main .hero .countdown {
+  max-width: 600px;
   display: none;
 }
-.hero .countdown.visible {
+.site-main .hero .countdown.visible {
   display: flex;
   justify-content: center;
   gap: 1.8rem;
   margin-right: 7.2rem;
   margin-left: 7.2rem;
 }
-.hero .countdown-item {
+.site-main .hero .countdown-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.hero .countdown-item span {
-  font-size: 22px;
+.site-main .hero .countdown-item span {
+  font-size: 21.2px;
   font-weight: bold;
-  margin-top: 120px;
 }
-.hero .countdown-item .label {
+.site-main .hero .countdown-item .label {
   font-size: 10.8px;
   margin-top: 0.5rem;
   font-weight: normal;
 }
 @media (min-width: 768px) {
-  .hero .countdown {
+  .site-main .hero .countdown {
     display: flex;
     gap: 7.2rem;
   }
-  .hero .countdown-item span {
-    font-size: 33px;
+  .site-main .hero .countdown-item span {
+    font-size: 31.8px;
   }
-  .hero .countdown-item .label {
+  .site-main .hero .countdown-item .label {
     font-size: 14.4px;
     margin-top: 0;
     line-height: 0.1;
   }
 }
 @media (min-width: 1300px) {
-  .hero .countdown-item span {
-    font-size: 55px;
+  .site-main .hero .countdown-item span {
+    font-size: 53px;
   }
-  .hero .countdown-item .label {
+  .site-main .hero .countdown-item .label {
     font-size: 18px;
   }
 }
-.hero .countdown .countdown-item .title {
+.site-main .hero .countdown .countdown-item .title {
   font-family: var(--font-brandongrotesque);
 }
-.hero .countdown .countdown-item .label {
+.site-main .hero .countdown .countdown-item .label {
   font-family: var(--font-sourcesanspro);
 }
 
