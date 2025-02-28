@@ -13,40 +13,52 @@
 .site-main .hero {
     background-color: var(--color-darkorange);
     background-image: url(./assets/hero/hero-bg.png);
-    height: 100vh; /* Ensure full height on mobile */
+    height: 750px;
+    width: 100%;
+    background-size: cover;
     position: relative; /* Required for absolute positioning of text */
 
     @media screen and (min-width: 768px) {
-        height: 1412px;
-        background-size: cover;
-        width: 1248px;
-        display: block;
+        height: 1300px;
     }
 
-    .hero-bg {
-        display: none; /* Hide image on mobile */
+    @media screen and (min-width: 1300px) {
+        height: 1380px;
+        width: 1248px;
+    }
 
-        @media screen and (min-width: 768px) {
-            display: block;
-            width: 100%;
-            height: 1380px;
-            padding: 0 1.5rem; /* Add padding to image */
-            object-fit: cover; /* Maintain aspect ratio and cover the area */
+
+    #hero-bg-img-left,
+    #hero-bg-img-right {
+
+        display: none; /* Hide by default on mobile */
+
+        @media screen and (min-width: 1300px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        padding-top: 70px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        mix-blend-mode: soft-light;
+        z-index: 1;
         }
     }
 
     #hero-bg-img-left {
-        position: absolute;
-        top: 0;
+        @media screen and (min-width: 1300px) {
         left: 0;
-        z-index: 1;
+        background-image: url(./assets/hero/hero-image-left.png);
+        }
     }
-
+    
     #hero-bg-img-right {
-        position: absolute;
-        top: 0;
+        @media screen and (min-width: 1300px) {
         right: 0;
-        z-index: 1;
+        background-image: url(./assets/hero/hero-image-right.png);
+        }
     }
 
     .hero-content {
@@ -59,10 +71,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 200px;
+        padding-top: 100px;
 
         @media screen and (min-width: 768px) {
-            padding-top: 514px;
+            padding-top: 150px;
+        }
+
+        @media screen and (min-width: 1300px) {
+            padding-top: 225px;
             display: block;
             margin-top: 0;
         }
@@ -83,19 +99,18 @@
     }
 
     .hero-logo {
-        width: 300px;
-        height: auto;
         background-image: url(./assets/hero/hero-logo.png);
-        @include image-replace(1016px, 484px);
+        @include image-replace(300px, 143px);
 
         @media screen and (min-width: 768px) {
-            width: 600px;
             margin-top: -55px;
             margin-bottom: 71px;
+            @include image-replace(570px, 272px);
         }
 
         @media screen and (min-width: 1024px) {
             width: 1016px;
+            @include image-replace(1016px, 484px);
         }
     }
 

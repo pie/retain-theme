@@ -315,40 +315,52 @@ body {
 .site-main .hero {
   background-color: var(--color-darkorange);
   background-image: url(./assets/hero/hero-bg.png);
-  height: 100vh; /* Ensure full height on mobile */
+  height: 750px;
+  width: 100%;
+  background-size: cover;
   position: relative; /* Required for absolute positioning of text */
 }
 @media screen and (min-width: 768px) {
   .site-main .hero {
-    height: 1412px;
-    background-size: cover;
-    width: 1248px;
-    display: block;
+    height: 1300px;
   }
 }
-.site-main .hero .hero-bg {
-  display: none; /* Hide image on mobile */
-}
-@media screen and (min-width: 768px) {
-  .site-main .hero .hero-bg {
-    display: block;
-    width: 100%;
+@media screen and (min-width: 1300px) {
+  .site-main .hero {
     height: 1380px;
-    padding: 0 1.5rem; /* Add padding to image */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    width: 1248px;
   }
 }
-.site-main .hero #hero-bg-img-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
+.site-main .hero #hero-bg-img-left,
 .site-main .hero #hero-bg-img-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
+  display: none; /* Hide by default on mobile */
+}
+@media screen and (min-width: 1300px) {
+  .site-main .hero #hero-bg-img-left,
+  .site-main .hero #hero-bg-img-right {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding-top: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: soft-light;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .site-main .hero #hero-bg-img-left {
+    left: 0;
+    background-image: url(./assets/hero/hero-image-left.png);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .site-main .hero #hero-bg-img-right {
+    right: 0;
+    background-image: url(./assets/hero/hero-image-right.png);
+  }
 }
 .site-main .hero .hero-content {
   z-index: 9; /* Ensure content is above image but below header */
@@ -359,11 +371,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  padding-top: 100px;
 }
 @media screen and (min-width: 768px) {
   .site-main .hero .hero-content {
-    padding-top: 514px;
+    padding-top: 150px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .site-main .hero .hero-content {
+    padding-top: 225px;
     display: block;
     margin-top: 0;
   }
@@ -383,28 +400,41 @@ body {
   }
 }
 .site-main .hero .hero-logo {
-  width: 300px;
-  height: auto;
   background-image: url(./assets/hero/hero-logo.png);
   display: block;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 1016px;
-  height: 484px;
+  width: 300px;
+  height: 143px;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .site-main .hero .hero-logo {
-    width: 600px;
     margin-top: -55px;
     margin-bottom: 71px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 570px;
+    height: 272px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
   }
 }
 @media screen and (min-width: 1024px) {
   .site-main .hero .hero-logo {
     width: 1016px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1016px;
+    height: 484px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
   }
 }
 .site-main .hero .countdown {

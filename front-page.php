@@ -33,9 +33,8 @@ Template Name: Front Page
         <div class="hero-content">
             <h1 class="hero-text">Sept 22nd - 24th 2025 / Newcastle, UK</h1>
             <h1 class="hero-logo">RETAIN - The Membership Growth Conference</h1>
-            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-logo.png" alt="Hero Logo" class="hero-logo"> -->
-            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-image-left.png" alt="Hero image with people 1" class="hero-bg-img" id="hero-bg-img-left">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-image-right.png" alt="Hero image with people 2" class="hero-bg-img" id="hero-bg-img-right"> -->
+            <div id="hero-bg-img-left"></div>
+            <div id="hero-bg-img-right"></div>
             <div id="countdown" class="countdown">
                 <div class="countdown-item">
                     <span id="days" class="title">00</span>
