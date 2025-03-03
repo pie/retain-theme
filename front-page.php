@@ -278,29 +278,22 @@ Template Name: Front Page
 
         <div class="location-section-content">
             <div class="location-text-wrapper">
-            <div class="parallelogram">
-        <h2 class="section-title">Location</h2>
-        </div>
-        <div class="location-text">
-                <p class="address"><b>
-                Hilton Newcastle Gateshead
-                </b>
-                </p>
-                <p class="address"><b>
-Bottle Bank, Gateshead NE8 2AR
-</b>
-                </p>
-                <p class="location-name">
-                Newcastle Airport <span>(8 miles)</span>
-                </p>
-                <p class="location-name">
-                Central Station <span>(1.3 miles)</span>
-                </p>
-            </div>
+                <div class="location-title-wrapper">
+                    <div class="location-title-box">
+                        <h2 class="section-title">Location</h2>
+                    </div>
+                    <div class="location-title-shadow"></div>
+                </div>
+                <div class="location-text">
+                    <p class="address"><b>Hilton Newcastle Gateshead</b></p>
+                    <p class="address"><b>Bottle Bank, Gateshead NE8 2AR</b></p>
+                    <p class="location-name">Newcastle Airport <span>(8 miles)</span></p>
+                    <p class="location-name">Central Station <span>(1.3 miles)</span></p>
+                </div>
             </div>
 
             <div class="map-wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.5954672480453!2d-1.6064786303255774!3d54.96640216817044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e70ba0fc767ef%3A0xb1529a45b94da2ea!2sHilton%20Newcastle%20Gateshead!5e0!3m2!1sen!2suk!4v1739978592971!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.5954672480453!2d-1.6064786303255774!3d54.96640216817044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e70ba0fc767ef%3A0xb1529a45b94da2ea!2sHilton%20Newcastle%20Gateshead!5e0!3m2!1sen!2suk!4v1739978592971!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>

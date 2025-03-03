@@ -332,7 +332,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .site-main .hero {
-    height: 1380px;
+    height: 1412px;
     width: 1248px;
   }
 }
@@ -385,7 +385,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .site-main .hero .hero-content {
-    padding-top: 482px;
+    padding-top: 514px;
     display: block;
     margin-top: 0;
   }
@@ -919,18 +919,25 @@ body {
 }
 .speakers .speakers-section-footer {
   width: 100%;
-  text-align: center;
+  height: auto;
+}
+@media screen and (min-width: 1300px) {
+  .speakers .speakers-section-footer {
+    height: 135px;
+  }
 }
 .speakers .speakers-section-footer h3 {
   margin: 20px auto 30px auto;
+  text-align: center;
 }
 @media screen and (min-width: 1300px) {
   .speakers .speakers-section-footer h3 {
-    margin: 38px auto 47px auto;
+    margin: 36px auto 48px auto;
   }
 }
 .speakers .speakers-section-footer hr {
-  margin: -9px 0;
+  text-align: center;
+  margin: -8px 0;
   width: 100%;
   height: 7px;
   border: none;
@@ -939,16 +946,15 @@ body {
 
 .tickets {
   text-align: center;
-  /* Stack side by side on larger screens */
   /* Default checkmark for all li items */
   /* Target the last li of the first card to show X instead */
 }
 .tickets .icon-img {
-  margin: 4px auto 48px auto;
+  margin: -5px auto 49px auto;
 }
 @media screen and (min-width: 1300px) {
   .tickets .icon-img {
-    width: 60px;
+    width: 58px;
   }
 }
 .tickets .parallelogram {
@@ -992,7 +998,10 @@ body {
   flex-direction: column;
   gap: 2rem;
   padding: 1rem;
-  margin: -16px auto;
+  margin-top: -18px;
+  width: 90%;
+  height: 735px;
+  /* Stack side by side on larger screens */
 }
 @media (min-width: 768px) {
   .tickets .ticket-prices {
@@ -1000,8 +1009,13 @@ body {
     justify-content: center;
     align-items: stretch;
     gap: 60px;
-    width: 87%;
-    height: 735px;
+    width: 70%;
+  }
+}
+@media (min-width: 1300px) {
+  .tickets .ticket-prices {
+    gap: 60px;
+    width: 1135px;
   }
 }
 .tickets .card-wrapper {
@@ -1144,30 +1158,67 @@ body {
 }
 
 .location {
-  width: 88%;
-  overflow: hidden;
   /* Default layout: single column */
 }
 .location .icon-img {
-  margin: 80px auto 50px auto;
+  margin: 62px auto 70px auto;
 }
 @media screen and (min-width: 1300px) {
   .location .icon-img {
     width: 52px;
   }
 }
-.location .parallelogram {
-  margin: 20px 10px 50px 10px;
+.location .location-title-wrapper {
+  position: relative;
+  margin-left: 0;
 }
 @media screen and (min-width: 1300px) {
-  .location .parallelogram {
-    height: 88px;
-    margin: 20px 850px 50px -30px;
+  .location .location-title-wrapper {
+    margin-left: -32px;
   }
 }
-@media screen and (min-width: 1300px) {
-  .location .section-title {
-    padding: 0 15px 0 140px;
+.location .location-title-wrapper .location-title-box {
+  height: 88px;
+  background-color: var(--lightorange);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+.location .location-title-wrapper .location-title-box .section-title {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  color: var(--color-white);
+  transform: none;
+}
+@media (min-width: 768px) {
+  .location .location-title-wrapper .location-title-box {
+    clip-path: polygon(10% 0%, 100% 0%, 88% 30%, 10% 30%);
+    height: 287px;
+    background-color: var(--color-lightorange);
+    width: 336px;
+  }
+  .location .location-title-wrapper .location-title-box .section-title {
+    padding: 0 20px 0 70px;
+    margin-top: -200px;
+  }
+}
+.location .location-title-wrapper .location-title-shadow {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .location .location-title-wrapper .location-title-shadow {
+    display: block;
+    position: relative;
+    top: -287px;
+    left: -12px;
+    height: 334px;
+    width: 308px;
+    background: var(--color-darkorange);
+    clip-path: polygon(10% 0%, 100% 0%, 88% 30%, 10% 30%);
+    z-index: 0;
   }
 }
 .location .location-section-content {
@@ -1178,13 +1229,18 @@ body {
   margin-bottom: 60px;
   width: 90%;
 }
+@media screen and (min-width: 768px) {
+  .location .location-section-content {
+    width: 60%;
+  }
+}
 @media screen and (min-width: 1300px) {
   .location .location-section-content {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 600px;
-    margin-bottom: 125px;
+    margin-bottom: 128px;
+    width: 1100px;
   }
 }
 .location .location-text-wrapper,
@@ -1194,12 +1250,12 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .location .location-text-wrapper {
-    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    min-width: fit-content;
+    margin-left: 0;
+    padding-left: 0;
   }
   .location .location-text-wrapper .address, .location .location-text-wrapper .location-name {
     text-align: left;
@@ -1215,14 +1271,12 @@ body {
   justify-content: flex-start;
   border: 7px solid var(--color-offwhite);
   text-align: left;
-  min-width: fit-content;
-  margin: 20px 0 0 0;
+  margin-left: -460px;
 }
 @media screen and (min-width: 1300px) {
   .location .map-wrapper {
-    margin: 20px 0 0 -1400px;
     width: 549px;
-    height: 549px;
+    height: 545px;
   }
 }
 .location .map-wrapper iframe {
@@ -1271,7 +1325,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .location .location-text {
-    margin: 8px 35px 0 98px;
+    margin: -476px 0 0 -5px;
   }
 }
 

@@ -2,10 +2,10 @@
     text-align: center;
     
     .icon-img {
-    margin: 4px auto 48px auto;
+    margin: -5px auto 49px auto;
 
     @media screen and (min-width: 1300px) {
-        width: 60px;
+        width: 58px;
     }
     }
 
@@ -52,19 +52,23 @@
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
-    margin: -16px auto;
-}
+    margin-top: -18px;
+    width: 90%;
+    height: 735px;
 
 /* Stack side by side on larger screens */
 @media (min-width: 768px) {
-    .ticket-prices {
         flex-direction: row;
         justify-content: center;
         align-items: stretch;
         gap: 60px;
-        width: 87%;
-        height: 735px;
+        width: 70%;
     }
+
+@media (min-width: 1300px) {
+        gap: 60px;
+        width: 1135px;
+}
 }
 
 .card-wrapper {
