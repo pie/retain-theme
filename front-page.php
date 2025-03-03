@@ -338,7 +338,7 @@ Template Name: Front Page
                 </p>
             </div>
 
-            <button type="button" class="collapsible">Can I BUY A TICKET TO JUST ONE OF THE DAYS OF THE EVENT?</button>
+            <button type="button" class="collapsible">CAN I BUY A TICKET TO JUST ONE OF THE DAYS OF THE EVENT?</button>
             <div class="content">
             <p>
                     Your completed registration includes the following:

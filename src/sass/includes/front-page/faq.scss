@@ -3,7 +3,7 @@
   text-align: center;
 
   .icon-img {
-    margin: 45px auto 50px auto;
+    margin: 48px auto 48px auto;
 
     @media screen and (min-width: 1300px) {
       width: 48px;
@@ -26,6 +26,10 @@
   }
 
   .collapsible {
+    display: flex; // Ensures icon and text are in separate columns
+    flex-direction: row; // Align icon and text in a row
+    align-items: center; // Vertically align them
+    justify-content: flex-start; // Align content to the left
     background-color: var(--color-lightorange);
     color: var(--color-white);
     font-weight: normal;
@@ -33,21 +37,46 @@
     padding: 20px 30px;
     border: none;
     outline: none;
-    font-size: 20px;
     height: auto;
-    min-height: 105px;
     text-align: left;
     width: 85%;
     margin-bottom: 5px;
 
     @media screen and (min-width: 768px) {
       width: 60%;
-      font-size: 30px;
     }
 
     @media screen and (min-width: 1300px) {
-      font-size: 40px;
       width: 1100px;
+      padding: 20px 46px;
+      height: 105px;
+    }
+
+    .toggle-icon {
+      font-size: 60px;
+      margin: 60px 0 70px 0;
+
+      @media screen and (min-width: 768px) {
+        font-size: 80px;
+      }
+
+      @media screen and (min-width: 1300px) {
+        font-size: 100px;
+      }
+    }
+
+    .collapsible-text {
+      font-size: 20px;
+      margin-left: 45px;
+      letter-spacing: 1px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 30px;
+      }
+  
+      @media screen and (min-width: 1300px) {
+        font-size: 35px;
+      }
     }
   }
 
@@ -84,7 +113,7 @@
 
     ul {
       list-style-type: disc; // Ensure bullet points are shown
-      padding: 10px 0 0 110px; // Add padding to align bullets properly
+      padding: 10px 0 2px 110px; // Add padding to align bullets properly
 
       li {
         font-size: 18px;

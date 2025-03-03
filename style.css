@@ -1334,7 +1334,7 @@ body {
   text-align: center;
 }
 .faq .icon-img {
-  margin: 45px auto 50px auto;
+  margin: 48px auto 48px auto;
 }
 @media screen and (min-width: 1300px) {
   .faq .icon-img {
@@ -1356,6 +1356,10 @@ body {
   }
 }
 .faq .collapsible {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   background-color: var(--color-lightorange);
   color: var(--color-white);
   font-weight: normal;
@@ -1363,9 +1367,7 @@ body {
   padding: 20px 30px;
   border: none;
   outline: none;
-  font-size: 20px;
   height: auto;
-  min-height: 105px;
   text-align: left;
   width: 85%;
   margin-bottom: 5px;
@@ -1373,13 +1375,42 @@ body {
 @media screen and (min-width: 768px) {
   .faq .collapsible {
     width: 60%;
-    font-size: 30px;
   }
 }
 @media screen and (min-width: 1300px) {
   .faq .collapsible {
-    font-size: 40px;
     width: 1100px;
+    padding: 20px 46px;
+    height: 105px;
+  }
+}
+.faq .collapsible .toggle-icon {
+  font-size: 60px;
+  margin: 60px 0 70px 0;
+}
+@media screen and (min-width: 768px) {
+  .faq .collapsible .toggle-icon {
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .faq .collapsible .toggle-icon {
+    font-size: 100px;
+  }
+}
+.faq .collapsible .collapsible-text {
+  font-size: 20px;
+  margin-left: 45px;
+  letter-spacing: 1px;
+}
+@media screen and (min-width: 768px) {
+  .faq .collapsible .collapsible-text {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .faq .collapsible .collapsible-text {
+    font-size: 35px;
   }
 }
 .faq .active {
@@ -1414,7 +1445,7 @@ body {
 }
 .faq .content ul {
   list-style-type: disc;
-  padding: 10px 0 0 110px;
+  padding: 10px 0 2px 110px;
 }
 .faq .content ul li {
   font-size: 18px;
