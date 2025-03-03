@@ -277,7 +277,10 @@ Template Name: Front Page
 
         <div class="location-section-content">
             <div class="location-text-wrapper">
-                <div class="location-title-wrapper">
+                <div class="parallelogram location-mobile-title">
+                    <h2 class="section-title">Location</h2>
+                </div>
+                <div class="location-title-wrapper location-desktop-title">
                     <div class="location-title-box">
                         <h2 class="section-title">Location</h2>
                     </div>

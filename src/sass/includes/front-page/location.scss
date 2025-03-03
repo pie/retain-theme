@@ -1,19 +1,29 @@
 .location {
-
     .icon-img {
-        margin: 62px auto 70px auto;
-
+        margin: 150% auto 70px auto;
 
     @media screen and (min-width: 1300px) {
         width: 52px;
-    }
+        margin: 62px auto 70px auto;
+        }
     }
 
-    .location-title-wrapper {
-        position: relative;
-        margin-left: 0;
+    .location-mobile-title {
+        margin-bottom: 70px;
+        display: block;
 
         @media screen and (min-width: 1300px) {
+            display: none;
+        }
+    }
+
+    .location-desktop-title {
+        display: none;
+
+        @media screen and (min-width: 1300px) {
+            display: block;
+            position: relative;
+            margin-left: 0;
             margin-left: -32px;
         }
 
@@ -34,7 +44,7 @@
             transform: none;
           }
           
-          @media (min-width: 768px) {
+          @media (min-width: 1300px) {
             clip-path: polygon(10% 0%, 100% 0%, 88% 30%, 10% 30%);
             height: 287px;
             background-color: var(--color-lightorange);
@@ -50,7 +60,7 @@
           .location-title-shadow {
             display: none;
 
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 1300px) {
                 display: block;
                 position: relative;
                 top: -287px;
@@ -82,6 +92,7 @@
             flex-direction: row;
             justify-content: flex-start;
             align-items: flex-start;
+            margin-top: 0;
             margin-bottom: 128px;
             width: 1100px;
         }
@@ -95,7 +106,6 @@
 
     @media screen and (min-width: 1300px) {
         .location-text-wrapper {
-            // width: 50%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -119,11 +129,13 @@
         justify-content: flex-start;
         border: 7px solid var(--color-offwhite);
         text-align: left;
-        margin-left: -460px;
+        margin: 0 auto;
+        
 
         @media screen and (min-width: 1300px) {
             width: 549px;
             height: 545px;
+            margin-left: -460px;
         }
     
         iframe {

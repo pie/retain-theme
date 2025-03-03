@@ -282,9 +282,14 @@ body {
   display: inline-block;
   padding: 20px;
 }
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 767px) {
   .site-main .parallelogram {
     width: 90%;
+  }
+}
+@media screen and (max-width: 1299px) {
+  .site-main .parallelogram {
+    width: 70%;
     height: auto;
   }
 }
@@ -770,7 +775,7 @@ body {
   position: relative;
   z-index: 5;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0;
 }
 .speakers .speakers-bg-img-1,
 .speakers .speakers-bg-img-2 {
@@ -831,7 +836,12 @@ body {
   justify-content: flex-start;
   gap: 2rem;
   margin: 40px 0 38px 0;
-  padding: 10px;
+  padding: 0;
+}
+@media screen and (min-width: 1300px) {
+  .speakers .speakers-grid {
+    padding: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
   .speakers .speakers-grid {
@@ -948,8 +958,14 @@ body {
 
 .tickets {
   text-align: center;
+  margin: 0 auto 100px auto;
   /* Default checkmark for all li items */
   /* Target the last li of the first card to show X instead */
+}
+@media screen and (min-width: 1300px) {
+  .tickets {
+    margin: 0 auto;
+  }
 }
 .tickets .icon-img {
   margin: -5px auto 49px auto;
@@ -1049,13 +1065,18 @@ body {
   opacity: 0.8;
 }
 .tickets .price-title {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: bold;
   margin: -25px 0 2px 0;
   position: relative;
   z-index: 1;
   color: var(--color-white);
   font-family: var(--font-brandongrotesque);
+}
+@media screen and (min-width: 768px) {
+  .tickets .price-title {
+    font-size: 120px;
+  }
 }
 @media screen and (min-width: 768px) {
   .tickets .price-title {
@@ -1153,12 +1174,13 @@ body {
   z-index: 1;
   transition: transform 0.2s;
   font-family: var(--font-brandongrotesque);
-  width: 248px;
+  width: 200px;
 }
 @media screen and (min-width: 768px) {
   .tickets .buy-now-button {
     font-size: 35px;
     padding: 8px 42px;
+    width: 248px;
   }
 }
 .tickets .buy-now-button:hover {
@@ -1170,23 +1192,35 @@ body {
   /* Default layout: single column */
 }
 .location .icon-img {
-  margin: 62px auto 70px auto;
+  margin: 150% auto 70px auto;
 }
 @media screen and (min-width: 1300px) {
   .location .icon-img {
     width: 52px;
+    margin: 62px auto 70px auto;
   }
 }
-.location .location-title-wrapper {
-  position: relative;
-  margin-left: 0;
+.location .location-mobile-title {
+  margin-bottom: 70px;
+  display: block;
 }
 @media screen and (min-width: 1300px) {
-  .location .location-title-wrapper {
+  .location .location-mobile-title {
+    display: none;
+  }
+}
+.location .location-desktop-title {
+  display: none;
+}
+@media screen and (min-width: 1300px) {
+  .location .location-desktop-title {
+    display: block;
+    position: relative;
+    margin-left: 0;
     margin-left: -32px;
   }
 }
-.location .location-title-wrapper .location-title-box {
+.location .location-desktop-title .location-title-box {
   height: 88px;
   background-color: var(--lightorange);
   display: flex;
@@ -1195,30 +1229,30 @@ body {
   position: relative;
   z-index: 1;
 }
-.location .location-title-wrapper .location-title-box .section-title {
+.location .location-desktop-title .location-title-box .section-title {
   position: relative;
   z-index: 2;
   margin: 0;
   color: var(--color-white);
   transform: none;
 }
-@media (min-width: 768px) {
-  .location .location-title-wrapper .location-title-box {
+@media (min-width: 1300px) {
+  .location .location-desktop-title .location-title-box {
     clip-path: polygon(10% 0%, 100% 0%, 88% 30%, 10% 30%);
     height: 287px;
     background-color: var(--color-lightorange);
     width: 336px;
   }
-  .location .location-title-wrapper .location-title-box .section-title {
+  .location .location-desktop-title .location-title-box .section-title {
     padding: 0 20px 0 70px;
     margin-top: -200px;
   }
 }
-.location .location-title-wrapper .location-title-shadow {
+.location .location-desktop-title .location-title-shadow {
   display: none;
 }
-@media screen and (min-width: 768px) {
-  .location .location-title-wrapper .location-title-shadow {
+@media screen and (min-width: 1300px) {
+  .location .location-desktop-title .location-title-shadow {
     display: block;
     position: relative;
     top: -287px;
@@ -1248,6 +1282,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: 0;
     margin-bottom: 128px;
     width: 1100px;
   }
@@ -1280,12 +1315,13 @@ body {
   justify-content: flex-start;
   border: 7px solid var(--color-offwhite);
   text-align: left;
-  margin-left: -460px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1300px) {
   .location .map-wrapper {
     width: 549px;
     height: 545px;
+    margin-left: -460px;
   }
 }
 .location .map-wrapper iframe {
@@ -1373,7 +1409,7 @@ body {
   color: var(--color-white);
   font-weight: normal;
   cursor: pointer;
-  padding: 20px 30px;
+  padding: 0 30px;
   border: none;
   outline: none;
   height: auto;
@@ -1391,6 +1427,7 @@ body {
     width: 1100px;
     padding: 20px 46px;
     height: 105px;
+    padding: 20px 30px;
   }
 }
 .faq .collapsible .toggle-icon {

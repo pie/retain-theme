@@ -23,7 +23,7 @@
     position: relative;
     z-index: 5; // Content above background
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
   }
 
   /* Background Images */
@@ -65,6 +65,7 @@
     font-weight: 700;
     z-index: 3; // Above background images
     font-size: 25px;
+
     @media screen and (min-width: 768px) {
       font-size: 30px;
       color: var(--color-white);
@@ -86,7 +87,11 @@
     justify-content: flex-start;
     gap: 2rem;
     margin: 40px 0 38px 0;
-    padding: 10px;
+    padding: 0;
+
+    @media screen and (min-width: 1300px) {
+      padding: 10px;
+    }
   }
 
   @media screen and (min-width: 768px) {
