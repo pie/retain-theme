@@ -94,6 +94,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       align-items: flex-start;
+      margin: 40px 27px 0 17px;
     }
   }
 
@@ -201,6 +202,7 @@
 
     @media screen and (min-width: 1300px) {
       height: 135px;
+      margin-bottom: 38px;
     }
 
   h3 {
@@ -208,7 +210,7 @@
     text-align: center;
 
    @media screen and (min-width: 1300px) {
-       margin: 36px auto 48px auto;
+       margin: 75px auto 48px auto;
     }
   }
 

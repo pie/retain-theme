@@ -838,6 +838,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin: 40px 27px 0 17px;
   }
 }
 .speakers .speaker-wrapper {
@@ -924,6 +925,7 @@ body {
 @media screen and (min-width: 1300px) {
   .speakers .speakers-section-footer {
     height: 135px;
+    margin-bottom: 38px;
   }
 }
 .speakers .speakers-section-footer h3 {
@@ -932,7 +934,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .speakers .speakers-section-footer h3 {
-    margin: 36px auto 48px auto;
+    margin: 75px auto 48px auto;
   }
 }
 .speakers .speakers-section-footer hr {
