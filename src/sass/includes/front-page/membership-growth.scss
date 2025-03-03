@@ -11,13 +11,18 @@
 
     .parallelogram {
         @media screen and (min-width: 1300px) {
-        height: 88px;
+        height: 89px;
     }
-}
 }
 
 .section-title {
     @media screen and (min-width: 1300px) {
     padding: 0 20px 10px 19px;
     }
+}
+
+.section-subtitle {
+    line-height: 1.4;
+    margin-bottom: 35px;
+}
 }

@@ -7,7 +7,10 @@
   }
 
   .speakers-content-wrapper {
+
+
   @media screen and (min-width: 1300px) {
+    width: 1300px;
     background: linear-gradient(to bottom, 
    white 0%, 
    white 210px,
@@ -69,7 +72,7 @@
     }
     @media screen and (min-width: 1300px) {
       font-size: 42px;
-      margin: 10px 0 0 0;
+      margin: 8px 0 0 0;
       width: auto;
     }
   }
@@ -82,7 +85,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
-    margin: 40px 0;
+    margin: 40px 0 38px 0;
     padding: 10px;
   }
 

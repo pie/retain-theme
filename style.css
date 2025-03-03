@@ -509,14 +509,17 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .membership-growth .parallelogram {
-    height: 88px;
+    height: 89px;
   }
 }
-
 @media screen and (min-width: 1300px) {
-  .section-title {
+  .membership-growth .section-title {
     padding: 0 20px 10px 19px;
   }
+}
+.membership-growth .section-subtitle {
+  line-height: 1.4;
+  margin-bottom: 35px;
 }
 
 .what-to-expect {
@@ -532,7 +535,7 @@ body {
   }
 }
 .what-to-expect .what-to-expect-collage-img {
-  margin-top: -60px;
+  margin-top: -63px;
 }
 .what-to-expect .what-to-expect-columns {
   display: flex;
@@ -561,7 +564,8 @@ body {
   .what-to-expect .what-to-expect-column {
     margin-bottom: 0;
     flex: 1;
-    margin-top: 250px;
+    margin-top: 246px;
+    width: 400px;
   }
 }
 .what-to-expect .what-to-expect-column h4 {
@@ -576,12 +580,13 @@ body {
 .what-to-expect .what-to-expect-column p {
   color: black;
   width: 90%;
+  line-height: 1.2;
 }
 @media screen and (min-width: 1300px) {
   .what-to-expect .what-to-expect-column p {
     color: white;
     font-size: 27px;
-    width: 100%;
+    width: 350px;
   }
 }
 
@@ -590,7 +595,7 @@ body {
   text-align: center;
 }
 .highlights .icon-img {
-  margin: 57px auto 48px auto;
+  margin: 57px auto 50px auto;
 }
 @media screen and (min-width: 1300px) {
   .highlights .icon-img {
@@ -608,7 +613,7 @@ body {
   }
 }
 .highlights .highlights-video {
-  margin: 63px auto 87px auto;
+  margin: 61px auto 87px auto;
   position: relative;
   width: 300px;
   height: 169px;
@@ -644,7 +649,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .meet-your-host .parallelogram {
-    height: 89px;
+    height: 90px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -757,6 +762,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .speakers .speakers-content-wrapper {
+    width: 1300px;
     background: linear-gradient(to bottom, white 0%, white 210px, var(--color-lightorange) 210px, var(--color-lightorange) 100%);
   }
 }
@@ -813,7 +819,7 @@ body {
 @media screen and (min-width: 1300px) {
   .speakers h2 {
     font-size: 42px;
-    margin: 10px 0 0 0;
+    margin: 8px 0 0 0;
     width: auto;
   }
 }
@@ -824,7 +830,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-  margin: 40px 0;
+  margin: 40px 0 38px 0;
   padding: 10px;
 }
 @media screen and (min-width: 768px) {
@@ -938,11 +944,11 @@ body {
   /* Target the last li of the first card to show X instead */
 }
 .tickets .icon-img {
-  margin: 4px auto 50px auto;
+  margin: 4px auto 48px auto;
 }
 @media screen and (min-width: 1300px) {
   .tickets .icon-img {
-    width: 58px;
+    width: 60px;
   }
 }
 .tickets .parallelogram {
@@ -950,7 +956,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .tickets .parallelogram {
-    height: 88px;
+    height: 90px;
     margin-bottom: 82px;
   }
 }
@@ -995,7 +1001,7 @@ body {
     align-items: stretch;
     gap: 60px;
     width: 87%;
-    height: 733px;
+    height: 735px;
   }
 }
 .tickets .card-wrapper {
