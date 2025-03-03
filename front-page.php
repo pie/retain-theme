@@ -29,12 +29,11 @@ Template Name: Front Page
 
 <!-- Hero Section -->
     <section class="hero">
-        <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/hero/hero-bg.png" alt="Hero Image" class="hero-bg"> -->
+        <div id="hero-bg-img-left"></div>
+        <div id="hero-bg-img-right"></div>
         <div class="hero-content">
             <h1 class="hero-text">Sept 22nd - 24th 2025 / Newcastle, UK</h1>
             <h1 class="hero-logo">RETAIN - The Membership Growth Conference</h1>
-            <div id="hero-bg-img-left"></div>
-            <div id="hero-bg-img-right"></div>
             <div id="countdown" class="countdown">
                 <div class="countdown-item">
                     <span id="days" class="title">00</span>
