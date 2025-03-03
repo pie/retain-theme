@@ -1049,7 +1049,7 @@ body {
 .tickets .price-title {
   font-size: 100px;
   font-weight: bold;
-  margin: -25px 0 0 0;
+  margin: -25px 0 2px 0;
   position: relative;
   z-index: 1;
   color: var(--color-white);
@@ -1068,8 +1068,14 @@ body {
   position: relative;
   z-index: 1;
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 1300px) {
+  .tickets .earlybird-bg {
+    height: 49px;
+  }
 }
 .tickets .earlybird-text {
   margin: 0;
@@ -1145,6 +1151,7 @@ body {
   z-index: 1;
   transition: transform 0.2s;
   font-family: var(--font-brandongrotesque);
+  width: 248px;
 }
 @media screen and (min-width: 768px) {
   .tickets .buy-now-button {

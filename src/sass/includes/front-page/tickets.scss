@@ -105,7 +105,7 @@
 .price-title {
     font-size: 100px;
     font-weight: bold;
-    margin: -25px 0 0 0;
+    margin: -25px 0 2px 0;
     position: relative;
     z-index: 1;
     color: var(--color-white);
@@ -129,8 +129,13 @@
     position: relative;
     z-index: 1;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 1300px) {
+        height: 49px;
+    }
 }
 
 .earlybird-text {
@@ -214,6 +219,7 @@
     z-index: 1;
     transition: transform 0.2s;
     font-family: var(--font-brandongrotesque);
+    width: 248px;
 
     @media screen and (min-width: 768px) {
         font-size: 35px;
