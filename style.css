@@ -543,14 +543,20 @@ body {
   height: auto;
   position: relative; /* Required for absolute positioning of text */
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 880px) {
   .what-to-expect {
     background-color: var(--color-white);
     height: auto;
   }
 }
 .what-to-expect .what-to-expect-collage-img {
-  margin-top: -63px;
+  display: none;
+}
+@media screen and (min-width: 880px) {
+  .what-to-expect .what-to-expect-collage-img {
+    display: block;
+    margin-top: -63px;
+  }
 }
 .what-to-expect .what-to-expect-columns {
   display: flex;
@@ -559,7 +565,7 @@ body {
   z-index: 1;
   padding: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 880px) {
   .what-to-expect .what-to-expect-columns {
     flex-direction: row;
     justify-content: space-between;
@@ -574,22 +580,34 @@ body {
 }
 .what-to-expect .what-to-expect-column {
   background-color: transparent;
+  margin-top: 5%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 880px) {
   .what-to-expect .what-to-expect-column {
     margin-bottom: 0;
     flex: 1;
-    margin-top: 246px;
     width: 400px;
+    margin-top: 15%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .what-to-expect .what-to-expect-column {
+    margin-top: 246px;
   }
 }
 .what-to-expect .what-to-expect-column h4 {
   color: darkorange;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 880px) {
   .what-to-expect .what-to-expect-column h4 {
     color: white;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .what-to-expect .what-to-expect-column h4 {
+    font-size: 25px;
   }
 }
 .what-to-expect .what-to-expect-column p {
@@ -597,9 +615,15 @@ body {
   width: 90%;
   line-height: 1.2;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 880px) {
   .what-to-expect .what-to-expect-column p {
     color: white;
+    width: 100%;
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .what-to-expect .what-to-expect-column p {
     font-size: 27px;
     width: 350px;
   }
@@ -634,6 +658,14 @@ body {
   height: 169px;
   margin-left: auto;
   margin-right: auto;
+  margin: 61px auto 87px auto;
+}
+@media screen and (min-width: 768px) {
+  .highlights .highlights-video {
+    margin: 50px auto;
+    width: 450px;
+    height: 350px;
+  }
 }
 @media screen and (min-width: 1300px) {
   .highlights .highlights-video {
@@ -763,7 +795,7 @@ body {
 
 .speakers {
   position: relative;
-  padding: 100px 0 50px;
+  padding: 50px 0;
   /* Background Images */
   /* Heading */
   /* Grid Layout */
@@ -771,6 +803,11 @@ body {
   /* Speaker Info */
 }
 @media screen and (min-width: 768px) {
+  .speakers {
+    padding: 70px 0;
+  }
+}
+@media screen and (min-width: 1300px) {
   .speakers {
     padding: 200px 0 63px 0;
   }
@@ -827,7 +864,6 @@ body {
 @media screen and (min-width: 768px) {
   .speakers h2 {
     font-size: 30px;
-    color: var(--color-white);
     width: 60%;
   }
 }
@@ -836,6 +872,7 @@ body {
     font-size: 42px;
     margin: 8px 0 0 0;
     width: auto;
+    color: var(--color-white);
   }
 }
 .speakers .speakers-grid {
@@ -874,16 +911,21 @@ body {
 }
 .speakers .speaker-card {
   position: relative;
-  width: 353px;
+  width: 280px;
   height: 280px;
   padding: 0px;
-  /* margin-right: 40px; */
   background: linear-gradient(to right top, #feb902, #fff);
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  clip-path: polygon(20.75% -5%, 100% 0%, 100% 100%, 20.75% 100%, 20.75% 84%, 0% 84%, 20.75% 58%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+@media screen and (min-width: 768px) {
+  .speakers .speaker-card {
+    width: 353px;
+    clip-path: polygon(20.75% -5%, 100% 0%, 100% 100%, 20.75% 100%, 20.75% 84%, 0% 84%, 20.75% 58%);
+  }
 }
 .speakers .speaker-image {
   width: 93.5%;
@@ -897,13 +939,23 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  clip-path: polygon(22.25% -6%, 100% 0%, 100% 100%, 22.25% 100%, 22.25% 83%, 4.3% 83%, 22.25% 60.5%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+@media screen and (min-width: 768px) {
+  .speakers .speaker-image img {
+    clip-path: polygon(22.25% -6%, 100% 0%, 100% 100%, 22.25% 100%, 22.25% 83%, 4.3% 83%, 22.25% 60.5%);
+  }
 }
 .speakers .speaker-info {
   text-align: center;
   padding-top: 10px;
-  padding-left: 10%;
+  padding-left: 0;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .speakers .speaker-info {
+    padding-left: 10%;
+  }
 }
 .speakers .speaker-name {
   font-size: 18px;

@@ -1,8 +1,12 @@
 .speakers {
   position: relative;
-  padding: 100px 0 50px;
+  padding: 50px 0;
 
   @media screen and (min-width: 768px) {
+    padding: 70px 0;
+  }
+
+  @media screen and (min-width: 1300px) {
     padding: 200px 0 63px 0;
   }
 
@@ -68,13 +72,13 @@
 
     @media screen and (min-width: 768px) {
       font-size: 30px;
-      color: var(--color-white);
       width: 60%;
     }
     @media screen and (min-width: 1300px) {
       font-size: 42px;
       margin: 8px 0 0 0;
       width: auto;
+      color: var(--color-white);
     }
   }
 
@@ -116,24 +120,33 @@
 
   .speaker-card {
     position: relative;
-    width: 353px;
+    width: 280px;
     height: 280px;
     padding: 0px;
-    /* margin-right: 40px; */
     background: linear-gradient(to right top, #feb902, #fff);
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     clip-path: polygon(
-      20.75% -5%, 
+      0% 0%, 
       100% 0%, 
       100% 100%, 
-      20.75% 100%, 
-      20.75% 84%, 
-      0% 84%, 
-      20.75% 58%
-    ); 
+      0% 100%
+    );
+    
+    @media screen and (min-width: 768px) {
+      width: 353px;
+      clip-path: polygon(
+        20.75% -5%, 
+        100% 0%, 
+        100% 100%, 
+        20.75% 100%, 
+        20.75% 84%, 
+        0% 84%, 
+        20.75% 58%
+      ); 
+    }
   }
 
   /* Speaker Image Container */
@@ -152,22 +165,35 @@
     height: 100%;
     object-fit: cover;
     clip-path: polygon(
-      22.25% -6%, 
+      0% 0%, 
       100% 0%, 
       100% 100%, 
-      22.25% 100%, 
-      22.25% 83%, 
-      4.3% 83%, 
-      22.25% 60.5%
+      0% 100%
     ); 
+
+    @media screen and (min-width: 768px) {
+      clip-path: polygon(
+        22.25% -6%, 
+        100% 0%, 
+        100% 100%, 
+        22.25% 100%, 
+        22.25% 83%, 
+        4.3% 83%, 
+        22.25% 60.5%
+      ); 
+    }
   }
 
   /* Speaker Info */
   .speaker-info {
     text-align: center;
     padding-top: 10px;
-    padding-left: 10%;
+    padding-left: 0;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 10%;
+    }
   }
 
   .speaker-name {

@@ -29,7 +29,14 @@
         height: 169px; // 16:9 aspect ratio for 300px width
         margin-left: auto;
         margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            margin: 50px auto;
+            width: 450px;
+            height: 350px; // 16:9 aspect ratio for 1200px width (1200 * 9/16)
+        }
     
+        margin: 61px auto 87px auto;
         @media screen and (min-width: 1300px) {
             width: 1165px;
             height: 675px; // 16:9 aspect ratio for 1200px width (1200 * 9/16)
