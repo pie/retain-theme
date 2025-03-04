@@ -60,11 +60,21 @@ body {
 }
 .site-header .site-branding {
   padding: 35px 25px 15px 0px;
-  margin: 0 50px;
+  margin: 0 20px;
+}
+@media (min-width: 768px) {
+  .site-header .site-branding {
+    margin: 0 50px;
+  }
 }
 .site-header .site-branding img {
-  width: 172px;
+  width: 140px;
   height: auto;
+}
+@media (min-width: 768px) {
+  .site-header .site-branding img {
+    width: 172px;
+  }
 }
 .site-header .main-navigation {
   margin: 0 5%;

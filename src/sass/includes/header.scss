@@ -24,11 +24,19 @@
 
     .site-branding {
         padding: 35px 25px 15px 0px;
-        margin: 0 50px;
+        margin: 0 20px;
+
+        @media (min-width: 768px) {
+            margin: 0 50px;
+        }
 
           img {
-                width: 172px;
+                width: 140px;
                 height: auto;
+
+                @media (min-width: 768px) {
+                    width: 172px;
+                }
             }
     }
 
