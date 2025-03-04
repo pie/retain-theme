@@ -24,7 +24,7 @@
     }
 
     @media screen and (min-width: 1300px) {
-        height: 1412px;
+        height: 1380px;
         width: 1248px;
     }
 
@@ -37,14 +37,12 @@
         @media screen and (min-width: 1300px) {
         display: block;
         position: absolute;
-        top: 0;
-        padding-top: 70px;
+        top: 80px;
         background-size: cover;
         background-repeat: no-repeat;
         mix-blend-mode: soft-light;
         z-index: 1;
-        top: 113px;
-        height: calc(100% - 113px);
+        height: 100%;
         width: 50%;
         }
     }
@@ -80,7 +78,7 @@
         }
 
         @media screen and (min-width: 1300px) {
-            padding-top: 514px;
+            padding-top: 482px;
             display: block;
             margin-top: 0;
         }
