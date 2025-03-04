@@ -46,13 +46,13 @@
           
           @media (min-width: 1300px) {
             clip-path: polygon(10% 0%, 100% 0%, 88% 30%, 10% 30%);
-            height: 287px;
+            height: 288px;
             background-color: var(--color-lightorange);
-            width: 336px;
+            width: 337px;
 
             .section-title {
                     padding: 0 20px 0 70px;
-                    margin-top: -200px;
+                    margin-top: -195px;
                 }
             }
           }
@@ -63,10 +63,10 @@
             @media screen and (min-width: 1300px) {
                 display: block;
                 position: relative;
-                top: -287px;
-                left: -12px;
+                top: -288px;
+                left: -15px;
                 height: 334px;
-                width: 308px;
+                width: 300px;
                 background: var(--color-darkorange);
                 clip-path: polygon(10% 0%, 100% 0%, 88% 30%, 10% 30%);
                 z-index: 0;
