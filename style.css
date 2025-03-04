@@ -339,6 +339,7 @@ body {
   width: 100%;
   background-size: cover;
   position: relative; /* Required for absolute positioning of text */
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .site-main .hero {
@@ -361,18 +362,19 @@ body {
     display: block;
     position: absolute;
     top: 0;
-    width: 50%;
-    height: 100%;
     padding-top: 70px;
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: soft-light;
     z-index: 1;
+    top: 113px;
+    height: calc(100% - 113px);
+    width: 50%;
   }
 }
 @media screen and (min-width: 1300px) {
   .site-main .hero #hero-bg-img-left {
-    left: 0;
+    left: -25px;
     background-image: url(./assets/hero/hero-image-left.png);
   }
 }
