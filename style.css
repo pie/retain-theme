@@ -361,7 +361,7 @@ body {
   .site-main .hero #hero-bg-img-right {
     display: block;
     position: absolute;
-    top: 80px;
+    top: 70px;
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: soft-light;
@@ -372,7 +372,7 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .site-main .hero #hero-bg-img-left {
-    left: -25px;
+    left: -30px;
     background-image: url(./assets/hero/hero-image-left.png);
   }
 }
