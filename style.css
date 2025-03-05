@@ -978,7 +978,9 @@ body {
 }
 @media screen and (min-width: 768px) {
   .speakers .speaker-image img {
-    clip-path: polygon(22.25% -6%, 100% 0%, 100% 100%, 22.25% 100%, 22.25% 83%, 4.3% 83%, 22.25% 60.5%);
+    clip-path: polygon(15% -6%, 100% 0%, 100% 100%, 15% 100%, 15% 83%, -0.5% 83%, 15% 60.5%);
+    position: relative;
+    left: 25px;
   }
 }
 .speakers .speaker-info {

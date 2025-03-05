@@ -172,15 +172,28 @@
     ); 
 
     @media screen and (min-width: 768px) {
+      // clip-path: polygon(
+      //   22.25% -6%, 
+      //   100% 0%, 
+      //   100% 100%, 
+      //   22.25% 100%, 
+      //   22.25% 83%, 
+      //   4.3% 83%, 
+      //   22.25% 60.5%
+      // ); // Original speech bubble
+
       clip-path: polygon(
-        22.25% -6%, 
+        15% -6%, 
         100% 0%, 
         100% 100%, 
-        22.25% 100%, 
-        22.25% 83%, 
-        4.3% 83%, 
-        22.25% 60.5%
-      ); 
+        15% 100%, 
+        15% 83%, 
+        -0.5% 83%, 
+        15% 60.5%
+      ); // Adjusted speech bubble for centering image
+
+      position: relative;
+      left: 25px; // Center image in speech bubble
     }
   }
 
