@@ -194,6 +194,7 @@ body {
   /* Large screen background images on what to expect and speakers sections */
   /* Section icon */
   /* Section titles */
+  /* Ensure main content can receive focus for skip links */
 }
 .site-main section {
   width: 100%;
@@ -330,6 +331,40 @@ body {
     transform: skew(28deg);
     font-size: 2.6em;
   }
+}
+.site-main .skip-links {
+  position: fixed;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #000;
+  padding: 10px;
+  transition: top 0.3s ease-in-out;
+}
+.site-main .skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: top 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+}
+.site-main .skip-link:focus {
+  top: 0;
+  opacity: 1;
+  z-index: 1000;
+  outline: 2px solid white;
+}
+.site-main #main-content:focus {
+  outline: none;
 }
 
 .site-main .hero {
@@ -1478,7 +1513,6 @@ body {
   cursor: pointer;
   padding: 0 30px;
   border: none;
-  outline: none;
   height: auto;
   min-height: 150px;
   text-align: left;
@@ -1530,6 +1564,10 @@ body {
 }
 .faq .collapsible:hover {
   background-color: var(--color-darkorange);
+}
+.faq .collapsible:focus {
+  outline: 2px solid var(--color-black);
+  outline-offset: 2px;
 }
 .faq .content {
   padding: 28px 18px 0 20px;

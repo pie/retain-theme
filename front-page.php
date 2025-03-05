@@ -6,8 +6,6 @@ Template Name: Front Page
     get_template_part('template-parts/header');
 ?>
 
-<main id="primary" class="site-main">
-
 <!-- This frontpage template includes the following sections:
     - Hero
     - Membership Growth
@@ -27,12 +25,30 @@ Template Name: Front Page
     When you edit the front page on WP admin, you can add speakers, plus sessions for day 1 and day 2 of the schedule.
 -->
 
+<!-- Accessibility Skip Links 
+     These links are hidden from view but can be accessed by screen readers to skip to specific sections of the page.
+     They are useful for users who rely on screen readers to navigate the site.
+-->
+<div class="skip-links">
+    <a href="#membership-growth" class="skip-link screen-reader-text">Skip to Membership Growth Section</a>
+    <a href="#what-to-expect" class="skip-link screen-reader-text">Skip to What to Expect Section</a>
+    <a href="#highlights" class="skip-link screen-reader-text">Skip to Highlights Section</a>
+    <a href="#meet-host" class="skip-link screen-reader-text">Skip to Meet Your Host Section</a>
+    <a href="#speakers" class="skip-link screen-reader-text">Skip to Speakers Section</a>
+    <a href="#tickets" class="skip-link screen-reader-text">Skip to Tickets Section</a>
+    <a href="#location" class="skip-link screen-reader-text">Skip to Location Section</a>
+    <a href="#faq" class="skip-link screen-reader-text">Skip to FAQ Section</a>
+    <a href="#schedule" class="skip-link screen-reader-text">Skip to Schedule Section</a>
+</div>
+
+<main id="primary" class="site-main">
+
 <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div id="hero-bg-img-left"></div>
         <div id="hero-bg-img-right"></div>
         <div class="hero-content">
-            <h1 class="hero-text">Sept 22nd - 24th 2025 / Newcastle, UK</h1>
+            <h2 class="hero-text">Sept 22nd - 24th 2025 / Newcastle, UK</h2>
             <h1 class="hero-logo">RETAIN - The Membership Growth Conference</h1>
             <div id="countdown" class="countdown">
                 <div class="countdown-item">
@@ -56,7 +72,7 @@ Template Name: Front Page
     </section>
 
 <!-- Membership Growth Section -->
-    <section class="membership-growth">
+    <section class="membership-growth" id="membership-growth">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/membership-growth/growth-icon.png" alt="Membership Growth Plant" class="icon-img">
 
         <div class="parallelogram">
@@ -76,9 +92,9 @@ Template Name: Front Page
         <p>
         Retain is the only live event dedicated entirely to growing your online membership.
         </p>
-        <p><b>
+        <p role="heading"><b>
         It’s an event for membership site owners, by membership site owners.
-<br />
+        <br />
         Are you in?
         </b>
         </p>
@@ -86,7 +102,7 @@ Template Name: Front Page
     </section>
 
 <!-- What to Expect Section -->
-    <section class="what-to-expect">
+    <section class="what-to-expect" id="what-to-expect">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/what-to-expect/people-collage.png" alt="people collage" class="full-w-img what-to-expect-collage-img">
         <div class="what-to-expect-columns">
             <div class="what-to-expect-column">
@@ -111,7 +127,7 @@ Template Name: Front Page
     </section>
 
 <!-- Highlights Section -->
-    <section class="highlights">
+    <section class="highlights" id="highlights">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/highlights/highlights-icon.png" alt="Highlights stars image" class="icon-img">
 
         <div class="parallelogram">
@@ -119,12 +135,12 @@ Template Name: Front Page
     </div>
 
         <div class="highlights-video">
-            <iframe src="https://player.vimeo.com/video/366466354?dnt=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>
+            <iframe src="https://player.vimeo.com/video/366466354?dnt=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" aria-label="2019 Highlights video" allowfullscreen></iframe>
         </div>
     </section>
 
 <!-- Meet Your Host Section -->
-    <section class="meet-your-host">
+    <section class="meet-your-host" id="meet-your-host">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/meet-your-host/host-icon.png" alt="Meet Your Host icon" class="icon-img">
 
         <div class="parallelogram">
@@ -137,7 +153,7 @@ Template Name: Front Page
             <img src="<?php echo get_template_directory_uri(); ?>/assets/meet-your-host/host.png" alt="Host photo" class="host-img">
         </div>
 
-        <p class="host-name">Mike Morrison</p>
+        <p role="heading" class="host-name">Mike Morrison</p>
 
         <h3 class="section-subtitle">Howdy, I’m Mike Morrison, founder of the “Membership Geeks”</h3>
 
@@ -153,12 +169,12 @@ Template Name: Front Page
         <p>
         I’ll be leading the charge at Retain 2025 providing training throughout both days on the latest membership growth tactics and strategies, and sharing insights from our work with countless successful memberships.
         </p>
-        <p><b>But I’m not coming alone…</b></p>
+        <p role="heading"><b>But I’m not coming alone…</b></p>
 
     </section>
 
 <!-- Speakers Section -->
-    <section class="speakers">
+    <section class="speakers" id="speakers">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg1.png" alt="abstract shape 1" class="full-w-img speakers-bg-img-1">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/speakers/bg2.png" alt="abstract shape 2" class="full-w-img speakers-bg-img-2">
         <div class="speakers-content-wrapper">
@@ -214,7 +230,7 @@ Template Name: Front Page
     </section>
 
 <!-- Tickets Section -->
-    <section class="tickets">
+    <section class="tickets" id="tickets">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/tickets/tickets-icon.png" alt="Tickers icon" class="icon-img">
 
         <div class="parallelogram">
@@ -272,7 +288,7 @@ Template Name: Front Page
     </section>
 
 <!-- Location Section -->
-    <section class="location">
+    <section class="location" id="location">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/location/location-icon.png" alt="Location icon" class="icon-img">
 
         <div class="location-section-content">
@@ -295,13 +311,13 @@ Template Name: Front Page
             </div>
 
             <div class="map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.5954672480453!2d-1.6064786303255774!3d54.96640216817044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e70ba0fc767ef%3A0xb1529a45b94da2ea!2sHilton%20Newcastle%20Gateshead!5e0!3m2!1sen!2suk!4v1739978592971!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.5954672480453!2d-1.6064786303255774!3d54.96640216817044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e70ba0fc767ef%3A0xb1529a45b94da2ea!2sHilton%20Newcastle%20Gateshead!5e0!3m2!1sen!2suk!4v1739978592971!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="location map"></iframe>
             </div>
         </div>
     </section>
 
 <!-- FAQ Section -->
-    <section class="faq">
+    <section class="faq" id="faq">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/faq/faq-icon.png" alt="FAQ icon" class="icon-img">
 
         <div class="parallelogram">
@@ -391,7 +407,7 @@ Template Name: Front Page
     </section>
 
 <!-- Schedule Section -->
-    <section class="schedule">
+    <section class="schedule" id="schedule">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/schedule/schedule-icon.png" alt="Schedule image" class="icon-img">
 
         <div class="parallelogram">
