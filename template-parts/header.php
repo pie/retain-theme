@@ -21,7 +21,7 @@
     </div><!-- .site-branding -->
 
     <nav id="site-navigation" class="main-navigation">
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+        <button class="menu-toggle" aria-controls="primary-menu" aria-label="Toggle primary menu aria-expanded="false">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
