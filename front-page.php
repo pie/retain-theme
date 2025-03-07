@@ -106,19 +106,19 @@ Template Name: Front Page
         <img src="<?php echo get_template_directory_uri(); ?>/assets/what-to-expect/people-collage.png" alt="people collage" class="full-w-img what-to-expect-collage-img">
         <div class="what-to-expect-columns">
             <div class="what-to-expect-column">
-                <h4>What you can expect</h4>
+                <h2>What you can expect</h2>
                 <p>
                 2 action packed days of membership goodness with talks and panels on a variety of membership topics. Plus plenty of time for talking with other membership site owners too – because lets be honest, the conversations you have and ideas you get from the other people in the room are often the best bit of attending a conference!
                 </p>
             </div>
             <div class="what-to-expect-column">
-                <h4>What you can expect</h4>
+                <h2>What you can expect</h2>
                 <p>
                 2 action packed days of membership goodness with talks and panels on a variety of membership topics. Plus plenty of time for talking with other membership site owners too – because lets be honest, the conversations you have and ideas you get from the other people in the room are often the best bit of attending a conference!
                 </p>
             </div>
             <div class="what-to-expect-column">
-                <h4>What you can expect</h4>
+                <h2>What you can expect</h2>
                 <p>
                 2 action packed days of membership goodness with talks and panels on a variety of membership topics. Plus plenty of time for talking with other membership site owners too – because lets be honest, the conversations you have and ideas you get from the other people in the room are often the best bit of attending a conference!
                 </p>

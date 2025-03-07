@@ -194,6 +194,7 @@ body {
   /* Large screen background images on what to expect and speakers sections */
   /* Section icon */
   /* Section titles */
+  /* Skip links for accessibility - hidden unless focused with keyboard */
   /* Ensure main content can receive focus for skip links */
 }
 .site-main section {
@@ -630,19 +631,23 @@ body {
     margin-top: 246px;
   }
 }
-.what-to-expect .what-to-expect-column h4 {
+.what-to-expect .what-to-expect-column h2 {
   color: darkorange;
-  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: var(--font-brandongrotesque);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto 10px auto;
 }
 @media screen and (min-width: 880px) {
-  .what-to-expect .what-to-expect-column h4 {
+  .what-to-expect .what-to-expect-column h2 {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 1300px) {
-  .what-to-expect .what-to-expect-column h4 {
-    font-size: 25px;
+  .what-to-expect .what-to-expect-column h2 {
+    font-size: 30px;
   }
 }
 .what-to-expect .what-to-expect-column p {

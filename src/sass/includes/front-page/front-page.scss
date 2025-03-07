@@ -138,6 +138,7 @@ p {
     }
 }
 
+/* Skip links for accessibility - hidden unless focused with keyboard */
 .skip-links {
     position: fixed;
     top: -40px;
