@@ -964,7 +964,7 @@ body {
 @media screen and (min-width: 768px) {
   .speakers .speaker-card {
     width: 353px;
-    clip-path: polygon(20.75% -5%, 100% 0%, 100% 100%, 20.75% 100%, 20.75% 84%, 0% 84%, 20.75% 58%);
+    clip-path: polygon(24% -5%, 100% 0%, 100% 100%, 24% 100%, 24% 84%, 6% 84%, 24% 58%);
   }
 }
 .speakers .speaker-image {
@@ -985,7 +985,7 @@ body {
   .speakers .speaker-image img {
     clip-path: polygon(15% -6%, 100% 0%, 100% 100%, 15% 100%, 15% 83%, -0.5% 83%, 15% 60.5%);
     position: relative;
-    left: 25px;
+    left: 36px;
   }
 }
 .speakers .speaker-info {
@@ -996,7 +996,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .speakers .speaker-info {
-    padding-left: 10%;
+    padding-left: 12%;
   }
 }
 .speakers .speaker-name {
