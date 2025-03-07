@@ -92,7 +92,7 @@ Template Name: Front Page
         <p>
         Retain is the only live event dedicated entirely to growing your online membership.
         </p>
-        <p role="heading" aria-label="Event description"><b>
+        <p role="heading" aria-label="Event description" aria-level="3"><b>
         It’s an event for membership site owners, by membership site owners.
         <br />
         Are you in?
@@ -153,7 +153,7 @@ Template Name: Front Page
             <img src="<?php echo get_template_directory_uri(); ?>/assets/meet-your-host/host.png" alt="Host photo" class="host-img">
         </div>
 
-        <p role="heading" aria-label="Host name" class="host-name">Mike Morrison</p>
+        <p role="heading" aria-label="Host name" aria-level="2" class="host-name">Mike Morrison</p>
 
         <h3 class="section-subtitle">Howdy, I’m Mike Morrison, founder of the “Membership Geeks”</h3>
 
@@ -169,7 +169,7 @@ Template Name: Front Page
         <p>
         I’ll be leading the charge at Retain 2025 providing training throughout both days on the latest membership growth tactics and strategies, and sharing insights from our work with countless successful memberships.
         </p>
-        <p role="heading" aria-label="Speaker section teaser"><b>But I’m not coming alone…</b></p>
+        <p role="heading" aria-label="Speaker section teaser" aria-level="3"><b>But I’m not coming alone…</b></p>
 
     </section>
 
