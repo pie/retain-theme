@@ -1,0 +1,336 @@
+.schedule {
+  text-align: center;
+  background-color: var(--color-white);
+  margin-bottom: 50px;
+
+  .icon-img {
+    margin: 55px auto 55px auto;
+
+    @media screen and (min-width: 1300px) {
+      width: 42px;
+  }
+  }
+
+  .parallelogram {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1300px) {
+      height: 90px;
+      margin-bottom: 110px;
+    }
+  }
+
+  .section-title {
+    @media screen and (min-width: 1300px) {
+      padding: 0 20px 10px 19px;
+    }
+  }
+
+  .schedule-tabs {
+    .tab-button-container {
+      display: none;
+    }
+
+    .tab-button-mobile {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color-darkorange);
+      color: var(--color-white);
+      padding: 10px 20px;
+      border: none;
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      line-height: 1;
+      text-align: center;
+      margin: 40px auto 20px auto;
+
+      span {
+          text-transform: uppercase;
+          font-family: var(--font-brandongrotesque);
+          font-size: 20px;
+          letter-spacing: 3px;
+    
+          &:first-child {
+            font-weight: 700;
+          }
+    
+          &:last-child {
+            font-weight: 400;
+          }
+        }
+    }
+
+    .tab-content {
+      display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 1100px;
+      margin: 0 auto;
+
+      .tab-button-mobile {
+        display: none;
+      }
+
+      /* Default gradient (first tab active) */
+      .tab-button-container {
+        display: flex;
+        position: relative;
+        border: 1px solid var(--color-darkorange);
+        width: 100%;
+        height: 105px;
+        overflow: hidden;
+        margin-bottom: 73px;
+        background: linear-gradient(
+          120deg,
+          var(--color-darkorange) 50%,
+          var(--color-white) 50%
+        );
+      }
+
+      /* When the second button is active */
+      .tab-button:nth-child(2).active ~ .tab-button-container,
+      .tab-button-container:has(.tab-button:nth-child(2).active) {
+        background: linear-gradient(
+          120deg,
+          var(--color-white) 50%,
+          var(--color-darkorange) 50%
+        );
+      }
+
+      .tab-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: var(--color-white); /* Default text color for first button */
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        flex: 1;
+        line-height: 1;
+        text-align: center;
+
+        span {
+            text-transform: uppercase;
+            font-family: var(--font-brandongrotesque);
+            font-size: 20px;
+            letter-spacing: 3px;
+    
+            &:first-child {margin-bottom: 8px;
+              font-weight: 700;
+            }
+    
+            &:last-child {
+              font-weight: 400;
+            }
+          }
+      }
+
+      /* When first button is active */
+      .tab-button:nth-child(1).active {
+        color: var(--color-white);
+      }
+
+      .tab-button:nth-child(2) {
+        color: var(--color-darkorange);
+        margin-left: 80px;
+      }
+
+      /* When second button is active */
+      .tab-button:nth-child(1) {
+        color: var(--color-darkorange);
+        margin-left: 20px;
+      }
+
+      .tab-button:nth-child(2).active {
+        color: var(--color-white);
+      }
+
+      .tab-button {
+        span {
+          font-size: 30px;
+        }
+      }
+
+      .tab-content {
+        display: none;
+      }
+
+      .tab-content:first-of-type {
+        display: block;
+      }
+    }
+  }
+
+  .schedule-tabs {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: calc(100% - 80px); // Adjusted for mobile
+      background-color: var(--color-darkorange);
+      top: 70px; // Start right after the first button ends
+      left: 50%; // Centered by default for mobile
+      transform: translateX(-50%); // Perfect centering
+      z-index: 0;
+      transition: left 0.3s ease, transform 0.3s ease; // Smooth transitions
+      pointer-events: none;
+    }
+
+    .schedule-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .schedule-card {
+      background-color: var(--color-white);
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      border: 1px solid var(--color-darkorange);
+      overflow: hidden;
+      background-color: var(--color-white);
+      height: 130px;
+      margin-bottom: 2px;
+
+      .schedule-time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        flex-shrink: 0;
+        background-color: var(--color-darkorange);
+        padding: 0;
+        height: 100%;
+
+        p {
+          color: var(--color-white);
+          font-weight: bold;
+          text-align: center;
+          line-height: 1;
+          margin: 0 auto;
+          font-size: 16px;
+        }
+      }
+
+      .schedule-session-details {
+        flex-grow: 1;
+        padding: 0;
+
+        .schedule-session {
+          h3 {
+            color: var(--color-black);
+            font-size: 18px;
+            font-weight: 700px;
+            margin: 0 auto 5px;
+            text-align: left;
+            font-style: normal;
+          }
+        }
+
+        .schedule-speaker {
+          p {
+            color: var(--color-lightorange);
+            text-transform: uppercase;
+            font-weight: 400px;
+            font-size: 16px;
+            margin: 0 auto;
+            text-align: left;
+            letter-spacing: 2px;
+            line-height: 1;
+          }
+        }
+      }
+
+      .schedule-speaker-photo {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      &::after {
+        height: calc(100% - 105px - 101px); // Adjusted height for desktop tabs and last card
+        top: 105px; // Start below the tab buttons
+        transform: translateX(0); // Remove centering transform on desktop
+        
+        // Default position for first tab on desktop
+        left: calc(25% + 10px); // Centered under first button
+      }
+      
+      // When second tab is active, move the line (desktop only)
+      .tab-button:nth-child(2).active ~ &::after,
+      &:has(.tab-button:nth-child(2).active)::after {
+        left: calc(75% - 40px); // Centered under second button
+      }
+
+      .schedule-grid {
+        gap: 25px;
+        width: 1100px;
+      }
+
+      .schedule-card {
+        margin-bottom: 8px;
+        height: 101px;
+
+        .schedule-time {
+          width: 102px;
+
+          p {
+            font-size: 24px;
+          }
+        }
+
+        .schedule-session-details {
+          .schedule-session {
+            h3 {
+              font-size: 26px;
+              margin-left: 26px;
+            }
+          }
+
+          .schedule-speaker {
+            p {
+              font-size: 22px;
+              margin-left: 26px;
+            }
+          }
+        }
+
+        .schedule-speaker-photo { 
+          width: 57px;
+        height: 61px;
+        background-color: var(--color-lightorange);
+        margin-left: auto;
+        margin-right: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
+
+        img {
+          width: 49px;
+          height: 53px;
+          object-fit: cover;
+          clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
+        }
+        }
+      }
+    }
+  }
+}

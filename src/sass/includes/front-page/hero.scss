@@ -1,0 +1,192 @@
+@mixin image-replace($width, $height) {
+    display: block;
+    background-size:contain;
+    background-repeat: no-repeat;
+
+    width: $width;
+    height: $height;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+  }
+
+.site-main .hero {
+    background-color: var(--color-darkorange);
+    background-image: url(./assets/hero/hero-bg.png);
+    height: 750px;
+    width: 100%;
+    background-size: cover;
+    position: relative; /* Required for absolute positioning of text */
+    overflow: hidden; 
+
+    @media screen and (min-width: 768px) {
+        height: 1300px;
+    }
+
+    @media screen and (min-width: 1300px) {
+        height: 1380px;
+        width: 1248px;
+    }
+
+
+    #hero-bg-img-left,
+    #hero-bg-img-right {
+
+        display: none; /* Hide by default on mobile */
+
+        @media screen and (min-width: 1300px) {
+        display: block;
+        position: absolute;
+        top: 70px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        mix-blend-mode: soft-light;
+        z-index: 1;
+        height: 100%;
+        width: 50%;
+        }
+    }
+
+    #hero-bg-img-left {
+        @media screen and (min-width: 1300px) {
+            left: -30px;
+            background-image: url(./assets/hero/hero-image-left.png);
+        }
+    }
+    
+    #hero-bg-img-right {
+        @media screen and (min-width: 1300px) {
+            right: 0; 
+            background-image: url(./assets/hero/hero-image-right.png);
+        }
+    }
+
+    .hero-content {
+
+        z-index: 9; /* Ensure content is above image but below header */
+        width: 100%;
+        text-align: center;
+        color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+
+        @media screen and (min-width: 768px) {
+            padding-top: 150px;
+        }
+
+        @media screen and (min-width: 1300px) {
+            padding-top: 482px;
+            display: block;
+            margin-top: 0;
+        }
+    }
+
+    .hero-text {
+        font-size: 22px;
+        letter-spacing: .15rem;
+        text-transform: uppercase;
+        font-family: var(--font-brandongrotesque);
+        margin-bottom: 20px;
+        font-weight: 700;
+
+        @media screen and (min-width: 1300px) {
+            font-size: 30px;
+            letter-spacing: .55rem;
+        }
+    }
+
+    .hero-logo {
+        background-image: url(./assets/hero/hero-logo.png);
+        @include image-replace(300px, 143px);
+
+        @media screen and (min-width: 768px) {
+            margin-top: -55px;
+            margin-bottom: 71px;
+            @include image-replace(570px, 272px);
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 1016px;
+            @include image-replace(1016px, 484px);
+        }
+    }
+
+    .countdown {
+        $spacing: 7.2rem;
+        $primary-font-size: 53px;
+        $secondary-font-size: 18px;
+        max-width: 600px;
+        
+        // Hidden by default on mobile
+        display: none;
+        
+        // Styles for when visible
+        &.visible {
+            display: flex;
+            justify-content: center;
+            gap: calc($spacing / 4);
+            margin-right: $spacing;
+            margin-left: $spacing;
+        }
+        
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            span {
+                font-size: $primary-font-size * 0.4;
+                font-weight: bold;
+
+            }
+            
+            .label {
+                font-size: $secondary-font-size * 0.6;
+                margin-top: 0.5rem;
+                font-weight: normal;
+            }
+        }
+    
+        @media (min-width: 768px) {
+            display: flex;
+            gap: $spacing;
+            
+            &-item {
+                span {
+                    font-size: $primary-font-size * 0.6;
+                }
+                
+                .label {
+                    font-size: $secondary-font-size * 0.8;
+                    margin-top: 0;
+                    line-height: 0.1;
+                }
+            }
+        }
+
+        @media (min-width: 1300px) {
+            &-item {
+                span {
+                    font-size: $primary-font-size;
+                }
+                
+                .label {
+                    font-size: $secondary-font-size;
+            }
+        }
+    }
+
+    .countdown-item {
+        .title {
+            font-family: var(--font-brandongrotesque);
+        }
+    
+        .label {
+            font-family: var(--font-sourcesanspro);
+        }
+    }
+}
+}

@@ -1,0 +1,53 @@
+.highlights {
+    background-color: #f7f7f7;
+    text-align: center;
+
+    .icon-img {
+        margin: 57px auto 50px auto;
+
+    @media screen and (min-width: 1300px) {
+        width: 64px;
+    }
+    }
+    
+        .parallelogram {
+            @media screen and (min-width: 1300px) {
+            height: 90px;
+            }
+        }
+    
+    .section-title {
+        @media screen and (min-width: 1300px) {
+        padding: 0 20px 10px 48px;
+        }
+    }
+
+    .highlights-video {
+        margin: 61px auto 87px auto;
+        position: relative;
+        width: 300px; 
+        height: 169px; // 16:9 aspect ratio for 300px width
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            margin: 50px auto;
+            width: 450px;
+            height: 350px; // 16:9 aspect ratio for 1200px width (1200 * 9/16)
+        }
+    
+        @media screen and (min-width: 1300px) {
+            margin: 61px auto 87px auto;
+            width: 1165px;
+            height: 675px; // 16:9 aspect ratio for 1200px width (1200 * 9/16)
+        }
+    
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

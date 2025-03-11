@@ -1,0 +1,245 @@
+.tickets {
+    text-align: center;
+    margin: 0 auto 100px auto;
+
+    @media screen and (min-width: 1300px) {
+        margin: 0 auto;
+    }
+    
+    .icon-img {
+    margin: -5px auto 49px auto;
+
+    @media screen and (min-width: 1300px) {
+        width: 58px;
+    }
+    }
+
+    .parallelogram {
+        margin-bottom: 52px;
+
+        @media screen and (min-width: 1300px) {
+        height: 90px;
+        margin-bottom: 82px;
+    }
+}
+
+.section-title {
+    @media screen and (min-width: 1300px) {
+    padding: 0 0 5px 20px;
+    }
+}
+
+.first-p {
+    width: 87%;
+}
+
+.second-p {
+    width: 100%;
+}
+
+.section-subtitle {
+    width: 90%;
+    margin: -6px auto 60px auto;
+    font-size: 25px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 1300px) {
+        margin: -6px auto 115px auto;
+        font-size: 38px;
+    }
+}
+
+.ticket-prices {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: -18px;
+    width: 300px;
+    height: auto;
+
+/* Stack side by side on larger screens */
+@media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 40px;
+        width: 700px;
+    }
+
+@media (min-width: 1300px) {
+        gap: 60px;
+        width: 1135px;
+        height: 735px;
+}
+}
+
+.card-wrapper {
+    background: linear-gradient(to bottom, #fe5e00, #feb902);
+    padding: 16px; /* This creates the border effect */
+    flex: 1;
+    width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.ticket-price-card {
+    position: relative;
+    background: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.price-title {
+    font-size: 70px;
+    font-weight: bold;
+    margin: -25px 0 2px 0;
+    position: relative;
+    z-index: 1;
+    color: var(--color-white);
+    font-family: var(--font-brandongrotesque);
+
+    @media screen and (min-width: 768px) {
+        font-size: 100px;
+    }
+
+    @media screen and (min-width: 1300px) {
+        font-size: 170px;
+    }
+}
+
+.earlybird-bg {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0)
+    );
+    padding: 8px 0;
+    border-radius: 25px;
+    margin: 0 0 60px 0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1300px) {
+        height: 49px;
+    }
+}
+
+.earlybird-text {
+    margin: 0;
+    color: var(--color-darkorange);
+    font-weight: 600;
+    font-style: italic;
+    font-family: var(--font-brandongrotesque);
+    text-transform: uppercase;
+    font-size: 20px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 25px;
+    }
+}
+
+.price-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;         
+    flex-direction: column;
+    align-items: center; 
+}
+
+.price-features li {
+    margin-bottom: 0.8rem;
+    color: var(--color-white);
+    font-family: var(--font-sourcesanspro);
+    display: inline-flex;
+    align-items: center; 
+    gap: 6px; 
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.1;
+
+    @media screen and (min-width: 768px) {
+        font-size: 27px;
+    }
+}
+
+.price-features li {
+    margin-bottom: 0.8rem;
+    color: var(--color-white);
+    font-family: var(--font-sourcesanspro);
+    position: relative;
+    padding-left: 30px; /* Make space for the icon */
+}
+
+/* Default checkmark for all li items */
+.price-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-white);
+}
+
+/* Target the last li of the first card to show X instead */
+.ticket-prices .card-wrapper:first-child .price-features li:last-child {
+    opacity: 0.6;
+}
+
+.ticket-prices .card-wrapper:first-child .price-features li:last-child::before {
+    content: "✕";
+}
+
+.buy-now-button {
+    background: var(--color-darkorange);
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 6px 32px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.2s;
+    font-family: var(--font-brandongrotesque);
+    width: 150px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 35px;
+        padding: 8px 42px;
+        width: 248px;
+    }
+}
+
+.buy-now-button:hover {
+    background: var(--color-white);
+    color: var(--color-darkorange);
+}
+}
