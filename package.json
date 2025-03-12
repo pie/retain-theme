@@ -4,15 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/sass/style.scss:style.css --watch",
-    "sass:build": "sass src/sass/style.scss:style.css --style compressed --no-source-map",
-    "start": "npm run sass",
-    "build": "npm run sass:build"
+    "watch": "sass src/sass/style.scss:inc/css/bundle.css --watch",
+    "build:sass": "sass src/sass/style.scss:inc/css/bundle.css",
+    "build": "npm run build:sass && webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.85.0"
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.85.0",
+    "sass-loader": "^16.0.5",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.98.0",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^6.0.1"
   }
 }

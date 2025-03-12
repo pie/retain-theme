@@ -1,1 +1,10 @@
+# Ignore the node_modules directory
 node_modules
+
+# Ignore the compiled CSS files (generated from the SCSS files during the build process) but not the directory itself
+inc/css/*
+!inc/css/.gitkeep
+
+# Ignore the compiled JS files (generated from the SCSS files during the build process) but not the directory itself
+inc/js/*
+!inc/js/.gitkeep
