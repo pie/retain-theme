@@ -23,3 +23,5 @@ get_template_part('template-parts/header');
     endif;
     ?>
 </main>
+<?php 
+    get_template_part('template-parts/footer');

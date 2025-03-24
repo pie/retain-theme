@@ -37,28 +37,31 @@ function retain_scripts() {
         RETAIN_VERSION
     );
 
-    // Enqueue countdown script
-    wp_enqueue_script(
-        'retain-countdown',
-        get_template_directory_uri() . '/inc/js/countdown.js',
-        array(),  
-        RETAIN_VERSION
-    );
+    if (is_page_template('front-page.php')) :
 
-    // Enqueue collapsible script
-    wp_enqueue_script(
-        'retain-collapsible',
-        get_template_directory_uri() . '/inc/js/collapsible.js',
-        array(),  
-        RETAIN_VERSION
-    );
+        // Enqueue countdown script
+        wp_enqueue_script(
+            'retain-countdown',
+            get_template_directory_uri() . '/inc/js/countdown.js',
+            array(),  
+            RETAIN_VERSION
+        );
 
-    // Enqueue schedule tabs script
-    wp_enqueue_script(
-        'retain-schedule-tabs',
-        get_template_directory_uri() . '/inc/js/schedule-tabs.js',
-        array(),  
-        RETAIN_VERSION
-    );
+        // Enqueue collapsible script
+        wp_enqueue_script(
+            'retain-collapsible',
+            get_template_directory_uri() . '/inc/js/collapsible.js',
+            array(),  
+            RETAIN_VERSION
+        );
+
+        // Enqueue schedule tabs script
+        wp_enqueue_script(
+            'retain-schedule-tabs',
+            get_template_directory_uri() . '/inc/js/schedule-tabs.js',
+            array(),  
+            RETAIN_VERSION
+        );
+    endif;
 }
 add_action('wp_enqueue_scripts', 'retain_scripts');
