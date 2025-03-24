@@ -5,12 +5,11 @@ const TerserPlugin = require("terser-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  mode: "production", // "development" for debugging or "production" for production built
-  entry: "./src/js/index.js", // Main entry point where we import all JS
+  mode: "production", // Change to "development" if debugging
+  entry: "./src/js/index.js", // Main entry point for JS
   output: {
     filename: "bundle.js", // Output single JS file
     path: path.resolve(__dirname, "inc/js"), // Save in inc/js
-    // Expose library functions globally
     library: {
       name: 'RetainTheme',
       type: 'window',
@@ -27,13 +26,13 @@ module.exports = {
             presets: ["@babel/preset-env"],
           },
         },
-      }, 
+      },
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
-          "postcss-loader",
+          "postcss-loader", // Loads from postcss.config.js
           "sass-loader",
         ],
       },
@@ -41,7 +40,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin({
-      // This configuration will delete only `bundle.js`
       cleanOnceBeforeBuildPatterns: ["**/*", "!*bundle.js"],
     }),
     new MiniCssExtractPlugin({

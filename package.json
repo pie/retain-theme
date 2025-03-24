@@ -18,6 +18,7 @@
     "babel-loader": "^10.0.0",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
+    "cssnano": "^7.0.6",
     "mini-css-extract-plugin": "^2.9.2",
     "postcss-loader": "^8.1.1",
     "sass": "^1.85.0",
