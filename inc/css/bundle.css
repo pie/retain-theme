@@ -1934,6 +1934,12 @@ body {
 
 .entry-content {
   margin: 120px auto;
+  width: 85%;
+}
+@media screen and (min-width: 1300px) {
+  .entry-content {
+    width: 93%;
+  }
 }
 .entry-content p {
   width: 85%;
