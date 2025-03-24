@@ -55,7 +55,7 @@ class EventCountdown {
 
 // Initialize countdown when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    const countdown = new EventCountdown('September 22, 2025 00:00:00', {
+    const countdown = new EventCountdown('September 23, 2025 00:00:00', {
         days: 'days',
         hours: 'hours',
         minutes: 'minutes',
