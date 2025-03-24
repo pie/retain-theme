@@ -250,7 +250,7 @@ body {
     font-size: 30px;
   }
 }
-.site-main p {
+.site-main p, .site-main ul:not(.price-features) {
   font-size: 18px;
   color: var(--color-black);
   font-family: var(--font-sourcesanspro);
@@ -260,12 +260,12 @@ body {
   margin: 0 auto 40px auto;
 }
 @media screen and (min-width: 768px) {
-  .site-main p {
+  .site-main p, .site-main ul:not(.price-features) {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .site-main p {
+  .site-main p, .site-main ul:not(.price-features) {
     font-size: 30px;
   }
 }
@@ -1091,6 +1091,7 @@ body {
 @media screen and (min-width: 1300px) {
   .tickets .icon-img {
     width: 58px;
+    margin: 25px auto 49px auto;
   }
 }
 .tickets .parallelogram {
@@ -1819,6 +1820,7 @@ body {
   gap: 20px;
   position: relative;
   z-index: 1;
+  width: 100vw;
 }
 .schedule .schedule-tabs .schedule-card {
   background-color: var(--color-white);

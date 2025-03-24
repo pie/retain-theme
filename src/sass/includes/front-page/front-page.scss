@@ -55,7 +55,7 @@ h4 {
     }
 }
 
-p {
+p, ul:not(.price-features) {
     font-size: 18px;
     color: var(--color-black);
     font-family: var(--font-sourcesanspro);
