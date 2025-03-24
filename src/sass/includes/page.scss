@@ -1,0 +1,11 @@
+.entry-content {
+    margin: 120px auto;
+
+    p {
+        width: 85%;
+
+        @media screen and (min-width: 1300px) {
+            width: 93%;
+        }
+    }
+}

@@ -29,9 +29,86 @@ body {
   --font-sourcesanspro: "Source Sans Pro", sans-serif;
 }
 
+.site-main {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
 @media screen and (min-width: 1300px) {
   .site-main {
     max-width: 1300px;
+  }
+}
+.site-main section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1300px) {
+  .site-main section {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+.site-main h3 {
+  font-size: 22px;
+  font-family: var(--font-brandongrotesque);
+  font-weight: 700;
+  color: var(--color-darkorange);
+  font-style: italic;
+  max-width: 85%;
+  text-align: center;
+  margin: 55px auto 30px auto;
+}
+@media screen and (min-width: 768px) {
+  .site-main h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-main h3 {
+    font-size: 35px;
+  }
+}
+.site-main h4 {
+  font-size: 20px;
+  font-family: var(--font-brandongrotesque);
+  font-weight: 700;
+  color: var(--color-darkorange);
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin: 0 auto 20px auto;
+}
+@media screen and (min-width: 768px) {
+  .site-main h4 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .site-main h4 {
+    font-size: 30px;
+  }
+}
+.site-main p, .site-main ul:not(.price-features) {
+  font-size: 18px;
+  color: var(--color-black);
+  font-family: var(--font-sourcesanspro);
+  font-weight: 400;
+  line-height: 1.4;
+  width: 85%;
+  margin: 0 auto 40px auto;
+}
+@media screen and (min-width: 768px) {
+  .site-main p, .site-main ul:not(.price-features) {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .site-main p, .site-main ul:not(.price-features) {
+    font-size: 30px;
   }
 }
 
@@ -188,86 +265,11 @@ body {
 }
 
 .site-main {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
   /* Large screen background images on what to expect and speakers sections */
   /* Section icon */
   /* Section titles */
   /* Skip links for accessibility - hidden unless focused with keyboard */
   /* Ensure main content can receive focus for skip links */
-}
-.site-main section {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 1300px) {
-  .site-main section {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-}
-.site-main h3 {
-  font-size: 22px;
-  font-family: var(--font-brandongrotesque);
-  font-weight: 700;
-  color: var(--color-darkorange);
-  font-style: italic;
-  max-width: 85%;
-  text-align: center;
-  margin: 55px auto 30px auto;
-}
-@media screen and (min-width: 768px) {
-  .site-main h3 {
-    font-size: 25px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .site-main h3 {
-    font-size: 35px;
-  }
-}
-.site-main h4 {
-  font-size: 20px;
-  font-family: var(--font-brandongrotesque);
-  font-weight: 700;
-  color: var(--color-darkorange);
-  margin: 0 auto;
-  text-transform: uppercase;
-  margin: 0 auto 20px auto;
-}
-@media screen and (min-width: 768px) {
-  .site-main h4 {
-    font-size: 25px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .site-main h4 {
-    font-size: 30px;
-  }
-}
-.site-main p, .site-main ul:not(.price-features) {
-  font-size: 18px;
-  color: var(--color-black);
-  font-family: var(--font-sourcesanspro);
-  font-weight: 400;
-  line-height: 1.4;
-  width: 85%;
-  margin: 0 auto 40px auto;
-}
-@media screen and (min-width: 768px) {
-  .site-main p, .site-main ul:not(.price-features) {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .site-main p, .site-main ul:not(.price-features) {
-    font-size: 30px;
-  }
 }
 .site-main .full-w-img {
   display: none; /* Hide image on mobile */
@@ -1927,6 +1929,18 @@ body {
     height: 53px;
     object-fit: cover;
     clip-path: polygon(20% 0%, 100% 0%, 80% 75%, 50% 75%, 30% 100%, 30% 75%, 0% 75%);
+  }
+}
+
+.entry-content {
+  margin: 120px auto;
+}
+.entry-content p {
+  width: 85%;
+}
+@media screen and (min-width: 1300px) {
+  .entry-content p {
+    width: 93%;
   }
 }
 
