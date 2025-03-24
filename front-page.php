@@ -500,6 +500,70 @@ Template Name: Front Page
             endwhile;
         endif;
     ?>
+
+    <!-- Repeated tickets Section (same as above, but appearing on the page a second time) -->
+    <section class="tickets" id="tickets">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/tickets/tickets-icon.png" alt="Tickets icon" class="icon-img">
+
+        <div class="parallelogram">
+        <h2 class="section-title">Buy your ticket</h2>
+        </div>
+
+        <div class="first-p">
+            <p>Join us on <b>September 23rd - 24th 2025</b> in <b>Newcastle-Upon-Tyne, England</b> for THE membership growth event that you simply can’t afford to miss.
+        </p>
+        </div>
+        <div class="second-p"><p>
+        <em><b>Don’t forget:</b> members of Membership Academy receive a discount on their ticket price!</em>
+    </p>
+    </div>
+
+        <h3 class="section-subtitle">
+        PLUS take advantage of Earlybird pricing if you buy your ticket today!
+        </h3>
+
+        <div class="ticket-prices">
+    <div class="card-wrapper">
+        <div class="ticket-price-card">
+            <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
+            <p class="price-title">£395</p>
+            <div class="earlybird-bg">
+                <p class="earlybird-text">Earlybird (non-members)</p>
+            </div>
+            <ul class="price-features">
+                <li><b>Save £100</b></li>
+                <li>Access to all sessions</li>
+                <li>Lunch & refreshments provided</li>
+                <li>Academy member discount</li>
+            </ul>
+            <a href="/registration" class="buy-now-button">BUY NOW</a>
+        </div>
+    </div>
+
+    <div class="card-wrapper">
+        <div class="ticket-price-card">
+            <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
+            <p class="price-title">£295</p>
+            <div class="earlybird-bg">
+                <p class="earlybird-text">Earlybird (members)</p>
+            </div>
+            <ul class="price-features">
+                    <li><b>Save £200</b></li>
+                    <li>Access to all sessions</li>
+                    <li>Lunch & refreshments provided</li>
+                    <li><b>Academy member discount</b></li>
+                </ul>
+                <a href="https://www.membershipacademy.com/retain-tickets/" target="_blank" class="buy-now-button">BUY NOW</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>Copyright &copy; 2025 - We Do Digital Ltd | <a href="https://www.retainlive.com/affiliate-home">Affiliates</a> | <a href="https://www.retainlive.com/sponsorship/">Sponsorship</a></p>
+</footer>
+
 </main>
 
 <?php

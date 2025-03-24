@@ -177,4 +177,16 @@ p {
 #main-content:focus {
     outline: none;
 }
+
+.footer {
+    background: black; 
+    margin-top:40px;
+    padding:20px;
+    width:100%; 
+    text-align: center;
+
+    p, a {
+        color: white;
+    }
+}
 }
