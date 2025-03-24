@@ -22,6 +22,7 @@ body {
 :root {
   --color-darkorange: #fe5e00;
   --color-lightorange: #feb902;
+  --color-darkred: #790000;
   --color-white: #fff;
   --color-black: #000;
   --color-offwhite: #f7f7f7;
@@ -1938,16 +1939,73 @@ body {
 }
 @media screen and (min-width: 1300px) {
   .entry-content {
-    width: 93%;
+    width: 100%;
   }
 }
 .entry-content p {
+  font-size: 18px;
+  color: var(--color-black);
+  font-family: var(--font-sourcesanspro);
+  font-weight: 400;
+  line-height: 1.4;
   width: 85%;
+  margin: 0 auto 40px auto;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 768px) {
   .entry-content p {
-    width: 93%;
+    font-size: 22px;
   }
+}
+@media screen and (min-width: 1024px) {
+  .entry-content p {
+    font-size: 30px;
+    width: 100%;
+  }
+}
+
+form {
+  font-family: var(--font-sourcesanspro);
+  text-align: left;
+  max-width: 100%;
+  margin: 0 auto;
+}
+form label {
+  line-height: 1.3;
+  font-weight: 700;
+}
+form label span {
+  color: var(--color-darkred);
+  margin-left: 4px;
+}
+form input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+  padding: 5px 4px;
+}
+form input[type=submit] {
+  background: var(--color-darkorange);
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 6px 0;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.2s;
+  font-family: var(--font-brandongrotesque);
+  width: 100px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  form input[type=submit] {
+    font-size: 25px;
+    padding: 8px 0;
+    width: 170px;
+  }
+}
+
+form input[type=submit]:hover {
+  background: var(--color-lightorange);
 }
 
 /*# sourceMappingURL=bundle.css.map */
