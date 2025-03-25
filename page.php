@@ -16,20 +16,6 @@ get_template_part('template-parts/header');
                 <h1 class="entry-title"><?php the_title(); ?></h1>
                 <div class="entry-content">
                     <?php the_content(); ?>
-                    <form action="#" method="post" class="simple-form">
-                        <label for="name">Name 
-                            <span class="required">*</span>
-                        </label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email
-                            <span class="required">*</span>
-                        </label>
-                        <input type="email" id="email" name="email" required>
-
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
             </article>
             <?php
         endwhile;
@@ -39,4 +25,3 @@ get_template_part('template-parts/header');
 </main>
 <?php 
     get_template_part('template-parts/footer');
-    

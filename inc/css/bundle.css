@@ -1935,7 +1935,7 @@ body {
 
 .entry-content {
   margin: 120px auto;
-  width: 85%;
+  width: 90%;
 }
 @media screen and (min-width: 1300px) {
   .entry-content {
@@ -1967,11 +1967,19 @@ form {
   font-family: var(--font-sourcesanspro);
   text-align: left;
   max-width: 100%;
-  margin: 0 auto;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  form {
+    width: 100%;
+  }
 }
 form label {
+  display: block;
+  margin-bottom: 10px;
   line-height: 1.3;
   font-weight: 700;
+  font-size: 20px;
 }
 form label span {
   color: var(--color-darkred);
@@ -1979,6 +1987,16 @@ form label span {
 }
 form input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
   padding: 5px 4px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  margin: 0 0 30px 0;
+}
+@media screen and (min-width: 768px) {
+  form input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    width: 60%;
+  }
 }
 form input[type=submit] {
   background: var(--color-darkorange);
