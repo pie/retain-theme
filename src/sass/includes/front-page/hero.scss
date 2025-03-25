@@ -12,7 +12,7 @@
 
 .site-main .hero {
     background-color: var(--color-darkorange);
-    background-image: url(./assets/hero/hero-bg.png);
+    background-image: url(../../assets/hero/hero-bg.png);
     height: 750px;
     width: 100%;
     background-size: cover;
@@ -50,14 +50,14 @@
     #hero-bg-img-left {
         @media screen and (min-width: 1300px) {
             left: -30px;
-            background-image: url(./assets/hero/hero-image-left.png);
+            background-image: url(../../assets/hero/hero-image-left.png);
         }
     }
     
     #hero-bg-img-right {
         @media screen and (min-width: 1300px) {
             right: 0; 
-            background-image: url(./assets/hero/hero-image-right.png);
+            background-image: url(../../assets/hero/hero-image-right.png);
         }
     }
 
@@ -99,7 +99,7 @@
     }
 
     .hero-logo {
-        background-image: url(./assets/hero/hero-logo.png);
+        background-image: url(../../assets/hero/hero-logo.png);
         @include image-replace(300px, 143px);
 
         @media screen and (min-width: 768px) {

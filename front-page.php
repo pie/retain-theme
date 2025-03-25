@@ -48,7 +48,7 @@ Template Name: Front Page
         <div id="hero-bg-img-left"></div>
         <div id="hero-bg-img-right"></div>
         <div class="hero-content">
-            <h2 class="hero-text">Sept 22nd - 24th 2025 / Newcastle, UK</h2>
+            <h2 class="hero-text">Sept 23rd - 24th 2025 / Newcastle, UK</h2>
             <h1 class="hero-logo">RETAIN - The Membership Growth Conference</h1>
             <div id="countdown" class="countdown">
                 <div class="countdown-item">
@@ -112,15 +112,15 @@ Template Name: Front Page
                 </p>
             </div>
             <div class="what-to-expect-column">
-                <h2>What you can expect</h2>
+                <h2>What we'll cover</h2>
                 <p>
-                2 action packed days of membership goodness with talks and panels on a variety of membership topics. Plus plenty of time for talking with other membership site owners too – because lets be honest, the conversations you have and ideas you get from the other people in the room are often the best bit of attending a conference!
+                The full agenda will be released soon, however Retain 2025 will be laser-focused on membership growth, with topics including marketing and sales tactics for attracting more members, improving your member experience and engagement, retention tactics, expanding and scaling your membership and more!
                 </p>
             </div>
             <div class="what-to-expect-column">
-                <h2>What you can expect</h2>
+                <h2>Who's the event for?</h2>
                 <p>
-                2 action packed days of membership goodness with talks and panels on a variety of membership topics. Plus plenty of time for talking with other membership site owners too – because lets be honest, the conversations you have and ideas you get from the other people in the room are often the best bit of attending a conference!
+                Retain Live is for people who already have an existing online membership site and are looking to focus on growth. We won't be teaching the basics or talking tech - we're covering higher level strategy around sales, retention and scaling. While we focus on online memberships, most of the info given will also be relevant to other membership types.
                 </p>
             </div>
         </div>
@@ -221,24 +221,24 @@ Template Name: Front Page
     </div>
     </div>
 
-    <div class="speakers-section-footer">
-        <h3 class="section-subtitle">
-        With more to come – full lineup to be announced in the coming months!
-        </h3>
-        <hr />
-        </div>
+    <?php /* <div class="speakers-section-footer">
+                <h3 class="section-subtitle">
+                    With more to come – full lineup to be announced in the coming months!
+                </h3>
+                <hr />
+            </div>*/ ?>
     </section>
 
 <!-- Tickets Section -->
     <section class="tickets" id="tickets">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/tickets/tickets-icon.png" alt="Tickers icon" class="icon-img">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/tickets/tickets-icon.png" alt="Tickets icon" class="icon-img">
 
         <div class="parallelogram">
         <h2 class="section-title">Buy your ticket</h2>
         </div>
 
         <div class="first-p">
-            <p>Join us on <b>September 22nd - 24th 2025</b> in <b>Newcastle-Upon-Tyne, England</b> for THE membership growth event that you simply can’t afford to miss.
+            <p>Join us on <b>September 23rd - 24th 2025</b> in <b>Newcastle-Upon-Tyne, England</b> for THE membership growth event that you simply can’t afford to miss.
         </p>
         </div>
         <div class="second-p"><p>
@@ -254,34 +254,34 @@ Template Name: Front Page
     <div class="card-wrapper">
         <div class="ticket-price-card">
             <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
-            <p class="price-title">£345</p>
+            <p class="price-title">£395</p>
             <div class="earlybird-bg">
                 <p class="earlybird-text">Earlybird (non-members)</p>
             </div>
             <ul class="price-features">
-                <li><b>Save £150</b></li>
+                <li><b>Save £100</b></li>
                 <li>Access to all sessions</li>
                 <li>Lunch & refreshments provided</li>
                 <li>Academy member discount</li>
             </ul>
-            <a href="/buy-your-tickets" class="buy-now-button">BUY NOW</a>
+            <a href="/registration" class="buy-now-button">BUY NOW</a>
         </div>
     </div>
 
     <div class="card-wrapper">
         <div class="ticket-price-card">
             <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
-            <p class="price-title">£245</p>
+            <p class="price-title">£295</p>
             <div class="earlybird-bg">
                 <p class="earlybird-text">Earlybird (members)</p>
             </div>
             <ul class="price-features">
-                <li><b>Save £250</b></li>
+                <li><b>Save £200</b></li>
                 <li>Access to all sessions</li>
                 <li>Lunch & refreshments provided</li>
                 <li><b>Academy member discount</b></li>
             </ul>
-            <a href="/buy-your-tickets" class="buy-now-button">BUY NOW</a>
+            <a href="https://www.membershipacademy.com/retain-tickets/" target="_blank" class="buy-now-button">BUY NOW</a>
         </div>
     </div>
 </div>
@@ -341,64 +341,42 @@ Template Name: Front Page
                 </p>
             </div>
 
+            <button type="button" class="collapsible">CAN I BRING MY SPOUSE, BUSINESS PARTNER, STAFF MEMBER?</button>
+            <div class="content">
+                <p>
+                    Yes you can. However all attendees at the summit must be registered attendees, and so everyone wanting to attend has to purchase a ticket.
+                </p>
+            </div>
+
             <button type="button" class="collapsible">ARE THERE ANY DISCOUNTS FOR STUDENTS OR CHARITIES?</button>
             <div class="content">
-            <p>
-                    Your completed registration includes the following:
+                <p>
+                    No. The current individual ticket price is the one displayed on this page and is the lowest at the time of publication.
                 </p>
-                <ul>
-                    <li>Access to all speaker presentations and panels throughout both days of the conference</li>
-                    <li>Breakfast, lunch and refreshments on both days</li>
-                    <li>Complimentary Wifi access in the event area</li>
-                    <li>And a few special surprises…</li>
-                <p class="note">
-                    Note: Hotel, airfare and other travel expenses are not included in the ticket price.
-                </p>
+                <p><strong>Note:</strong> The price does increase as the event gets closer, so it’s best to get a discounted price by purchasing at our ‘early bird’ prices.</p>
+                <p><strong>Group Bookings:</strong> If you have a group of 10 or more people that want to attend, please feel free to reach out to us directly for more information on a group discount.</p>
             </div>
 
             <button type="button" class="collapsible">CAN I BUY A TICKET TO JUST ONE OF THE DAYS OF THE EVENT?</button>
             <div class="content">
-            <p>
-                    Your completed registration includes the following:
-                </p>
-                <ul>
-                    <li>Access to all speaker presentations and panels throughout both days of the conference</li>
-                    <li>Breakfast, lunch and refreshments on both days</li>
-                    <li>Complimentary Wifi access in the event area</li>
-                    <li>And a few special surprises…</li>
-                <p class="note">
-                    Note: Hotel, airfare and other travel expenses are not included in the ticket price.
+                <p>
+                    Single day tickets are not available – plus, why would you want to miss out on a full day of learning and fun, anyway!?
                 </p>
             </div>
 
             <button type="button" class="collapsible">WHAT IS YOUR REFUND POLICY?</button>
             <div class="content">
-            <p>
-                    Your completed registration includes the following:
-                </p>
-                <ul>
-                    <li>Access to all speaker presentations and panels throughout both days of the conference</li>
-                    <li>Breakfast, lunch and refreshments on both days</li>
-                    <li>Complimentary Wifi access in the event area</li>
-                    <li>And a few special surprises…</li>
-                <p class="note">
-                    Note: Hotel, airfare and other travel expenses are not included in the ticket price.
-                </p>
+                    <p>
+                        You can cancel at any time, but please be aware of the following policy: If you cancel before March 31st 2025 you will receive a full refund, less any processing fees.
+                    </p>
+                    <p>If you cancel from April 1st, 2025 onwards you will not be eligible for a refund, but you may send someone in your place – be sure to let us know no later than August 20th, 2025 so we have their details ahead of the event, to make sure that they gain entry without any problems.</p>
+                    <p><strong>Note:</strong> No change of names associated with tickets will be accepted after August 20th, 2025.</p>
             </div>
 
             <button type="button" class="collapsible">ARE MEALS PROVIDED?</button>
             <div class="content">
-            <p>
-                    Your completed registration includes the following:
-                </p>
-                <ul>
-                    <li>Access to all speaker presentations and panels throughout both days of the conference</li>
-                    <li>Breakfast, lunch and refreshments on both days</li>
-                    <li>Complimentary Wifi access in the event area</li>
-                    <li>And a few special surprises…</li>
-                <p class="note">
-                    Note: Hotel, airfare and other travel expenses are not included in the ticket price.
-                </p>
+                <p>Lunch will be provided, along with a light breakfast and refreshments throughout the day.</p>
+                <p>There is also an extensive choice of restaurants within walking distance for making your dinner arrangements at the end of each day.</p>
             </div>
 
         </div>
@@ -522,4 +500,71 @@ Template Name: Front Page
             endwhile;
         endif;
     ?>
+
+    <!-- Repeated tickets Section (same as above, but appearing on the page a second time) -->
+    <section class="tickets" id="tickets">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/tickets/tickets-icon.png" alt="Tickets icon" class="icon-img">
+
+        <div class="parallelogram">
+        <h2 class="section-title">Buy your ticket</h2>
+        </div>
+
+        <div class="first-p">
+            <p>Join us on <b>September 23rd - 24th 2025</b> in <b>Newcastle-Upon-Tyne, England</b> for THE membership growth event that you simply can’t afford to miss.
+        </p>
+        </div>
+        <div class="second-p"><p>
+        <em><b>Don’t forget:</b> members of Membership Academy receive a discount on their ticket price!</em>
+    </p>
+    </div>
+
+        <h3 class="section-subtitle">
+        PLUS take advantage of Earlybird pricing if you buy your ticket today!
+        </h3>
+
+        <div class="ticket-prices">
+    <div class="card-wrapper">
+        <div class="ticket-price-card">
+            <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
+            <p class="price-title">£395</p>
+            <div class="earlybird-bg">
+                <p class="earlybird-text">Earlybird (non-members)</p>
+            </div>
+            <ul class="price-features">
+                <li><b>Save £100</b></li>
+                <li>Access to all sessions</li>
+                <li>Lunch & refreshments provided</li>
+                <li>Academy member discount</li>
+            </ul>
+            <a href="/registration" class="buy-now-button">BUY NOW</a>
+        </div>
+    </div>
+
+    <div class="card-wrapper">
+        <div class="ticket-price-card">
+            <img class="card-bg" src="<?php echo get_template_directory_uri(); ?>/assets/tickets/card-bg.png" alt="Ticket card background">
+            <p class="price-title">£295</p>
+            <div class="earlybird-bg">
+                <p class="earlybird-text">Earlybird (members)</p>
+            </div>
+            <ul class="price-features">
+                    <li><b>Save £200</b></li>
+                    <li>Access to all sessions</li>
+                    <li>Lunch & refreshments provided</li>
+                    <li><b>Academy member discount</b></li>
+                </ul>
+                <a href="https://www.membershipacademy.com/retain-tickets/" target="_blank" class="buy-now-button">BUY NOW</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>Copyright &copy; 2025 - We Do Digital Ltd | <a href="https://www.retainlive.com/affiliate-home">Affiliates</a> | <a href="https://www.retainlive.com/sponsorship/">Sponsorship</a></p>
+</footer>
+
 </main>
+
+<?php
+    get_template_part('template-parts/footer');

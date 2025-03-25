@@ -24,41 +24,20 @@ function retain_scripts() {
     // Enqueue compiled stylesheet
     wp_enqueue_style(
         'retain-style',
-        get_template_directory_uri() . '/style.css',
+        get_template_directory_uri() . '/inc/css/bundle.css',
         array(),
         RETAIN_VERSION
     );
 
-    // Enqueue navigation script
-    wp_enqueue_script(
-        'retain-navigation',
-        get_template_directory_uri() . '/inc/js/navigation.js',
-        array(), 
-        RETAIN_VERSION
-    );
-
-    // Enqueue countdown script
-    wp_enqueue_script(
-        'retain-countdown',
-        get_template_directory_uri() . '/inc/js/countdown.js',
-        array(),  
-        RETAIN_VERSION
-    );
-
-    // Enqueue collapsible script
-    wp_enqueue_script(
-        'retain-collapsible',
-        get_template_directory_uri() . '/inc/js/collapsible.js',
-        array(),  
-        RETAIN_VERSION
-    );
-
-    // Enqueue schedule tabs script
-    wp_enqueue_script(
-        'retain-schedule-tabs',
-        get_template_directory_uri() . '/inc/js/schedule-tabs.js',
-        array(),  
-        RETAIN_VERSION
-    );
+    // Enqueue scripts only if the page template is front-page.php
+    if (is_page_template('front-page.php')) {
+        wp_enqueue_script(
+            'retain-bundle',
+            get_template_directory_uri() . '/inc/js/bundle.js',
+            array(),
+            RETAIN_VERSION,
+            true // Load script in the footer
+        );
+    }
 }
 add_action('wp_enqueue_scripts', 'retain_scripts');
