@@ -1,2 +1,9 @@
 # Ignore the node_modules directory
 node_modules
+
+# Ignore the compiled CSS file
+inc/css/bundle.css
+inc/css/bundle.css.map
+
+# Ignore the compiled JavaScript file
+inc/js/bundle.js
