@@ -396,18 +396,18 @@ Template Name: Front Page
             <div class="tab-button-container">
             <button class="tab-button active" onclick="openTab(event, 'day1')">
                 <span>Day 1</span>
-                <span>22/09/2025</span>
+                <span>23/09/2025</span>
             </button>
             <button class="tab-button" onclick="openTab(event, 'day2')">
                 <span>Day 2</span>
-                <span>23/09/2025</span>
+                <span>24/09/2025</span>
             </button>
             </div>
 
         <div id="day1" class="tab-content">
         <button class="tab-button-mobile">
                 <span>Day 1</span>
-                <span>22/09/2025</span>
+                <span>23/09/2025</span>
             </button>
                 <!-- schedule day 1 repeater fields -->
                 <?php if (have_rows('schedule_day_1')): ?>
@@ -450,7 +450,7 @@ Template Name: Front Page
             <div id="day2" class="tab-content">
             <button class="tab-button-mobile">
                 <span>Day 2</span>
-                <span>23/09/2025</span>
+                <span>24/09/2025</span>
             </button>
                 <!-- schedule day 2 repeater fields -->
                 <?php if (have_rows('schedule_day_2')): ?>
