@@ -114,7 +114,7 @@ Template Name: Front Page
             <div class="what-to-expect-column">
                 <h2>What we'll cover</h2>
                 <p>
-                The full agenda will be released soon, however Retain 2025 will be laser-focused on membership growth, with topics including marketing and sales tactics for attracting more members, improving your member experience and engagement, retention tactics, expanding and scaling your membership and more!
+                The full agenda is detailed below, and you can rest assured that Retain 2025 will be laser-focused on membership growth, with topics including marketing and sales tactics for attracting more members, improving your member experience and engagement, retention tactics, expanding and scaling your membership and more!
                 </p>
             </div>
             <div class="what-to-expect-column">

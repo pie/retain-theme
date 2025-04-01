@@ -75,7 +75,7 @@
       width: 60%;
     }
     @media screen and (min-width: 1300px) {
-      font-size: 42px;
+      font-size: 38px;
       margin: 8px 0 0 0;
       width: auto;
       color: var(--color-white);
@@ -233,11 +233,10 @@
     }
     @media screen and (min-width: 768px) {
       font-size: 23px;
-      letter-spacing: 5px;
     }
 
     @media screen and (min-width: 1300px) {
-      font-size: 27px;
+      font-size: 25px;
       color: var(--color-white);
     }
   }
