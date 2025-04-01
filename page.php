@@ -21,7 +21,10 @@ get_template_part('template-parts/header');
         endwhile;
     endif;
     ?>
-
+<!-- Footer -->
+<footer class="footer">
+    <p>Copyright &copy; 2025 - We Do Digital Ltd | <a href="https://www.retainlive.com/affiliate-home">Affiliates</a> | <a href="https://www.retainlive.com/sponsorship/">Sponsorship</a></p>
+</footer>
 </main>
 <?php 
     get_template_part('template-parts/footer');
