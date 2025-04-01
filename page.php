@@ -6,7 +6,7 @@ Template Name: Page
 get_template_part('template-parts/header');
 ?>
 
-<main id="primary" class="site-main">
+<main id="primary" class="site-main inner-page">
     <div class="site-inner">
     <?php
     if (have_posts()) :

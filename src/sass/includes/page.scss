@@ -1,6 +1,13 @@
-.site-inner {
-    margin: 120px auto;
+.site-main.inner-page {
+
     width: 90%;
+    margin: 120px auto;
+
+    @media screen and (min-width: 1300px) {
+        width: 100%;
+    }
+}
+.site-inner {
     padding: 20px;
     text-align: center;
 
