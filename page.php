@@ -6,7 +6,8 @@ Template Name: Page
 get_template_part('template-parts/header');
 ?>
 
-<main id="primary" class="site-main site-inner">
+<main id="primary" class="site-main">
+    <div class="site-inner">
     <?php
     if (have_posts()) :
         while (have_posts()) :
@@ -21,6 +22,7 @@ get_template_part('template-parts/header');
         endwhile;
     endif;
     ?>
+</div>
 <!-- Footer -->
 <footer class="footer">
     <p>Copyright &copy; 2025 - We Do Digital Ltd | <a href="https://www.retainlive.com/affiliate-home">Affiliates</a> | <a href="https://www.retainlive.com/sponsorship/">Sponsorship</a></p>
