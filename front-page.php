@@ -33,7 +33,7 @@ Template Name: Front Page
     <a href="#membership-growth" class="skip-link screen-reader-text">Skip to Membership Growth Section</a>
     <a href="#what-to-expect" class="skip-link screen-reader-text">Skip to What to Expect Section</a>
     <a href="#highlights" class="skip-link screen-reader-text">Skip to Highlights Section</a>
-    <a href="#meet-host" class="skip-link screen-reader-text">Skip to Meet Your Host Section</a>
+    <a href="#meet-your-host" class="skip-link screen-reader-text">Skip to Meet Your Host Section</a>
     <a href="#speakers" class="skip-link screen-reader-text">Skip to Speakers Section</a>
     <a href="#tickets" class="skip-link screen-reader-text">Skip to Tickets Section</a>
     <a href="#location" class="skip-link screen-reader-text">Skip to Location Section</a>
